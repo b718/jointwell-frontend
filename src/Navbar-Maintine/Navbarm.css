@@ -1,0 +1,40 @@
+.maintineFlex {
+  margin-left: 3rem;
+}
+
+.maintineFlex-2 {
+  margin-right: 4rem;
+}
+
+.navbarm-header-jw {
+  color: white;
+}
+
+.button-m {
+  color: white;
+  transition: 1s;
+  text-transform: uppercase;
+}
+
+.button-m:hover {
+  text-decoration: underline;
+  text-decoration-color: lightblue;
+  text-decoration-thickness: 2px;
+}
+
+.button-m-active-au,
+.button-m-active-p,
+.button-m-active-c,
+.button-m-active-cu {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: lightblue;
+  text-decoration-thickness: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #0b4c95;
+}
