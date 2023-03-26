@@ -1,0 +1,50 @@
+.homePageText {
+  color: #0b4c95;
+  text-align: center;
+  font-weight: bold;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mGridHomePage {
+  max-width: 38rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.jointWellFooter {
+  display: block;
+  color: #0b4c95;
+  text-align: center;
+  font-weight: bold;
+  max-width: 40rem;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  margin-top: 4rem;
+  position: fixed;
+  bottom: 0.3rem;
+  left: 0;
+  right: 0;
+}
+
+.homePageMainPicture {
+  border: 0.5px solid transparent;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/*Max-width is basically saying 500px, if youre in that this will happen*/
+@media all {
+  @media (max-width: 638px) {
+    .homePageText {
+      font-size: 0.7rem;
+    }
+  }
+}

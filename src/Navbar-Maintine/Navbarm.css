@@ -38,3 +38,12 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   background-color: #0b4c95;
 }
+
+/*Max-width is basically saying 500px, if youre in that this will happen*/
+@media all {
+  @media (max-width: 638px) {
+    .navbarm-header-jw {
+      font-size: 0.7rem;
+    }
+  }
+}

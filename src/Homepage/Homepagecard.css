@@ -1,0 +1,113 @@
+.homePageImages,
+.homePageImages-active {
+  transition: 0.5s;
+  border: 0.5px solid transparent;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.homePageImages-active {
+  border: 0.5px solid #0b4c95;
+  box-shadow: 2px -1px 10px 3px rgba(107, 107, 107, 0.45);
+}
+
+.propTextHomePageCard,
+.enterTextHomePageCard,
+.propTextHomePageCard-active,
+.enterTextHomePageCard-active {
+  position: absolute;
+  text-transform: uppercase;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.enterTextHomePageCard,
+.enterTextHomePageCard-active {
+  color: #ff7816;
+  opacity: 0.5;
+  font-weight: bold;
+  top: 30rem;
+}
+
+.propTextHomePageCard,
+.propTextHomePageCard-active {
+  color: #0b4c95;
+  opacity: 0.5;
+  font-weight: bold;
+  top: 27rem;
+}
+
+.enterTextHomePageCard-active,
+.propTextHomePageCard-active {
+  opacity: 1;
+}
+
+/*Max-width is basically saying 500px, if youre in that this will happen*/
+@media all {
+  @media (min-width: 1107px) {
+    .enterTextHomePageCard,
+    .enterTextHomePageCard-active {
+      top: 28rem;
+    }
+
+    .propTextHomePageCard,
+    .propTextHomePageCard-active {
+      top: 25rem;
+    }
+  }
+  @media (max-width: 1106px) {
+    .enterTextHomePageCard,
+    .enterTextHomePageCard-active {
+      top: 30rem;
+    }
+
+    .propTextHomePageCard,
+    .propTextHomePageCard-active {
+      top: 27rem;
+    }
+  }
+
+  @media (max-width: 638px) {
+    .enterTextHomePageCard,
+    .enterTextHomePageCard-active {
+      top: 28rem;
+    }
+
+    .propTextHomePageCard,
+    .propTextHomePageCard-active {
+      top: 25rem;
+    }
+  }
+
+  @media (max-width: 637px) {
+    .enterTextHomePageCard,
+    .enterTextHomePageCard-active {
+      top: 30rem;
+    }
+
+    .propTextHomePageCard,
+    .propTextHomePageCard-active {
+      top: 27rem;
+    }
+  }
+
+  @media (max-width: 573px) {
+    .enterTextHomePageCard,
+    .enterTextHomePageCard-active {
+      top: 33rem;
+      font-size: 0.7rem;
+    }
+
+    .propTextHomePageCard,
+    .propTextHomePageCard-active {
+      top: 31rem;
+      font-size: 0.7rem;
+    }
+  }
+}

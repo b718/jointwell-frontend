@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Flex, Button, Image, MantineProvider, Text } from "@mantine/core";
 import "./Navbarm.css";
+import { Link } from "react-router-dom";
 
 const Navbarm = () => {
   const [auSate, changeauState] = useState(false);
@@ -41,15 +42,19 @@ const Navbarm = () => {
         align="center"
         className="maintineFlex"
       >
-        <Image
-          width={60}
-          height={40}
-          fit="contain"
-          src={require("../Images/nav-pic.png")}
-        />
+        <Link to="/home">
+          {" "}
+          <Image
+            width={60}
+            height={40}
+            fit="contain"
+            src={require("../Images/nav-pic.png")}
+          />
+        </Link>
 
         <h1 className="navbarm-header-jw">JOINT WELL</h1>
       </Flex>
+
       <Flex
         mih={50}
         gap="sm"
