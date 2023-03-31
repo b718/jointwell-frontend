@@ -81,22 +81,27 @@ const Navbarm = () => {
           {" "}
           PRODUCTS
         </Button>
-        <Button
-          variant="cyan"
-          className={cSate ? "button-m-active-c" : "button-m"}
-          color="cyan"
-          onClick={cChanger}
-        >
-          compliance
-        </Button>
-        <Button
-          variant="cyan"
-          className={cuSate ? "button-m-active-cu" : "button-m"}
-          color="cyan"
-          onClick={cuChanger}
-        >
-          Contact Us
-        </Button>
+        <Link to="/compliance">
+          <Button
+            variant="cyan"
+            className={cSate ? "button-m-active-c" : "button-m"}
+            color="cyan"
+            onClick={cChanger}
+          >
+            compliance
+          </Button>
+        </Link>
+
+        <Link to="/contact-us">
+          <Button
+            variant="cyan"
+            className={cuSate ? "button-m-active-cu" : "button-m"}
+            color="cyan"
+            onClick={cuChanger}
+          >
+            Contact Us
+          </Button>
+        </Link>
       </Flex>
     </nav>
   );

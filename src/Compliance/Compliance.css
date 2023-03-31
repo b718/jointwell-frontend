@@ -1,0 +1,23 @@
+.compliace-main-header {
+    margin-top: 4rem;
+    color: #0B4C95;
+    font-size: 2vw;
+
+}
+
+.compliace-second-header {
+    margin-top: 0.3rem;
+    font-size: 1.2vw;
+
+}
+
+.complianceParagraph {
+    margin-top: 2.3rem;
+    text-size-adjust: auto;
+
+
+}
+.compliace-article{
+    max-width: 35rem;
+    margin-left: 1rem;
+}
