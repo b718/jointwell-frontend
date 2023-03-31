@@ -4,7 +4,7 @@ import "./Compliance.css";
 
 const Compliance = (props) => {
   return (
-    <Grid>
+    <Grid style={{ maxWidth: "100vw" }}>
       <Grid.Col span={4}>
         <div style={{ marginLeft: "3rem", marginTop: "2rem" }}>
           <Image fit="inherit" src={require("../Images/compliance-1.png")} />
