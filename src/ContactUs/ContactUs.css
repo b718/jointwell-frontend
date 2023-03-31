@@ -1,5 +1,5 @@
 .contact-us-grid-form-left {
-    margin-left: 4rem;
+    margin-left: 5rem;
     max-width: 35rem;
     margin-top: 10rem;
 }
@@ -7,10 +7,20 @@
 .footer-contact-us {
     background-color: #0B4C95;
     margin-top: 10rem;
-    
 }
 
 .jw-footer-title {
-    margin-left: 4rem;
+    color: white;
+    margin-top: 2rem;
+}
 
+.column-contact-us-footer-flex {
+    margin-left: 4rem;
+    background-color: #0B4C95;
+
+}
+
+.footer-grid-for-contacts{
+    margin-top: 1.3rem;
+    
 }
