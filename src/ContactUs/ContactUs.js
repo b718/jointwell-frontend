@@ -1,6 +1,7 @@
 import { Box, Grid, Text, Title, Flex, Center } from "@mantine/core";
 import React from "react";
 import "./ContactUs.css";
+import Form from "./Form/Form";
 
 const ContactUs = () => {
   return (
@@ -21,7 +22,9 @@ const ContactUs = () => {
             ultricies lacus sed turpis.
           </Text>
         </Grid.Col>
-        <Grid.Col span={6}></Grid.Col>
+        <Grid.Col span={6}>
+          <Form />
+        </Grid.Col>
       </Grid>
 
       <div className="footer-contact-us" style={{ paddingBottom: "10px" }}>
