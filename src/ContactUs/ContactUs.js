@@ -6,7 +6,7 @@ import Form from "./Form/Form";
 const ContactUs = () => {
   return (
     <>
-      <Grid style={{ maxWidth: "100vw" }}>
+      <Grid style={{ maxWidth: "90vw" }}>
         <Grid.Col span={6} className="contact-us-grid-form-left">
           <Title order={2} style={{ color: "#0B4C95" }}>
             Contact Us
@@ -43,7 +43,7 @@ const ContactUs = () => {
 
           <Grid
             className="footer-grid-for-contacts"
-            style={{ maxWidth: "100vw" }}
+            style={{ maxWidth: "90vw" }}
           >
             <Grid.Col span={4} style={{ background: "#0B4C95" }}>
               <section className="text-section-contact-us">
