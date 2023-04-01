@@ -1,8 +1,15 @@
 .text-area-form {
-  color: #0b4c95;
-  margin-top: 1rem;
+  /*border: 1.3px solid #0b4c95;*/
+  border-radius: 0.1rem;
+  margin-top: 0.2rem;
 }
 
 .text-input-form {
-  margin-top: 1rem;
+  margin-top: 0.2rem;
+  /*border: 1.3px solid #0b4c95;*/
+  border-radius: 0.1rem;
+}
+
+label {
+  color: #0b4c95;
 }

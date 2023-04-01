@@ -1,24 +1,52 @@
-import React from "react";
-import { TextInput, Button, Group, Box, Textarea } from "@mantine/core";
-import { useForm } from "@mantine/form";
+import React, { useState } from "react";
+import {
+  TextInput,
+  Button,
+  Group,
+  Box,
+  Textarea,
+  MantineProvider,
+} from "@mantine/core";
 import "./Form.css";
 
 const Form = () => {
-  const form = useForm({
-    initialValues: {
-      name: "",
-      email: "",
-      text: "",
-    },
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+  const [nameClicked, setNameClicked] = useState(false);
+  const [emailClicked, setEmailClicked] = useState(false);
 
-    validate: {
-      email: (value) => (/^\S+@\S+$/.test(value) ? null : "Invalid email"),
-      name: (value) => (value.length < 0 ? "Please enter a name" : null),
-    },
-  });
+  const validateEmail = (email) => {
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
 
   const onSubmit = (e) => {
     e.preventDefault();
+    const backEndObj = { name: { name }, email: { email }, text: { text } };
+    console.log(backEndObj);
+    setEmail("");
+    setName("");
+    setText("");
+    setNameClicked(false);
+    setEmailClicked(false);
+  };
+
+  const emailClickChecker = () => {
+    if (emailClicked) {
+      return email.length > 0 && validateEmail(email);
+    } else {
+      return true;
+    }
+  };
+
+  const nameClickChecker = () => {
+    if (nameClicked) {
+      return name.length > 0;
+    } else {
+      return true;
+    }
   };
 
   return (
@@ -26,34 +54,54 @@ const Form = () => {
       mx="auto"
       style={{ maxWidth: "35rem", marginTop: "10rem", marginLeft: "10rem" }}
     >
-      <form
-        onSubmit={form.onSubmit((values) => {
-          console.log(values);
-          values.email = "";
-          values.name = "";
-          values.text = "";
-        })}
-      >
+      <form onSubmit={onSubmit}>
+        <label>Name</label>
         <TextInput
           withAsterisk
-          label="Name"
-          {...form.getInputProps("name")}
           className="text-input-form"
-        />
-        <TextInput
-          withAsterisk
-          label="Email"
-          placeholder="your@email.com"
-          {...form.getInputProps("email")}
-          className="text-input-form"
+          radius="xs"
+          value={name}
+          onChange={(e) => {
+            setName(e.currentTarget.value);
+            console.log(name);
+          }}
+          onClick={() => {
+            setNameClicked(true);
+          }}
+          placeholder="John Loon"
+          required
+          error={nameClickChecker() ? "" : "This is required"}
         />
 
+        <label style={{ marginTop: "1rem", display: "block" }}>Email</label>
+        <TextInput
+          withAsterisk
+          placeholder="your@email.com"
+          className="text-input-form"
+          radius="xs"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.currentTarget.value);
+            console.log(email);
+          }}
+          onClick={() => {
+            setEmailClicked(true);
+          }}
+          type="email"
+          error={emailClickChecker() ? "" : "Invalid Email"}
+        />
+
+        <label style={{ marginTop: "1rem", display: "block" }}>Message</label>
         <Textarea
           minRows={5}
           autosize
-          label="Message"
-          {...form.getInputProps("text")}
           className="text-area-form"
+          radius="xs"
+          value={text}
+          onChange={(e) => {
+            setText(e.currentTarget.value);
+            console.log(text);
+          }}
         />
 
         <Group position="right" mt="md">
