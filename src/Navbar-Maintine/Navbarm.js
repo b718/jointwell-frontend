@@ -25,12 +25,7 @@ const Navbarm = () => {
       >
         <Link to="/home">
           {" "}
-          <Image
-            width={60}
-            height={40}
-            fit="contain"
-            src={require("../Images/nav-pic.png")}
-          />
+          <Image fit="contain" src={require("../Images/nav-pic.png")} />
         </Link>
 
         <h1 className="navbarm-header-jw">JOINT WELL</h1>
