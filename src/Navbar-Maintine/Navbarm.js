@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { Flex, Button, Image, MantineProvider, Text } from "@mantine/core";
+/* eslint-disable no-duplicate-case */
+/* eslint-disable default-case */
+import React, { useEffect, useState } from "react";
+import { Flex, Button, Image } from "@mantine/core";
 import "./Navbarm.css";
 import { Link } from "react-router-dom";
 
@@ -8,9 +10,10 @@ const Navbarm = () => {
   const [pSate, changepSate] = useState(false);
   const [cSate, changecSate] = useState(false);
   const [cuSate, changecuSate] = useState(false);
+  const [pathState, setPathState] = useState("");
 
   function auChanger() {
-    changeauState(true);
+    changeauState(false);
     changepSate(false);
     changecSate(false);
     changecuSate(false);
@@ -33,6 +36,28 @@ const Navbarm = () => {
     changecSate(false);
     changeauState(false);
   }
+
+  useEffect(() => {
+    console.log(window.location.pathname);
+    setPathState(window.location.pathname);
+
+    switch (pathState) {
+      case "/products":
+        pChanger();
+        break;
+      case "/compliance":
+        cChanger();
+        break;
+      case "/contact-us":
+        cuChanger();
+        break;
+      case "/home":
+        auChanger();
+        break;
+      default:
+        auChanger();
+    }
+  });
 
   return (
     <nav>
