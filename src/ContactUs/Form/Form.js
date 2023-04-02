@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  TextInput,
-  Button,
-  Group,
-  Box,
-  Textarea,
-  MantineProvider,
-} from "@mantine/core";
+import { TextInput, Button, Group, Box, Textarea } from "@mantine/core";
 import "./Form.css";
 
 const Form = () => {
@@ -22,10 +15,23 @@ const Form = () => {
     );
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     const backEndObj = { name: { name }, email: { email }, text: { text } };
     console.log(backEndObj);
+    //cors is basically saying when we are not on the same domian
+    //we cannot do that unless we add cors
+    await fetch("http://localhost:3001/client", {
+      method: "POST",
+      body: JSON.stringify({
+        name,
+        email,
+        text,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     setEmail("");
     setName("");
     setText("");
