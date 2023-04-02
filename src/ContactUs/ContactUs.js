@@ -11,7 +11,7 @@ const ContactUs = () => {
           <Title order={2} style={{ color: "#0B4C95" }}>
             Contact Us
           </Title>
-          <Text>
+          <Text style={{ marginTop: "0.4rem" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl vel
             pretium lectus quam id leo. Molestie at elementum eu facilisis. Sit
