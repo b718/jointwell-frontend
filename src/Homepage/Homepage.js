@@ -2,7 +2,6 @@ import React from "react";
 import "./Homepage.css";
 import { Center, Grid, Image } from "@mantine/core";
 import Homepagecard from "./Homepage-card";
-import Compliance from "../Compliance/Compliance";
 
 const Homepage = () => {
   return (
