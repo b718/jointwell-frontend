@@ -39,6 +39,12 @@ nav {
   background-color: #0b4c95;
 }
 
+#container {
+  min-width: 800px;
+  width: auto !important;
+  width: 800px;
+}
+
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
   @media (max-width: 638px) {

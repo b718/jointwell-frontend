@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
-import { Grid, Box } from "@mantine/core";
+import { Grid, Box, Center } from "@mantine/core";
 import DropDown from "./DropDown/DropDown";
+import HatCard from "./HatCard/HatCard";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -9,7 +10,7 @@ const Products = () => {
   useEffect(() => {
     //we need to do async await since its an api fetch
     async function fetchProducts() {
-      const response = await fetch("http://localhost:3001/products");
+      const response = await fetch("http://localhost:3001/hats");
       const currentProducts = await response.json();
       setProducts(currentProducts);
     }
@@ -19,23 +20,39 @@ const Products = () => {
 
   return (
     <>
-      <Grid style={{ maxWidth: "90vw", marginTop: "6rem", marginLeft: "4rem" }}>
-        <Grid.Col span={1}>
+      <Grid
+        columns={12}
+        gutter={40}
+        grow={true}
+        style={{ maxWidth: "97vw", marginTop: "3rem", marginLeft: "2rem" }}
+      >
+        <Grid.Col span={2} style={{ maxWidth: "10rem" }}>
           <DropDown dropDownName={"STYLE"} />
-          <Box style={{ marginTop: "0.2rem" }}>
+          <Box style={{ marginTop: "0.2rem", maxWidth: "5rem" }}>
             {" "}
             <DropDown dropDownName={"MATERIAL"} />
           </Box>
-          <Box style={{ marginTop: "0.2rem" }}>
+          <Box style={{ marginTop: "0.2rem", maxWidth: "5rem" }}>
             {" "}
             <DropDown dropDownName={"DECORATION"} />
           </Box>
         </Grid.Col>
-        <Grid.Col span={11}>
+
+        <Grid.Col span={10} style={{ maxWidth: "90vw", marginTop: "1rem" }}>
           {" "}
-          {products.map((product) => {
-            return <h1>{product.email}</h1>;
-          })}
+          <Center>
+            <Grid>
+              {products.map((product) => {
+                return (
+                  <HatCard
+                    path={product.path}
+                    id={product.id}
+                    name={product.name}
+                  />
+                );
+              })}
+            </Grid>
+          </Center>
         </Grid.Col>
       </Grid>
     </>
