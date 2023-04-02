@@ -7,10 +7,9 @@ const Compliance = (props) => {
     <Grid style={{ maxWidth: "90vw" }}>
       <Grid.Col span={4}>
         <div style={{ marginLeft: "3rem", marginTop: "2rem" }}>
-          <Image fit="inherit" src={require("../Images/compliance-1.png")} />
-
-          <Image fit="inherit" src={require("../Images/compliance3.png")} />
-          <Image fit="inherit" src={require("../Images/compliance-2.png")} />
+          <Image fit="contain" src={require("../Images/compliance-1.png")} />
+          <Image fit="contain" src={require("../Images/compliance3.png")} />
+          <Image fit="contain" src={require("../Images/compliance-2.png")} />
         </div>
       </Grid.Col>
       <Grid.Col span={6}>
@@ -24,7 +23,7 @@ const Compliance = (props) => {
               </h2>
             </header>
             <section className="complianceParagraph">
-              <Text style={{ fontSize: "1.1vw" }}>
+              <Text style={{ fontSize: "1rem" }}>
                 {" "}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl

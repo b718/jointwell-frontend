@@ -13,3 +13,8 @@
 label {
   color: #0b4c95;
 }
+
+.form-container-box {
+  align-items: end;
+  justify-content: end;
+}
