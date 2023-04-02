@@ -20,3 +20,13 @@
 .drop-down-item-each:hover {
   color: orange;
 }
+
+.dropDownExperience-active {
+  color: orange;
+  font-weight: 600;
+}
+
+.drop-down-item-each-active {
+  color: orange;
+  font-weight: 600;
+}

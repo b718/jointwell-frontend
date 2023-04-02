@@ -10,7 +10,9 @@ const DropDown = ({ dropDownName }) => {
     <div style={{ maxWidth: "10rem" }}>
       <Text
         fz="md"
-        className="dropDownExperience"
+        className={
+          !isActive ? "dropDownExperience" : "dropDownExperience-active"
+        }
         onClick={() => {
           setIsActive(!isActive);
         }}
@@ -23,7 +25,7 @@ const DropDown = ({ dropDownName }) => {
         style={
           isActive
             ? {
-                "max-height": "450px",
+                "max-height": parentRef.current.scrollHeight + "px",
               }
             : {
                 "max-height": "0px",
