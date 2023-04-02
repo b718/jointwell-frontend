@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./DropDown.css";
 import { Text } from "@mantine/core";
 import { ProductsContext, SetProductsContext } from "../Products";
@@ -14,6 +14,11 @@ const DropDownItem = ({ name }) => {
       newProducts("");
     }
   };
+
+  useEffect(() => {
+    settingProducts();
+  }, [active]);
+
   return (
     <Text
       fz="sm"
@@ -21,7 +26,6 @@ const DropDownItem = ({ name }) => {
       style={{ maxWidth: "3.2rem" }}
       onClick={() => {
         setActive(!active);
-        settingProducts();
       }}
     >
       {name}
