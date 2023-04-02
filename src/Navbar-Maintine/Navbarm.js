@@ -72,15 +72,17 @@ const Navbarm = () => {
         >
           ABOUT US{" "}
         </Button>
-        <Button
-          variant="cyan"
-          className={pSate ? "button-m-active-p" : "button-m"}
-          color="cyan"
-          onClick={pChanger}
-        >
-          {" "}
-          PRODUCTS
-        </Button>
+        <Link to="/products">
+          <Button
+            variant="cyan"
+            className={pSate ? "button-m-active-p" : "button-m"}
+            color="cyan"
+            onClick={pChanger}
+          >
+            {" "}
+            PRODUCTS
+          </Button>
+        </Link>
         <Link to="/compliance">
           <Button
             variant="cyan"

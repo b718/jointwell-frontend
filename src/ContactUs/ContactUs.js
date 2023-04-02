@@ -1,4 +1,4 @@
-import { Box, Grid, Text, Title, Flex, Center } from "@mantine/core";
+import { Grid, Text, Title, Flex } from "@mantine/core";
 import React from "react";
 import "./ContactUs.css";
 import Form from "./Form/Form";
@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <>
       <Grid style={{ maxWidth: "90vw" }}>
-        <Grid.Col span={6} className="contact-us-grid-form-left">
+        <Grid.Col span={5} className="contact-us-grid-form-left">
           <Title order={2} style={{ color: "#0B4C95" }}>
             Contact Us
           </Title>
@@ -22,7 +22,7 @@ const ContactUs = () => {
             ultricies lacus sed turpis.
           </Text>
         </Grid.Col>
-        <Grid.Col span={6}>
+        <Grid.Col span={7}>
           <Form />
         </Grid.Col>
       </Grid>

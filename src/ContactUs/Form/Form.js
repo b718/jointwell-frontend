@@ -58,7 +58,7 @@ const Form = () => {
   return (
     <Box
       mx="auto"
-      style={{ maxWidth: "35rem", marginTop: "10rem", marginLeft: "10rem" }}
+      style={{ maxWidth: "40rem", marginTop: "10rem", marginLeft: "10rem" }}
     >
       <form onSubmit={onSubmit}>
         <label>Name</label>
