@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./DropDown.css";
 import { Text } from "@mantine/core";
-import { ProductsContext, SetProductsContext } from "../Products";
+import { SetProductsContext } from "../Products";
+import { ActiveContext } from "./DropDown";
 
 const DropDownItem = ({ name, func, boolean, num }) => {
   const [active, setActive] = useState(false);
   const newProducts = useContext(SetProductsContext);
+  const activeContent = useContext(ActiveContext);
 
   const settingProducts = () => {
     if (active) {
@@ -18,6 +20,10 @@ const DropDownItem = ({ name, func, boolean, num }) => {
   useEffect(() => {
     settingProducts();
   }, [active]);
+
+  useEffect(() => {
+    setActive(false);
+  }, [activeContent]);
 
   return (
     <Text
