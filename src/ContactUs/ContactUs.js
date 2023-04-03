@@ -35,16 +35,16 @@ const ContactUs = () => {
           </Title>
           <hr
             style={{
-              width: "90%",
+              width: "90vw",
               textAlign: "left",
               marginTop: "1rem",
-              marginLeft: "4rem",
+              marginLeft: "5rem",
             }}
           />
 
           <Grid
             className="footer-grid-for-contacts"
-            style={{ maxWidth: "90vw" }}
+            style={{ maxWidth: "99vw" }}
           >
             <Grid.Col span={4} style={{ background: "#0B4C95" }}>
               <section className="text-section-contact-us">
