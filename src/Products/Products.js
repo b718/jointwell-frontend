@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
-import { Grid, Box, Center, Button } from "@mantine/core";
+import { Grid, Box, Center, Button, Flex } from "@mantine/core";
 import DropDown from "./DropDown/DropDown";
 import HatCard from "./HatCard/HatCard";
 
@@ -50,28 +50,32 @@ const Products = () => {
 
             <Grid.Col span={10} style={{ maxWidth: "90vw", marginTop: "1rem" }}>
               {" "}
-              <Center>
-                <Grid>
-                  {products
-                    .filter((product) => {
-                      console.log(product);
-                      if (!selectedCategory) {
-                        return true;
-                      } else {
-                        return product.style.includes(selectedCategory);
-                      }
-                    })
-                    .map((product) => {
-                      return (
-                        <HatCard
-                          path={product.path}
-                          id={product.id}
-                          name={product.name}
-                        />
-                      );
-                    })}
-                </Grid>
-              </Center>
+              <Flex
+                gap="md"
+                justify="flex-start"
+                align="flex-start"
+                direction="row"
+                wrap="wrap"
+              >
+                {products
+                  .filter((product) => {
+                    console.log(product);
+                    if (!selectedCategory) {
+                      return true;
+                    } else {
+                      return product.style.includes(selectedCategory);
+                    }
+                  })
+                  .map((product) => {
+                    return (
+                      <HatCard
+                        path={product.path}
+                        id={product.id}
+                        name={product.name}
+                      />
+                    );
+                  })}
+              </Flex>
             </Grid.Col>
           </Grid>
         </SetProductsContext.Provider>
