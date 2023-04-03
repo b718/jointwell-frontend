@@ -15,6 +15,8 @@ const Products = () => {
 
   useEffect(() => {
     //we need to do async await since its an api fetch
+    //One thing to note is that the keys that are unique, do
+    //get re-rendered which can make it faster!
     async function fetchProducts() {
       const response = await fetch("http://localhost:3001/hats");
       const currentProducts = await response.json();
