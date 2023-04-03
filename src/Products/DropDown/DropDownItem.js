@@ -11,11 +11,12 @@ const DropDownItem = ({ name, func, num }) => {
   const parentNumber = useContext(DropDownContext);
 
   const settingProducts = () => {
-    if (active) {
-      newProducts(name.toLowerCase());
-    } else {
-      newProducts("");
-    }
+    // if (active) {
+    //   newProducts(name.toLowerCase());
+    // } else {
+    //   newProducts("");
+    // }
+    newProducts(name.toLowerCase());
   };
 
   useEffect(() => {
@@ -26,23 +27,28 @@ const DropDownItem = ({ name, func, num }) => {
     setActive(false);
   }, [activeContent]);
 
-  useEffect(() => {
-    if (num === parentNumber) {
-      setActive(true);
-      settingProducts();
-    } else {
-      setActive(false);
-    }
-  }, [parentNumber]);
+  // useEffect(() => {
+  //   if (num === parentNumber) {
+  //     setActive(true);
+  //     settingProducts();
+  //   } else {
+  //     setActive(false);
+  //   }
+  // }, [parentNumber]);
 
   return (
     <Text
       fz="sm"
-      className={active ? "drop-down-item-each-active" : "drop-down-item-each"}
+      className={
+        parentNumber === num
+          ? "drop-down-item-each-active"
+          : "drop-down-item-each"
+      }
       style={{ maxWidth: "3.2rem" }}
       onClick={() => {
         func(num);
-        setActive(!active);
+        //setActive(!active);
+        settingProducts();
       }}
     >
       {name}
