@@ -58,7 +58,7 @@ const Form = () => {
   return (
     <Box
       mx="auto"
-      style={{ maxWidth: "40rem", marginTop: "10rem", marginLeft: "6rem" }}
+      style={{ maxWidth: "40rem", marginTop: "10rem", marginLeft: "0rem" }}
     >
       <form onSubmit={onSubmit} className="form-container-box">
         <label>Name</label>
