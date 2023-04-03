@@ -48,8 +48,8 @@ const DropDown = ({ dropDownName }) => {
                   }
             }
           >
-            <DropDownItem name={"CAPS"} func={setStyleActive} num={0} />
-            <DropDownItem name={"VISORS"} func={setStyleActive} num={1} />
+            <DropDownItem name={"test1"} func={setStyleActive} num={0} />
+            <DropDownItem name={"test2"} func={setStyleActive} num={1} />
             <DropDownItem name={"BUCKET"} func={setStyleActive} num={2} />
             <DropDownItem name={"KNIT"} func={setStyleActive} num={3} />
             <DropDownItem name={"SPORTS"} func={setStyleActive} num={4} />

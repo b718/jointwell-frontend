@@ -2,16 +2,17 @@ import React, { useContext, useEffect, useState } from "react";
 import "./DropDown.css";
 import { Text } from "@mantine/core";
 import { SetProductsContext } from "../Products";
-import { ActiveContext } from "./DropDown";
+import { ActiveContext, DropDownContext } from "./DropDown";
 
 const DropDownItem = ({ name, func, num }) => {
   const [active, setActive] = useState(false);
   const newProducts = useContext(SetProductsContext);
   const activeContent = useContext(ActiveContext);
+  const parentNumber = useContext(DropDownContext);
 
   const settingProducts = () => {
     if (active) {
-      newProducts("test");
+      newProducts(name.toLowerCase());
     } else {
       newProducts("");
     }
@@ -24,6 +25,15 @@ const DropDownItem = ({ name, func, num }) => {
   useEffect(() => {
     setActive(false);
   }, [activeContent]);
+
+  useEffect(() => {
+    if (num === parentNumber) {
+      setActive(true);
+      settingProducts();
+    } else {
+      setActive(false);
+    }
+  }, [parentNumber]);
 
   return (
     <Text
