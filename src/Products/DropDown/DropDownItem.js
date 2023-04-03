@@ -3,7 +3,7 @@ import "./DropDown.css";
 import { Text } from "@mantine/core";
 import { ProductsContext, SetProductsContext } from "../Products";
 
-const DropDownItem = ({ name }) => {
+const DropDownItem = ({ name, func, boolean, num }) => {
   const [active, setActive] = useState(false);
   const newProducts = useContext(SetProductsContext);
 
@@ -22,9 +22,10 @@ const DropDownItem = ({ name }) => {
   return (
     <Text
       fz="sm"
-      className={active ? "drop-down-item-each-active" : "drop-down-item-each"}
+      className={boolean ? "drop-down-item-each-active" : "drop-down-item-each"}
       style={{ maxWidth: "3.2rem" }}
       onClick={() => {
+        func(num);
         setActive(!active);
       }}
     >

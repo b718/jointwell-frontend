@@ -69,6 +69,7 @@ const Products = () => {
                   .map((product) => {
                     return (
                       <HatCard
+                        key={product._id}
                         path={product.path}
                         id={product.id}
                         name={product.name}
