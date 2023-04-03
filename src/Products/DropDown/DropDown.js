@@ -48,42 +48,12 @@ const DropDown = ({ dropDownName }) => {
                   }
             }
           >
-            <DropDownItem
-              name={"CAPS"}
-              func={setStyleActive}
-              boolean={styleActive === 0 ? true : false}
-              num={0}
-            />
-            <DropDownItem
-              name={"VISORS"}
-              func={setStyleActive}
-              boolean={styleActive === 1 ? true : false}
-              num={1}
-            />
-            <DropDownItem
-              name={"BUCKET"}
-              func={setStyleActive}
-              boolean={styleActive === 2 ? true : false}
-              num={2}
-            />
-            <DropDownItem
-              name={"KNIT"}
-              func={setStyleActive}
-              boolean={styleActive === 3 ? true : false}
-              num={3}
-            />
-            <DropDownItem
-              name={"SPORTS"}
-              func={setStyleActive}
-              boolean={styleActive === 4 ? true : false}
-              num={4}
-            />
-            <DropDownItem
-              name={"OTHER"}
-              func={setStyleActive}
-              boolean={styleActive === 5 ? true : false}
-              num={5}
-            />
+            <DropDownItem name={"CAPS"} func={setStyleActive} num={0} />
+            <DropDownItem name={"VISORS"} func={setStyleActive} num={1} />
+            <DropDownItem name={"BUCKET"} func={setStyleActive} num={2} />
+            <DropDownItem name={"KNIT"} func={setStyleActive} num={3} />
+            <DropDownItem name={"SPORTS"} func={setStyleActive} num={4} />
+            <DropDownItem name={"OTHER"} func={setStyleActive} num={5} />
           </div>
         </div>
       </ActiveContext.Provider>
