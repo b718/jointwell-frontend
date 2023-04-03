@@ -53,12 +53,12 @@
   @media (min-width: 1107px) {
     .enterTextHomePageCard,
     .enterTextHomePageCard-active {
-      top: 30rem;
+      top: 27rem;
     }
 
     .propTextHomePageCard,
     .propTextHomePageCard-active {
-      top: 27rem;
+      top: 25rem;
     }
   }
   @media (max-width: 1106px) {
