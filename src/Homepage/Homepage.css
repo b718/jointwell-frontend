@@ -18,17 +18,17 @@
 
 .jointWellFooter {
   display: block;
-  color: #0b4c95;
+  color: white;
   text-align: center;
   font-weight: bold;
   max-width: 40rem;
   margin: 0 auto;
   font-size: 0.8rem;
-  margin-top: 4rem;
-  position: fixed;
+  position: relative;
   bottom: 0.3rem;
   left: 0;
   right: 0;
+  margin-top: 2rem;
 }
 
 .homePageMainPicture {

@@ -45,15 +45,17 @@ const Navbarm = () => {
         wrap="wrap"
         className="maintineFlex-2"
       >
-        <Button
-          variant="cyan"
-          className={
-            pathState === "/about-us" ? "button-m-active-au" : "button-m"
-          }
-          color="cyan"
-        >
-          ABOUT US{" "}
-        </Button>
+        <Link to="/about-us">
+          <Button
+            variant="cyan"
+            className={
+              pathState === "/about-us" ? "button-m-active-au" : "button-m"
+            }
+            color="cyan"
+          >
+            ABOUT US{" "}
+          </Button>
+        </Link>
 
         <Link to="/products">
           <Button
