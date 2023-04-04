@@ -22,17 +22,17 @@ const Navbarm = () => {
         justify="flex-start"
         align="center"
         className="maintineFlex"
+        style={{ marginBottom: "1rem", marginTop: "1rem" }}
       >
-        <Link to="/home">
-          {" "}
+        {" "}
+        <div>
           <Image
             fit="contain"
-            width={200}
-            height={60}
+            height={65}
             src={require("../Images/nav-pic.png")}
+            style={{ background: "white", borderRadius: "1.2rem" }}
           />
-        </Link>
-
+        </div>
         <h1 className="navbarm-header-jw">JOINT WELL</h1>
       </Flex>
 
@@ -44,6 +44,7 @@ const Navbarm = () => {
         direction="row"
         wrap="wrap"
         className="maintineFlex-2"
+        style={{ marginBottom: "1rem", marginTop: "1rem" }}
       >
         <Link to="/about-us">
           <Button

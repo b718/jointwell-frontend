@@ -1,7 +1,8 @@
 import React from "react";
 import "./Homepage.css";
-import { Center, Grid, Image, Flex, Text, Title } from "@mantine/core";
+import { Center, Grid, Image, Flex, Text, Title, Header } from "@mantine/core";
 import Homepagecard from "./Homepage-card";
+import Footer from "./Footer/Footer";
 
 const Homepage = () => {
   return (
@@ -45,71 +46,52 @@ const Homepage = () => {
         </Grid.Col>
       </Grid>
 
-      <div className="footer-contact-us" style={{ paddingBottom: "10px" }}>
-        <Flex direction="column" className="column-contact-us-footer-flex">
-          <Title order={2} className="jw-footer-title">
-            JOINT WELL VIETNAM
-          </Title>
-          <hr
-            style={{
-              width: "90vw",
-              textAlign: "left",
-              marginTop: "1rem",
-              marginLeft: "5rem",
-            }}
+      <Grid
+        style={{ maxWidth: "70vw", marginTop: "2rem" }}
+        className="joint-well-china-paragraph"
+      >
+        <Grid.Col span={6}>
+          <Image
+            className="joint-well-china-pic"
+            radius="md"
+            fit="contain"
+            src={require("../Images/joint-well-china-color.jpeg")}
           />
+        </Grid.Col>
+        <Grid.Col span={6}>
+          <h1 className="joint-well-china-header">JOINTWELL CHINA</h1>
+          <Text style={{ marginTop: "1rem", marginLeft: "1rem" }}>
+            Established in 2019, Jointwell Vietnam has grown into a dynamic and
+            reliable manufacturer and exporter of caps and hats in Hue, Danang,
+            Vietnam.
+          </Text>
+          <Text style={{ marginTop: "1rem", marginLeft: "1rem" }}>
+            We have 1000 skilled workers making 1,000,000 pcs quality caps each
+            month and most of our products are selling to USA.
+          </Text>
+          <Text style={{ marginTop: "1rem", marginLeft: "1rem" }}>
+            With our consistent superior quality cap production, reasonable
+            prices, timely deliveries, impeccable services, creative and
+            innovative R&D team, we provide impeccable services ensuring
+            customer ease and satisfaction.
+          </Text>
 
-          <Grid
-            className="footer-grid-for-contacts"
-            style={{ maxWidth: "99vw" }}
-          >
-            <Grid.Col span={4} style={{ background: "#0B4C95" }}>
-              <section className="text-section-contact-us">
-                <Text>Joint Well Head Office:</Text>
-                <Text>Room 702, Building No.3,</Text>
-                <Text>Guo Zhan Fortune Center, No.18 Qin Ling Road</Text>
-                <Text>Qingdao China 266061</Text>
-                <Text>Tel: +86 532 81118060 81118058</Text>
-                <Text>E-mail: angela@jointwellcaps.com</Text>
-              </section>
-            </Grid.Col>{" "}
-            <Grid.Col
-              span={4}
-              style={{ background: "#0B4C95" }}
-              justify="center"
-            >
-              <section className="text-section-contact-us">
-                <Text>Vietnam Factory:</Text>
-                <Text>Jointwell Vietnam Co., Ltd.</Text>
-                <Text>Thua Thien Hue City, Vietnam</Text>
-                <Text style={{ marginTop: "1rem" }}>China Factory:</Text>
-                <Text>Qingdao Joint Well Caps Co., Ltd.</Text>
-                <Text>Qingdao, China</Text>
-              </section>
-            </Grid.Col>
-            <Grid.Col
-              span={4}
-              style={{ background: "#0B4C95" }}
-              justify="center"
-            >
-              {" "}
-              <section className="text-section-contact-us">
-                <Text>Vietnam Factory:</Text>
-                <Text>Jointwell Vietnam Co., Ltd.</Text>
-                <Text>Thua Thien Hue City, Vietnam</Text>
-                <Text style={{ marginTop: "1rem" }}>China Factory:</Text>
-                <Text>Qingdao Joint Well Caps Co., Ltd.</Text>
-                <Text>Qingdao, China</Text>
-              </section>
-            </Grid.Col>
-          </Grid>
-        </Flex>
-        <footer>
-          <Center>
-            <h1 className="jointWellFooter">©JOINTWELL 2023</h1>
-          </Center>
-        </footer>
-      </div>
+          <Text style={{ marginTop: "1rem", marginLeft: "1rem" }}>
+            We aim to grow together with our valued customers based on long term
+            business partnership. We train, motivate and equip our people to
+            always provide better quality and better service. We appreciate
+            every inquiry as a lead to a strong business relationship. Social
+            responsibility is also our committed priority.
+          </Text>
+
+          <Text style={{ marginTop: "1rem", marginLeft: "1rem" }}>
+            We are WRAP certified ( No.127426). Thank you for visiting us on
+            line! Send us your request and we will return you satisfaction.
+          </Text>
+        </Grid.Col>
+      </Grid>
+
+      <Footer />
     </div>
   );
 };

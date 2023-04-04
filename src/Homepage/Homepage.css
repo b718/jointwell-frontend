@@ -41,6 +41,16 @@
   -ms-user-select: none;
 }
 
+.joint-well-china-paragraph {
+  margin: 0 auto;
+}
+
+.joint-well-china-header {
+  color: #0b4c95;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
   @media (max-width: 638px) {

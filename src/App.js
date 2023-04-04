@@ -14,19 +14,10 @@ function App() {
       <Navbarm />
       {/*The very first one will be our home page*/}
 
-      <Grid grow="true" style={{ maxWidth: "70vw", marginLeft: "0.1rem" }}>
-        <Grid.Col span={6}>
-          <Image src={require("./Images/joint-well-china.png")} />
-        </Grid.Col>
-        <Grid.Col span={6}>
-          <Image src={require("./Images/joint-well-vietnam.png")} />
-        </Grid.Col>
-      </Grid>
-
       <div>
         {" "}
         <Routes>
-          <Route path="/home" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<Homepage />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/contact-us" element={<ContactUs />} />
