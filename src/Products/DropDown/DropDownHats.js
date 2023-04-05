@@ -49,7 +49,7 @@ const DropDownHats = () => {
           setName("test1");
         }}
       >
-        Test 1
+        CAPS
       </Text>
       <Text
         fz="sm"
@@ -65,7 +65,7 @@ const DropDownHats = () => {
           setName("test2");
         }}
       >
-        Test 2
+        VISORS{" "}
       </Text>
       <Text
         fz="sm"
@@ -81,7 +81,7 @@ const DropDownHats = () => {
           setName("test3");
         }}
       >
-        Test 3
+        BUCKET{" "}
       </Text>
       <Text
         fz="sm"
@@ -97,7 +97,7 @@ const DropDownHats = () => {
           setName("");
         }}
       >
-        Text 4
+        KNIT{" "}
       </Text>
       <Text
         fz="sm"
@@ -113,7 +113,23 @@ const DropDownHats = () => {
           setName("");
         }}
       >
-        Test 5
+        SPORTS{" "}
+      </Text>
+      <Text
+        fz="sm"
+        className={
+          numActive == 5 && counter % 2 == 0 && activeContent
+            ? "drop-down-item-each-active"
+            : "drop-down-item-each"
+        }
+        style={{ maxWidth: "3.2rem" }}
+        onClick={() => {
+          setNumActive(5);
+          setCounter(counter + 1);
+          setName("");
+        }}
+      >
+        OTHER{" "}
       </Text>
     </>
   );
