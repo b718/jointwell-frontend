@@ -1,13 +1,11 @@
 .homePageText {
-  color: #0b4c95;
+  color: white;
   text-align: center;
-  font-weight: bold;
   max-width: 40rem;
-  margin: 0 auto;
-  padding-top: 10rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 1rem;
+  margin-top: 4rem;
+  background-color: #0b4c95;
+  border-radius: 1rem;
+  text-align: left;
 }
 
 .mGridHomePage {
@@ -28,7 +26,7 @@
   bottom: 0.3rem;
   left: 0;
   right: 0;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .homePageMainPicture {

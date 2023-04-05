@@ -50,7 +50,9 @@ const Navbarm = () => {
           <Button
             variant="cyan"
             className={
-              pathState === "/about-us" ? "button-m-active-au" : "button-m"
+              pathState === "/about-us" || pathState === "/"
+                ? "button-m-active-au"
+                : "button-m"
             }
             color="cyan"
           >

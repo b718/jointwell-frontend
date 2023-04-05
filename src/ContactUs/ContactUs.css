@@ -12,7 +12,6 @@
 .jw-footer-title {
   color: white;
   margin-top: 2rem;
-  margin-left: 5rem;
 }
 
 .column-contact-us-footer-flex {
@@ -26,7 +25,7 @@
 }
 
 .text-section-contact-us {
-  max-width: 18rem;
   color: white;
-  margin-left: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
