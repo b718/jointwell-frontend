@@ -15,7 +15,7 @@
 }
 
 .column-contact-us-footer-flex {
-  padding-top: 4rem;
+  margin-top: 1rem;
   background-color: #0b4c95;
 }
 
@@ -26,6 +26,7 @@
 
 .text-section-contact-us {
   color: white;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  max-width: 15rem;
+  background-color: #267adb;
+  border-radius: 1rem;
 }

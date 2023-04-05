@@ -37,8 +37,7 @@ const Navbarm = () => {
       </Flex>
 
       <Flex
-        mih={50}
-        gap="sm"
+        gap="md"
         justify="flex-end"
         align="center"
         direction="row"
@@ -85,7 +84,7 @@ const Navbarm = () => {
           </Button>
         </Link>
 
-        <Link to="/contact-us">
+        {/*<Link to="/contact-us">
           <Button
             variant="cyan"
             className={
@@ -95,7 +94,7 @@ const Navbarm = () => {
           >
             Contact Us
           </Button>
-        </Link>
+        </Link>*/}
       </Flex>
     </nav>
   );
