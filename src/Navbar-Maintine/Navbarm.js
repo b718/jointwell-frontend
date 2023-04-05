@@ -31,6 +31,7 @@ const Navbarm = () => {
             height={65}
             src={require("../Images/nav-pic.png")}
             style={{ background: "white", borderRadius: "1.2rem" }}
+            className="rotate-picture-nav-bar"
           />
         </div>
         <h1 className="navbarm-header-jw">JOINT WELL</h1>

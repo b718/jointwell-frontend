@@ -45,6 +45,14 @@ nav {
   width: 800px;
 }
 
+.rotate-picture-nav-bar {
+  transition: 2s;
+}
+
+.rotate-picture-nav-bar:hover {
+  transform: rotate(360deg);
+}
+
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
   @media (max-width: 638px) {

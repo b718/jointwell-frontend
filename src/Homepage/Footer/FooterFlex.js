@@ -10,25 +10,24 @@ const FooterFlex = () => {
           className="column-contact-us-footer-flex"
           style={{ maxWidth: "80vw" }}
         >
-          <Flex gap="md" justify="flex-start" align="center" direction="row">
+          <Flex
+            gap="sm"
+            justify="flex-start"
+            align="center"
+            style={{ marginBottom: "1rem", marginTop: "1rem" }}
+          >
+            {" "}
             <div>
               <Image
                 fit="contain"
                 height={65}
                 src={require("../../Images/nav-pic.png")}
-                style={{
-                  background: "white",
-                  borderRadius: "1.2rem",
-                  maxWidth: "4rem",
-                }}
+                style={{ background: "white", borderRadius: "1.2rem" }}
               />
             </div>
-            {
-              <Title order={2} className="jw-footer-title">
-                JOINT WELL
-              </Title>
-            }
+            <h1 style={{ color: "white" }}>JOINT WELL</h1>
           </Flex>
+
           <Center>
             <hr
               style={{
