@@ -23,7 +23,7 @@ const Products = () => {
       setProducts(currentProducts);
     }
     fetchProducts();
-    console.log(products);
+    //console.log(products);
   }, []);
 
   return (
@@ -61,7 +61,7 @@ const Products = () => {
               >
                 {products
                   .filter((product) => {
-                    console.log(product);
+                    //console.log(product);
                     if (!selectedCategory) {
                       return true;
                     } else {

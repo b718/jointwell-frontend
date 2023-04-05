@@ -3,6 +3,7 @@ import "./DropDown.css";
 import DropDownItem from "./DropDownItem";
 import { Text } from "@mantine/core";
 import { SetProductsContext } from "../Products";
+import DropDownHats from "./DropDownHats";
 
 export const DropDownContext = React.createContext();
 export const ActiveContext = React.createContext();
@@ -48,12 +49,14 @@ const DropDown = ({ dropDownName }) => {
                   }
             }
           >
-            <DropDownItem name={"test1"} func={setStyleActive} num={0} />
-            <DropDownItem name={"test2"} func={setStyleActive} num={1} />
-            <DropDownItem name={"BUCKET"} func={setStyleActive} num={2} />
-            <DropDownItem name={"KNIT"} func={setStyleActive} num={3} />
-            <DropDownItem name={"SPORTS"} func={setStyleActive} num={4} />
-            <DropDownItem name={"OTHER"} func={setStyleActive} num={5} />
+            {/* <DropDownItem name={"test1"} func={setStyleActive} num={0} />
+              <DropDownItem name={"test2"} func={setStyleActive} num={1} />
+              <DropDownItem name={"BUCKET"} func={setStyleActive} num={2} />
+              <DropDownItem name={"KNIT"} func={setStyleActive} num={3} />
+              <DropDownItem name={"SPORTS"} func={setStyleActive} num={4} />
+              <DropDownItem name={"OTHER"} func={setStyleActive} num={5} />*/}
+
+            <DropDownHats />
           </div>
         </div>
       </ActiveContext.Provider>
