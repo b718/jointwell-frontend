@@ -7,11 +7,11 @@ const Circle = () => {
       <Center>
         <div id="circle-container">
           <div id="cc">
-            <div class="circle" id="five"></div>
-            <div class="circle" id="four"></div>
-            <div class="circle" id="three"></div>
-            <div class="circle" id="two"></div>
-            <div class="circle" id="one"></div>
+            <div className="circle" id="five"></div>
+            <div className="circle" id="four"></div>
+            <div className="circle" id="three"></div>
+            <div className="circle" id="two"></div>
+            <div className="circle" id="one"></div>
           </div>
         </div>
       </Center>
