@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Text, Title, Flex, Center, Image } from "@mantine/core";
+import { Text, Title, Flex, Center, Image } from "@mantine/core";
 
 const FooterFlex = () => {
   return (
