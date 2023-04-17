@@ -46,7 +46,7 @@ const DropDownHats = () => {
         onClick={() => {
           setNumActive(0);
           setCounter(counter + 1);
-          setName("test1");
+          setName("caps");
         }}
       >
         CAPS
@@ -62,7 +62,7 @@ const DropDownHats = () => {
         onClick={() => {
           setNumActive(1);
           setCounter(counter + 1);
-          setName("test2");
+          setName("visors");
         }}
       >
         VISORS{" "}
@@ -78,7 +78,7 @@ const DropDownHats = () => {
         onClick={() => {
           setNumActive(2);
           setCounter(counter + 1);
-          setName("test3");
+          setName("bucket");
         }}
       >
         BUCKET{" "}
@@ -94,7 +94,7 @@ const DropDownHats = () => {
         onClick={() => {
           setNumActive(3);
           setCounter(counter + 1);
-          setName("");
+          setName("knit");
         }}
       >
         KNIT{" "}
@@ -110,7 +110,7 @@ const DropDownHats = () => {
         onClick={() => {
           setNumActive(4);
           setCounter(counter + 1);
-          setName("");
+          setName("sports");
         }}
       >
         SPORTS{" "}
@@ -126,7 +126,7 @@ const DropDownHats = () => {
         onClick={() => {
           setNumActive(5);
           setCounter(counter + 1);
-          setName("");
+          setName("other");
         }}
       >
         OTHER{" "}
