@@ -94,7 +94,7 @@ const DropDownHats = () => {
         onClick={() => {
           setNumActive(3);
           setCounter(counter + 1);
-          setName("knit");
+          setName("knitted");
         }}
       >
         KNIT{" "}

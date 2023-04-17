@@ -3,3 +3,7 @@
   font-weight: 625;
   text-transform: uppercase;
 }
+
+.hat-card-drop-down {
+  border: 1px solid red;
+}
