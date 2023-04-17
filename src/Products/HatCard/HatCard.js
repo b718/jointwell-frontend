@@ -10,7 +10,7 @@ const HatCard = ({ path, id, name }) => {
         <Image
           width={260}
           fit="contain"
-          src={require("../../Images/hat-pic.png")}
+          src={require(`../../Images/${path}`)}
         />
       </Center>
       <Grid direction="row">
