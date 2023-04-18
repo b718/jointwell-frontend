@@ -24,13 +24,15 @@ const HatCard = ({ path, id, name }) => {
           {" "}
           <Grid.Col span={8}>
             <Text fz="sm" className="text-hat-card">
-              {name}
+              {
+                //name
+              }
             </Text>
           </Grid.Col>
           <Grid.Col span={4}>
             {" "}
             <Text fz="sm" align="right" className="text-hat-card">
-              ID: {id}
+              {id}
             </Text>
           </Grid.Col>
         </Grid>
