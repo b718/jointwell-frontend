@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import "./DropDown.css";
+import "../DropDown.css";
 import { Text } from "@mantine/core";
-import { SetProductsContext } from "../Products";
-import { ActiveContext, DropDownContext } from "./DropDown";
+import { SetProductsContext } from "../../Products";
+import { ActiveContext, DropDownContext } from "../DropDown";
 
 const DropDownItem = ({ name, func, num }) => {
   const [active, setActive] = useState(false);

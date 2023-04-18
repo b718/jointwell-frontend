@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
-import { Grid, Box, Center, Button, Flex } from "@mantine/core";
+import { Grid, Box, Center, Button, Flex, Header } from "@mantine/core";
 import DropDown from "./DropDown/DropDown";
 import HatCard from "./HatCard/HatCard";
 
@@ -59,25 +59,31 @@ const Products = () => {
                 direction="row"
                 wrap="wrap"
               >
-                {products
-                  .filter((product) => {
-                    //console.log(product);
-                    if (!selectedCategory) {
-                      return true;
-                    } else {
-                      return product.style.includes(selectedCategory);
-                    }
-                  })
-                  .map((product) => {
-                    return (
-                      <HatCard
-                        key={product._id}
-                        path={product.path}
-                        id={product.id}
-                        name={product.name}
-                      />
-                    );
-                  })}
+                {products.length > 0 ? (
+                  products
+                    .filter((product) => {
+                      //console.log(product);
+                      if (!selectedCategory) {
+                        return true;
+                      } else {
+                        return product.style.includes(selectedCategory);
+                      }
+                    })
+                    .map((product) => {
+                      return (
+                        <HatCard
+                          key={product._id}
+                          path={product.path}
+                          id={product.id}
+                          name={product.name}
+                        />
+                      );
+                    })
+                ) : (
+                  <Header style={{ display: "block", margin: "0 auto" }}>
+                    Loading ...
+                  </Header>
+                )}
               </Flex>
             </Grid.Col>
           </Grid>

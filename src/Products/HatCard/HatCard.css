@@ -1,9 +1,12 @@
-.text-hat-card {
+.hat-card-drop-down {
   color: #0b4c95;
   font-weight: 625;
   text-transform: uppercase;
+  border: 0px solid transparent;
+  transition: all 1s;
 }
 
-.hat-card-drop-down {
-  border: 1px solid red;
+.hat-card-drop-down:hover {
+  color: orange;
+  transform: translateY(-3%);
 }

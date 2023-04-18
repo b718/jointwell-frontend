@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
 import "./DropDown.css";
-import DropDownItem from "./DropDownItem";
+import DropDownItem from "./Unused/DropDownItem";
 import { Text } from "@mantine/core";
 import { SetProductsContext } from "../Products";
 import DropDownHats from "./DropDownHats";
