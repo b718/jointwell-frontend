@@ -1,17 +1,21 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
-import { Grid, Box, Center, Button, Flex, Header } from "@mantine/core";
-import DropDown from "./DropDown/DropDown";
+import { Grid, Box, Flex, Header } from "@mantine/core";
+import DropDown from "./DropDown/DropDownHats/DropDownHatsBase";
+import DropDownDecorationBase from "./DropDown/DropDownDecorations/DropDownDecorationBase";
 import HatCard from "./HatCard/HatCard";
 
 export const ProductsContext = React.createContext();
 export const SetProductsContext = React.createContext();
+export const SetDecorationContext = React.createContext();
+
 //Recall that with context API we can now avoid prop drilling!
 
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [click, setClick] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedStyle, setSelectedStyle] = useState("");
+  const [selectedDecoration, setSelectedDecoration] = useState("");
 
   useEffect(() => {
     //we need to do async await since its an api fetch
@@ -29,64 +33,77 @@ const Products = () => {
   return (
     <>
       <ProductsContext.Provider value={products}>
-        <SetProductsContext.Provider value={setSelectedCategory}>
-          <Grid
-            columns={12}
-            gutter={40}
-            grow={true}
-            style={{ maxWidth: "97vw", marginTop: "3rem", marginLeft: "2rem" }}
-          >
-            <Grid.Col span={2} style={{ maxWidth: "10rem" }}>
-              <Box onClick={() => setClick(!click)}>
-                <DropDown dropDownName={"STYLE"} />
-              </Box>
-              <Box style={{ marginTop: "0.2rem", maxWidth: "5rem" }}>
-                {" "}
-                <DropDown dropDownName={"MATERIAL"} />
-              </Box>
-              <Box style={{ marginTop: "0.2rem", maxWidth: "5rem" }}>
-                {" "}
-                <DropDown dropDownName={"DECORATION"} />
-              </Box>
-            </Grid.Col>
+        <SetProductsContext.Provider value={setSelectedStyle}>
+          <SetDecorationContext.Provider value={setSelectedDecoration}>
+            <Grid
+              columns={12}
+              gutter={40}
+              grow={true}
+              style={{
+                maxWidth: "97vw",
+                marginTop: "3rem",
+                marginLeft: "2rem",
+              }}
+            >
+              <Grid.Col span={2} style={{ maxWidth: "10rem" }}>
+                <Box onClick={() => setClick(!click)}>
+                  <DropDown dropDownName={"STYLE"} />
+                </Box>
 
-            <Grid.Col span={10} style={{ maxWidth: "90vw", marginTop: "1rem" }}>
-              {" "}
-              <Flex
-                gap="md"
-                justify="flex-start"
-                align="flex-start"
-                direction="row"
-                wrap="wrap"
+                <Box style={{ marginTop: "0.2rem", maxWidth: "10rem" }}>
+                  {" "}
+                  <DropDownDecorationBase dropDownName={"DECORATION"} />
+                </Box>
+              </Grid.Col>
+
+              <Grid.Col
+                span={10}
+                style={{ maxWidth: "90vw", marginTop: "1rem" }}
               >
-                {products.length > 0 ? (
-                  products
-                    .filter((product) => {
-                      //console.log(product);
-                      if (!selectedCategory) {
-                        return true;
-                      } else {
-                        return product.style.includes(selectedCategory);
-                      }
-                    })
-                    .map((product) => {
-                      return (
-                        <HatCard
-                          key={product._id}
-                          path={product.path}
-                          id={product.id}
-                          name={product.name}
-                        />
-                      );
-                    })
-                ) : (
-                  <Header style={{ display: "block", margin: "0 auto" }}>
-                    Loading ...
-                  </Header>
-                )}
-              </Flex>
-            </Grid.Col>
-          </Grid>
+                {" "}
+                <Flex
+                  gap="md"
+                  justify="flex-start"
+                  align="flex-end"
+                  direction="row"
+                  wrap="wrap"
+                >
+                  {products.length > 0 ? (
+                    products
+                      .filter((product) => {
+                        //console.log(product);
+                        if (!selectedStyle) {
+                          return true;
+                        } else {
+                          return product.style.includes(selectedStyle);
+                        }
+                      })
+                      .filter((product) => {
+                        if (!selectedDecoration) {
+                          return true;
+                        } else {
+                          return product.style.includes(selectedDecoration);
+                        }
+                      })
+                      .map((product) => {
+                        return (
+                          <HatCard
+                            key={product._id}
+                            path={product.path}
+                            id={product.id}
+                            name={product.name}
+                          />
+                        );
+                      })
+                  ) : (
+                    <Header style={{ display: "block", margin: "0 auto" }}>
+                      Loading ...
+                    </Header>
+                  )}
+                </Flex>
+              </Grid.Col>
+            </Grid>
+          </SetDecorationContext.Provider>
         </SetProductsContext.Provider>
       </ProductsContext.Provider>
     </>

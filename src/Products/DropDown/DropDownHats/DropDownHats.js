@@ -1,7 +1,7 @@
 import { Text } from "@mantine/core";
 import React, { useState, useEffect, useContext } from "react";
-import { SetProductsContext } from "../Products";
-import { ActiveContext } from "./DropDown";
+import { SetProductsContext } from "../../Products";
+import { ActiveContext } from "./DropDownHatsBase";
 
 const DropDownHats = () => {
   const [numActive, setNumActive] = useState(-1);
