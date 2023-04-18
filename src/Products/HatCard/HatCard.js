@@ -6,7 +6,7 @@ const HatCard = ({ path, id, name }) => {
   return (
     <Flex
       direction="column"
-      style={{ marginLeft: "6rem" }}
+      style={{ marginLeft: "0rem" }}
       className="hat-card-drop-down"
     >
       {" "}

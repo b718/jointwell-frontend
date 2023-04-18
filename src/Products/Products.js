@@ -58,7 +58,12 @@ const Products = () => {
 
               <Grid.Col
                 span={10}
-                style={{ maxWidth: "90vw", marginTop: "1rem" }}
+                style={{
+                  maxWidth: "95vw",
+                  marginTop: "1rem",
+                  marginLeft: "5rem",
+                }}
+                grow={true}
               >
                 {" "}
                 <Flex
