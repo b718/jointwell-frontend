@@ -3,11 +3,12 @@
 }
 
 .maintineFlex-2 {
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 
 .navbarm-header-jw {
   color: white;
+  margin-left: 0.8rem;
 }
 
 .button-m {
@@ -49,9 +50,9 @@ nav {
   transition: 2s;
 }
 
-.rotate-picture-nav-bar:hover {
+/* .rotate-picture-nav-bar:hover {
   transform: rotate(360deg);
-}
+} */
 
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {

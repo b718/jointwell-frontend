@@ -1,7 +1,7 @@
 /* eslint-disable no-duplicate-case */
 /* eslint-disable default-case */
 import React, { useEffect, useState } from "react";
-import { Flex, Button, Image } from "@mantine/core";
+import { Flex, Button, Image, Text } from "@mantine/core";
 import "./Navbarm.css";
 import { Link, useLocation } from "react-router-dom";
 
@@ -30,7 +30,14 @@ const Navbarm = () => {
             fit="contain"
             height={65}
             src={require("../Images/nav-pic.png")}
-            style={{ background: "white", borderRadius: "1.2rem" }}
+            style={{
+              background: "white",
+              borderRadius: "1.2rem",
+              paddingTop: "0.5rem",
+              paddingLeft: "0.3rem",
+              paddingRight: "0.3rem",
+              paddingBottom: "0.5rem",
+            }}
             className="rotate-picture-nav-bar"
           />
         </div>
@@ -38,7 +45,7 @@ const Navbarm = () => {
       </Flex>
 
       <Flex
-        gap="md"
+        gap="xs"
         justify="flex-end"
         align="center"
         direction="row"
@@ -55,8 +62,9 @@ const Navbarm = () => {
                 : "button-m"
             }
             color="cyan"
+            style={{ padding: "0rem", margin: "0rem 0.3rem 0rem 0.5rem" }}
           >
-            ABOUT US{" "}
+            <Text fz="md">ABOUT US </Text>
           </Button>
         </Link>
 
@@ -67,9 +75,10 @@ const Navbarm = () => {
               pathState === "/products" ? "button-m-active-p" : "button-m"
             }
             color="cyan"
+            style={{ padding: "0rem", margin: "0rem 0.3rem 0rem 0.5rem" }}
           >
             {" "}
-            PRODUCTS
+            <Text fz="md">PRODUCTS </Text>
           </Button>
         </Link>
 
@@ -80,8 +89,9 @@ const Navbarm = () => {
               pathState === "/compliance" ? "button-m-active-c" : "button-m"
             }
             color="cyan"
+            style={{ padding: "0rem", margin: "0rem 0.3rem 0rem 0.5rem" }}
           >
-            compliance
+            <Text fz="md">compliance </Text>
           </Button>
         </Link>
 

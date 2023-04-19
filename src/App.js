@@ -6,7 +6,6 @@ import Compliance from "./Compliance/Compliance";
 import React from "react";
 import ContactUs from "./ContactUs/ContactUs";
 import Products from "./Products/Products";
-import { Grid, Image, Center } from "@mantine/core";
 
 function App() {
   return (
