@@ -5,6 +5,7 @@ import Homepagecard from "./Homepage-card";
 import Footer from "./Footer/Footer";
 import Circle from "../Aesthetic/Circle";
 import FooterFlex from "./Footer/FooterFlex";
+import HomePageSlideShow from "../Slideshow/HomePageSlideShow";
 
 const Homepage = () => {
   return (
@@ -64,8 +65,7 @@ const Homepage = () => {
           />
         </Grid.Col>
         <Grid.Col span={4}>
-          {" "}
-          <Circle />
+          <HomePageSlideShow />
         </Grid.Col>
         <Grid.Col span={4}>
           {" "}
@@ -125,6 +125,7 @@ const Homepage = () => {
           </Text>
         </Box>
       </Center>
+
       <FooterFlex />
     </div>
   );
