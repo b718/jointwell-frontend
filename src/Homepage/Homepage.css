@@ -31,7 +31,6 @@
 
 .homePageMainPicture {
   border: 0.5px solid transparent;
-  user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -51,21 +50,26 @@
 
 .home-page-box-introduction-c-v {
   border: 1px solid transparent;
+  border-radius: 12px;
   transition: 0.3s;
 }
 
 .home-page-box-introduction-c-v:hover {
   border: 2px solid #0b4c95;
+  border-radius: 12px;
+  cursor: pointer;
 }
 
 .home-page-text-header-c-v {
   color: #0b4c95;
   font-weight: 600;
+  font-size: 1.2vw;
 }
 
 .home-page-text-header-c-v-2 {
   color: orange;
   font-weight: 600;
+  font-size: 1.2vw;
 }
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {

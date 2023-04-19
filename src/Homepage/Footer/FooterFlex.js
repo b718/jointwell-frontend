@@ -42,81 +42,65 @@ const FooterFlex = () => {
             wrap="wrap"
             justify="center"
             columnGap="8rem"
+            rowGap="1rem"
           >
-            <section className="text-section-contact-us">
+            <section
+              className="text-section-contact-us"
+              style={{ marginTop: "1rem" }}
+            >
               <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
-                <Text fz="md" truncate style={{ textDecoration: "underline" }}>
+                <Text fz="sm" style={{ textDecoration: "underline" }}>
                   Joint Well Head Office:
                 </Text>
-                <Text fz="md" truncate>
-                  Room 702, Building No.3,
-                </Text>
-                <Text fz="md" truncate>
+                <Text fz="sm">Room 702, Building No.3,</Text>
+                <Text fz="sm">
                   Guo Zhan Fortune Center, No.18 Qin Ling Road
                 </Text>
-                <Text fz="md" truncate>
-                  Qingdao China 266061
-                </Text>
-                <Text fz="md" truncate>
-                  Tel: +86 532 81118060 81118058
-                </Text>
-                <Text fz="md" truncate>
-                  E-mail: angela@jointwellcaps.com
-                </Text>
+                <Text fz="sm">Qingdao China 266061</Text>
+                <Text fz="sm">Tel: +86 532 81118060 81118058</Text>
+                <Text fz="sm">E-mail: angela@jointwellcaps.com</Text>
               </div>
             </section>
 
-            <section className="text-section-contact-us">
+            <section
+              className="text-section-contact-us"
+              style={{ marginTop: "1rem" }}
+            >
               <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
-                <Text fz="md" truncate style={{ textDecoration: "underline" }}>
+                <Text fz="sm" style={{ textDecoration: "underline" }}>
                   Vietnam Factory:
                 </Text>
-                <Text fz="md" truncate>
-                  Jointwell Vietnam Co., Ltd.
-                </Text>
-                <Text fz="md" truncate>
-                  Thua Thien Hue City, Vietnam
-                </Text>
+                <Text fz="sm">Jointwell Vietnam Co., Ltd.</Text>
+                <Text fz="sm">Thua Thien Hue City, Vietnam</Text>
                 <Text
-                  fz="md"
+                  fz="sm"
                   style={{ marginTop: "1rem", textDecoration: "underline" }}
-                  truncate
                 >
                   China Factory:
                 </Text>
-                <Text fz="md" truncate>
-                  Qingdao Joint Well Caps Co., Ltd.
-                </Text>
-                <Text fz="md" truncate>
-                  Qingdao, China
-                </Text>
+                <Text fz="sm">Qingdao Joint Well Caps Co., Ltd.</Text>
+                <Text fz="sm">Qingdao, China</Text>
               </div>
             </section>
 
-            <section className="text-section-contact-us">
+            <section
+              className="text-section-contact-us"
+              style={{ marginTop: "1rem" }}
+            >
               <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
-                <Text fz="md" truncate style={{ textDecoration: "underline" }}>
+                <Text fz="sm" style={{ textDecoration: "underline" }}>
                   Vietnam Factory:
                 </Text>
-                <Text fz="md" truncate>
-                  Jointwell Vietnam Co., Ltd.
-                </Text>
-                <Text fz="md" truncate>
-                  Thua Thien Hue City, Vietnam
-                </Text>
+                <Text fz="sm">Jointwell Vietnam Co., Ltd.</Text>
+                <Text fz="sm">Thua Thien Hue City, Vietnam</Text>
                 <Text
-                  fz="md"
+                  fz="sm"
                   style={{ marginTop: "1rem", textDecoration: "underline" }}
-                  truncate
                 >
                   China Factory:
                 </Text>
-                <Text fz="md" truncate>
-                  Qingdao Joint Well Caps Co., Ltd.
-                </Text>
-                <Text fz="md" truncate>
-                  Qingdao, China
-                </Text>
+                <Text fz="sm">Qingdao Joint Well Caps Co., Ltd.</Text>
+                <Text fz="sm">Qingdao, China</Text>
               </div>
             </section>
           </Flex>

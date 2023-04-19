@@ -87,7 +87,7 @@ const Products = () => {
                         if (!selectedDecoration) {
                           return true;
                         } else {
-                          return product.style.includes(selectedDecoration);
+                          return product.decoration.includes(selectedDecoration);
                         }
                       })
                       .map((product) => {

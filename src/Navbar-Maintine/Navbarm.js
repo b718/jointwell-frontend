@@ -26,20 +26,22 @@ const Navbarm = () => {
       >
         {" "}
         <div>
-          <Image
-            fit="contain"
-            height={65}
-            src={require("../Images/nav-pic.png")}
-            style={{
-              background: "white",
-              borderRadius: "1.2rem",
-              paddingTop: "0.5rem",
-              paddingLeft: "0.3rem",
-              paddingRight: "0.3rem",
-              paddingBottom: "0.5rem",
-            }}
-            className="rotate-picture-nav-bar"
-          />
+          <Link to="/about-us">
+            <Image
+              fit="contain"
+              height={65}
+              src={require("../Images/nav-pic.png")}
+              style={{
+                background: "white",
+                borderRadius: "1.2rem",
+                paddingTop: "0.5rem",
+                paddingLeft: "0.3rem",
+                paddingRight: "0.3rem",
+                paddingBottom: "0.5rem",
+              }}
+              className="rotate-picture-nav-bar"
+            />
+          </Link>
         </div>
         <h1 className="navbarm-header-jw">JOINT WELL</h1>
       </Flex>

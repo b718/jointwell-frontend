@@ -79,12 +79,12 @@ const Homepage = () => {
                 style={{ marginTop: "1rem" }}
                 className="home-page-text-header-c-v"
               >
-                JOINT WELL CHINA
+                JOINTWELL CHINA
               </Text>
             </Center>
             <Center>
               <Text
-                style={{ marginTop: "2rem", marginBottom: "16rem" }}
+                style={{ marginTop: "2rem", marginBottom: "10rem" }}
                 className="home-page-text-header-c-v-2"
               >
                 ENTER
@@ -106,12 +106,12 @@ const Homepage = () => {
                 style={{ marginTop: "1rem" }}
                 className="home-page-text-header-c-v"
               >
-                JOINT WELL VIETNAM
+                JOINTWELL VIETNAM
               </Text>
             </Center>
             <Center>
               <Text
-                style={{ marginTop: "2rem", marginBottom: "16rem" }}
+                style={{ marginTop: "2rem", marginBottom: "10rem" }}
                 className="home-page-text-header-c-v-2"
               >
                 ENTER

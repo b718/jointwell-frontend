@@ -14,8 +14,8 @@ const props = {
   transitionDuration: 800,
   infinite: true,
   indicators: true,
-  prevArrow: <button></button>,
-  nextArrow: <button></button>,
+  prevArrow: <div></div>,
+  nextArrow: <div></div>,
 };
 //scale={1.4} for Zoom
 
