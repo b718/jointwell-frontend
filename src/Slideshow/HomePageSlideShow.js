@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide, Fade } from "react-slideshow-image";
+import { Slide, Fade, Zoom } from "react-slideshow-image";
 import imageOne from "../Images/Caps/BC01.png";
 import imageTwo from "../Images/Caps/BC001.png";
 import imageThree from "../Images/Caps/BC002.jpg";
@@ -10,13 +10,14 @@ import { Box, Image } from "@mantine/core";
 import "react-slideshow-image/dist/styles.css";
 
 const props = {
-  duration: 2500,
+  duration: 2000,
   transitionDuration: 800,
   infinite: true,
   indicators: true,
   prevArrow: <button></button>,
   nextArrow: <button></button>,
 };
+//scale={1.4} for Zoom
 
 const HomePageSlideShow = () => {
   const images = [

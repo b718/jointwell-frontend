@@ -1,14 +1,22 @@
 import React from "react";
-import { Center, Image, Text, Box } from "@mantine/core";
+import { Center, Image, Text, Box, Flex } from "@mantine/core";
+import vietNamPicOne from "../Images/Vietnam/WechatIMG53.jpeg";
+import vietNamPicTwo from "../Images/Vietnam/WechatIMG56.jpeg";
+import vietNamPicThree from "../Images/Vietnam/WechatIMG54.jpeg";
 
 const JointWellVietnamIntro = () => {
+  const imagePaths = [vietNamPicTwo, vietNamPicOne, vietNamPicThree];
   return (
     <>
       {" "}
       <Center>
         <Box
           id="joint-well-vietnam-box-writing"
-          style={{ maxWidth: "60vw", marginTop: "8rem" }}
+          style={{
+            maxWidth: "60vw",
+            marginTop: "11rem",
+            marginBottom: "3rem",
+          }}
         >
           <h1
             className="joint-well-china-header"
@@ -55,12 +63,24 @@ const JointWellVietnamIntro = () => {
             line! Send us your request and we will return you satisfaction.
           </Text>
 
-          <Image
-            className="joint-well-china-pic"
-            width={320}
-            radius="md"
-            src={require("../Images/joint-well-vietnam.png")}
-          />
+          <Flex
+            gap={"1rem"}
+            style={{ marginTop: "1rem", marginLeft: "1rem" }}
+            wrap="wrap"
+            justify="flex-start"
+            align="center"
+          >
+            {imagePaths.map((path) => {
+              return (
+                <Image
+                  className="joint-well-china-pic"
+                  width={280}
+                  radius="md"
+                  src={path}
+                />
+              );
+            })}
+          </Flex>
         </Box>
       </Center>
     </>

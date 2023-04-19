@@ -49,9 +49,24 @@
   margin-left: 1rem;
 }
 
-.joint-well-china-pic {
+.home-page-box-introduction-c-v {
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
 
+.home-page-box-introduction-c-v:hover {
+  border: 2px solid #0b4c95;
+}
+
+.home-page-text-header-c-v {
+  color: #0b4c95;
+  font-weight: 600;
+}
+
+.home-page-text-header-c-v-2 {
+  color: orange;
+  font-weight: 600;
+}
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
   @media (max-width: 638px) {

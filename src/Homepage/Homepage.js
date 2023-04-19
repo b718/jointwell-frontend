@@ -72,9 +72,24 @@ const Homepage = () => {
         <Grid.Col span={4}>
           <Box
             onClick={handleClickChinaScroll}
-            style={{ cursor: "pointer", border: "1px solid red" }}
+            className="home-page-box-introduction-c-v"
           >
-            JOINT WELL CHINA
+            <Center>
+              <Text
+                style={{ marginTop: "1rem" }}
+                className="home-page-text-header-c-v"
+              >
+                JOINT WELL CHINA
+              </Text>
+            </Center>
+            <Center>
+              <Text
+                style={{ marginTop: "2rem", marginBottom: "16rem" }}
+                className="home-page-text-header-c-v-2"
+              >
+                ENTER
+              </Text>
+            </Center>
           </Box>
         </Grid.Col>
         <Grid.Col span={4}>
@@ -84,9 +99,24 @@ const Homepage = () => {
           {" "}
           <Box
             onClick={handleClickVietnamScroll}
-            style={{ cursor: "pointer", border: "1px solid red" }}
+            className="home-page-box-introduction-c-v"
           >
-            JOINT WELL VIETNAM
+            <Center>
+              <Text
+                style={{ marginTop: "1rem" }}
+                className="home-page-text-header-c-v"
+              >
+                JOINT WELL VIETNAM
+              </Text>
+            </Center>
+            <Center>
+              <Text
+                style={{ marginTop: "2rem", marginBottom: "16rem" }}
+                className="home-page-text-header-c-v-2"
+              >
+                ENTER
+              </Text>
+            </Center>
           </Box>
         </Grid.Col>
       </Grid>

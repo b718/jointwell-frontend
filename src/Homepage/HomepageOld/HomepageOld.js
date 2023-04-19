@@ -14,7 +14,7 @@ const HomepageOld = () => {
         <Center>
           <Image
             fit="contain"
-            src={require("../Images/hat-pic.png")}
+            src={require("../../Images/hat-pic.png")}
             className="homePageMainPicture"
           />
         </Center>

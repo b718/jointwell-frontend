@@ -1,7 +1,12 @@
 import React from "react";
-import { Center, Image, Text, Box } from "@mantine/core";
+import { Center, Image, Text, Box, Flex } from "@mantine/core";
+import chinaPicOne from "../Images/China/WechatIMG43.jpeg";
+import chinaPicTwo from "../Images/China/WechatIMG48.jpeg";
+import chinaPicThree from "../Images/China/WechatIMG49.jpeg";
 
 const JointWellChinaIntro = () => {
+  const imagePaths = [chinaPicOne, chinaPicTwo, chinaPicThree];
+
   return (
     <>
       {" "}
@@ -54,12 +59,25 @@ const JointWellChinaIntro = () => {
             We are WRAP certified ( No.127426). Thank you for visiting us on
             line! Send us your request and we will return you satisfaction.
           </Text>
-          <Image
-            className="joint-well-china-pic"
-            width={320}
-            radius="md"
-            src={require("../Images/joint-well-china.png")}
-          />
+
+          <Flex
+            gap={"1rem"}
+            style={{ marginTop: "1rem", marginLeft: "1rem" }}
+            wrap="wrap"
+            justify="flex-start"
+            align="center"
+          >
+            {imagePaths.map((path) => {
+              return (
+                <Image
+                  className="joint-well-china-pic"
+                  width={280}
+                  radius="md"
+                  src={path}
+                />
+              );
+            })}
+          </Flex>
         </Box>
       </Center>
     </>
