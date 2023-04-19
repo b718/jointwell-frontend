@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
+import { Slide, Fade } from "react-slideshow-image";
 import imageOne from "../Images/Caps/BC01.png";
 import imageTwo from "../Images/Caps/BC001.png";
 import imageThree from "../Images/Caps/BC002.jpg";
@@ -9,21 +9,13 @@ import imageSix from "../Images/Caps/BC005.png";
 import { Box, Image } from "@mantine/core";
 import "react-slideshow-image/dist/styles.css";
 
-const proprietes = {
-  duration: 5000,
-  transitionDuration: 500,
+const props = {
+  duration: 2500,
+  transitionDuration: 800,
   infinite: true,
   indicators: true,
-  prevArrow: "",
-  nextArrow: "",
-};
-
-const divStyle = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  backgroundSize: "cover",
-  height: "",
+  prevArrow: <button></button>,
+  nextArrow: <button></button>,
 };
 
 const HomePageSlideShow = () => {
@@ -37,17 +29,17 @@ const HomePageSlideShow = () => {
   ];
 
   return (
-    <div className="slide-container">
-      <Slide {...proprietes}>
+    <>
+      <Slide {...props}>
         {images.map((src) => {
           return (
-            <Box style={{ ...divStyle }}>
-              <Image width={320} fit="contain" src={src} />
+            <Box>
+              <Image fit="contain" src={src} />
             </Box>
           );
         })}
       </Slide>
-    </div>
+    </>
   );
 };
 

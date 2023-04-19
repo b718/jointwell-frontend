@@ -49,6 +49,9 @@
   margin-left: 1rem;
 }
 
+.joint-well-china-pic {
+}
+
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
   @media (max-width: 638px) {
