@@ -21,7 +21,7 @@ const JointWellChinaIntro = () => {
           >
             JOINTWELL CHINA
           </h1>
-          <Text
+          {/* <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
           >
             Established in 2019, Jointwell Vietnam has grown into a dynamic and
@@ -58,7 +58,7 @@ const JointWellChinaIntro = () => {
           >
             We are WRAP certified ( No.127426). Thank you for visiting us on
             line! Send us your request and we will return you satisfaction.
-          </Text>
+          </Text> */}
 
           <Flex
             gap={"1rem"}

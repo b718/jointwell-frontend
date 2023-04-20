@@ -5,6 +5,7 @@ import FooterFlex from "./Footer/FooterFlex";
 import HomePageSlideShow from "../Slideshow/HomePageSlideShow";
 import JointWellChinaIntro from "./JointWellChinaIntro";
 import JointWellVietnamIntro from "./JointWellVietnamIntro";
+import TopHat from "./TopHat";
 
 const Homepage = () => {
   const handleClickChinaScroll = () => {
@@ -23,6 +24,7 @@ const Homepage = () => {
 
   return (
     <div>
+      <div style={{ maxWidth: "10rem" }}></div>
       <article>
         <Center>
           {" "}
