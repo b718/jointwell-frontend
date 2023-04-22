@@ -14,7 +14,6 @@
 .button-m {
   color: white;
   transition: 1s;
-  text-transform: uppercase;
 }
 
 .button-m:hover {
@@ -31,7 +30,6 @@
   text-decoration: underline;
   text-decoration-color: lightblue;
   text-decoration-thickness: 2px;
-  text-transform: uppercase;
 }
 
 nav {
@@ -48,6 +46,11 @@ nav {
 
 .rotate-picture-nav-bar {
   transition: 2s;
+}
+
+.mantine-flex-2-text {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
 }
 
 /* .rotate-picture-nav-bar:hover {

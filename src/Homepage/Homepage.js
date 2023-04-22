@@ -5,7 +5,6 @@ import FooterFlex from "./Footer/FooterFlex";
 import HomePageSlideShow from "../Slideshow/HomePageSlideShow";
 import JointWellChinaIntro from "./JointWellChinaIntro";
 import JointWellVietnamIntro from "./JointWellVietnamIntro";
-import TopHat from "./TopHat";
 
 const Homepage = () => {
   const handleClickChinaScroll = () => {
@@ -36,6 +35,7 @@ const Homepage = () => {
                 marginLeft: "1rem",
                 marginRight: "1rem",
               }}
+              className="home-page-open-statement-text"
             >
               {" "}
               Joint Well Caps specializes in manufacturing caps and hats for
@@ -47,6 +47,7 @@ const Homepage = () => {
                 marginLeft: "1rem",
                 marginRight: "1rem",
               }}
+              className="home-page-open-statement-text"
             >
               {" "}
               Our China factory was set up in 1995, making 10 million caps each
@@ -59,6 +60,7 @@ const Homepage = () => {
                 marginLeft: "1rem",
                 marginRight: "1rem",
               }}
+              className="home-page-open-statement-text"
             >
               Our Vietnam factory was set up in 2019, making 12 million caps
               each year. Our people make the products speak for themselves.
@@ -71,7 +73,7 @@ const Homepage = () => {
         style={{ maxWidth: "60vw", marginTop: "2rem" }}
         className="joint-well-china-paragraph"
       >
-        <Grid.Col span={4}>
+        <Grid.Col span={6}>
           <Box
             onClick={handleClickChinaScroll}
             className="home-page-box-introduction-c-v"
@@ -94,10 +96,10 @@ const Homepage = () => {
             </Center>
           </Box>
         </Grid.Col>
-        <Grid.Col span={4}>
+        {/* <Grid.Col span={4}>
           <HomePageSlideShow />
-        </Grid.Col>
-        <Grid.Col span={4}>
+        </Grid.Col> */}
+        <Grid.Col span={6}>
           {" "}
           <Box
             onClick={handleClickVietnamScroll}
@@ -123,8 +125,8 @@ const Homepage = () => {
         </Grid.Col>
       </Grid>
 
-      <JointWellChinaIntro />
-      <JointWellVietnamIntro />
+      {/* <JointWellChinaIntro />
+      <JointWellVietnamIntro /> */}
 
       <FooterFlex />
     </div>

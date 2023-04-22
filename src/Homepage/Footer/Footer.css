@@ -1,0 +1,24 @@
+.footer-contact-us {
+  background-color: #0b4c95;
+  margin-top: 10rem;
+}
+
+.footer-flex-text-font {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+.text-section-contact-us {
+  color: white;
+  max-width: 25rem;
+  background-color: #267adb;
+  border-radius: 1rem;
+}
+.footer-grid-for-contacts {
+  margin-top: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+.column-contact-us-footer-flex {
+  margin-top: 1rem;
+  background-color: #0b4c95;
+}

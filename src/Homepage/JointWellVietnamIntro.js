@@ -13,7 +13,7 @@ const JointWellVietnamIntro = () => {
         <Box
           id="joint-well-vietnam-box-writing"
           style={{
-            maxWidth: "60vw",
+            maxWidth: "50vw",
             marginTop: "11rem",
             marginBottom: "3rem",
           }}
@@ -24,7 +24,7 @@ const JointWellVietnamIntro = () => {
           >
             JOINTWELL VIETNAM
           </h1>
-          {/* <Text
+          <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
           >
             Established in 2019, Jointwell Vietnam has grown into a dynamic and
@@ -61,10 +61,10 @@ const JointWellVietnamIntro = () => {
           >
             We are WRAP certified ( No.127426). Thank you for visiting us on
             line! Send us your request and we will return you satisfaction.
-          </Text> */}
+          </Text>
 
           <Flex
-            gap={"1rem"}
+            gap={"2rem"}
             style={{ marginTop: "1rem", marginLeft: "1rem" }}
             wrap="wrap"
             justify="flex-start"
@@ -74,7 +74,7 @@ const JointWellVietnamIntro = () => {
               return (
                 <Image
                   className="joint-well-china-pic"
-                  width={280}
+                  width="18rem"
                   radius="md"
                   src={path}
                 />

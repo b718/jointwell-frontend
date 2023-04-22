@@ -63,13 +63,18 @@
 .home-page-text-header-c-v {
   color: #0b4c95;
   font-weight: 600;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
 }
 
 .home-page-text-header-c-v-2 {
   color: orange;
   font-weight: 600;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
+}
+
+.home-page-open-statement-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
 }
 
 /*Max-width is basically saying 500px, if youre in that this will happen*/

@@ -13,7 +13,7 @@ const JointWellChinaIntro = () => {
       <Center>
         <Box
           id="joint-well-china-box-writing"
-          style={{ maxWidth: "60vw", marginTop: "8rem" }}
+          style={{ maxWidth: "50vw", marginTop: "8rem" }}
         >
           <h1
             className="joint-well-china-header"
@@ -21,47 +21,28 @@ const JointWellChinaIntro = () => {
           >
             JOINTWELL CHINA
           </h1>
-          {/* <Text
+          <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
           >
-            Established in 2019, Jointwell Vietnam has grown into a dynamic and
-            reliable manufacturer and exporter of caps and hats in Hue, Danang,
-            Vietnam.
+            Established in 1995, Qingdao Joint Well Caps Co. Ltd has performed
+            as a leading manufacturer and exporter of caps and hats in China.
           </Text>
           <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
           >
-            We have 1000 skilled workers making 1,000,000 pcs quality caps each
-            month and most of our products are selling to USA.
+            We have 800 skilled workers making 10 million quality caps each year
+            and most of our products are selling to USA, Europe and Canada.
           </Text>
           <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
           >
-            With our consistent superior quality cap production, reasonable
-            prices, timely deliveries, impeccable services, creative and
-            innovative R&D team, we provide impeccable services ensuring
-            customer ease and satisfaction.
+            We train, motivate and equip our people to always provide better
+            quality and better service. We are capable of satisfying all your
+            demand on caps and usually we do better than you expect.
           </Text>
-
-          <Text
-            style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
-          >
-            We aim to grow together with our valued customers based on long term
-            business partnership. We train, motivate and equip our people to
-            always provide better quality and better service. We appreciate
-            every inquiry as a lead to a strong business relationship. Social
-            responsibility is also our committed priority.
-          </Text>
-
-          <Text
-            style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
-          >
-            We are WRAP certified ( No.127426). Thank you for visiting us on
-            line! Send us your request and we will return you satisfaction.
-          </Text> */}
 
           <Flex
-            gap={"1rem"}
+            gap={"2rem"}
             style={{ marginTop: "1rem", marginLeft: "1rem" }}
             wrap="wrap"
             justify="flex-start"
@@ -71,7 +52,7 @@ const JointWellChinaIntro = () => {
               return (
                 <Image
                   className="joint-well-china-pic"
-                  width={280}
+                  width="18rem"
                   radius="md"
                   src={path}
                 />

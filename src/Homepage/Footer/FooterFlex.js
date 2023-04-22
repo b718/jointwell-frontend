@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, Title, Flex, Center, Image } from "@mantine/core";
+import { Text, Flex, Center, Image } from "@mantine/core";
+import "./Footer.css";
 
 const FooterFlex = () => {
   return (
@@ -49,16 +50,48 @@ const FooterFlex = () => {
               style={{ marginTop: "1rem" }}
             >
               <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
-                <Text fz="sm" style={{ textDecoration: "underline" }}>
+                <Text
+                  fz="sm"
+                  style={{ marginTop: "1rem", textDecoration: "underline" }}
+                  className="footer-flex-text-font"
+                >
+                  China Factory:
+                </Text>
+                <Text fz="sm" className="footer-flex-text-font">
+                  Qingdao Joint Well Caps Co., Ltd.
+                </Text>
+                <Text fz="sm" className="footer-flex-text-font">
+                  Qingdao, China
+                </Text>
+              </div>
+            </section>
+            <section
+              className="text-section-contact-us"
+              style={{ marginTop: "1rem" }}
+            >
+              <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
+                <Text
+                  fz="sm"
+                  style={{ textDecoration: "underline" }}
+                  className="footer-flex-text-font"
+                >
                   Joint Well Head Office:
                 </Text>
-                <Text fz="sm">Room 702, Building No.3,</Text>
-                <Text fz="sm">
-                  Guo Zhan Fortune Center, No.18 Qin Ling Road
+                <Text fz="sm" className="footer-flex-text-font">
+                  Room 702, Building No.3,
                 </Text>
-                <Text fz="sm">Qingdao China 266061</Text>
-                <Text fz="sm">Tel: +86 532 81118060 81118058</Text>
-                <Text fz="sm">E-mail: angela@jointwellcaps.com</Text>
+                <Text fz="sm" className="footer-flex-text-font">
+                  Guo Zhan Fortune Center
+                </Text>
+                <Text fz="sm" className="footer-flex-text-font">
+                  No.18 Qin Ling Road, Qingdao China 266061
+                </Text>
+                <Text fz="sm" className="footer-flex-text-font">
+                  Tel: +86 532 81118060, 81118058
+                </Text>
+                <Text fz="sm" className="footer-flex-text-font">
+                  E-mail: angela@jointwellcaps.com
+                </Text>
               </div>
             </section>
 
@@ -67,40 +100,19 @@ const FooterFlex = () => {
               style={{ marginTop: "1rem" }}
             >
               <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
-                <Text fz="sm" style={{ textDecoration: "underline" }}>
-                  Vietnam Factory:
-                </Text>
-                <Text fz="sm">Jointwell Vietnam Co., Ltd.</Text>
-                <Text fz="sm">Thua Thien Hue City, Vietnam</Text>
                 <Text
                   fz="sm"
-                  style={{ marginTop: "1rem", textDecoration: "underline" }}
+                  style={{ textDecoration: "underline" }}
+                  className="footer-flex-text-font"
                 >
-                  China Factory:
-                </Text>
-                <Text fz="sm">Qingdao Joint Well Caps Co., Ltd.</Text>
-                <Text fz="sm">Qingdao, China</Text>
-              </div>
-            </section>
-
-            <section
-              className="text-section-contact-us"
-              style={{ marginTop: "1rem" }}
-            >
-              <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
-                <Text fz="sm" style={{ textDecoration: "underline" }}>
                   Vietnam Factory:
                 </Text>
-                <Text fz="sm">Jointwell Vietnam Co., Ltd.</Text>
-                <Text fz="sm">Thua Thien Hue City, Vietnam</Text>
-                <Text
-                  fz="sm"
-                  style={{ marginTop: "1rem", textDecoration: "underline" }}
-                >
-                  China Factory:
+                <Text fz="sm" className="footer-flex-text-font">
+                  Jointwell Vietnam Co., Ltd.
                 </Text>
-                <Text fz="sm">Qingdao Joint Well Caps Co., Ltd.</Text>
-                <Text fz="sm">Qingdao, China</Text>
+                <Text fz="sm" className="footer-flex-text-font">
+                  Thua Thien Hue City, Vietnam
+                </Text>
               </div>
             </section>
           </Flex>

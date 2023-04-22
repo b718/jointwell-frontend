@@ -66,7 +66,9 @@ const Navbarm = () => {
             color="cyan"
             style={{ padding: "0rem", margin: "0rem 0.3rem 0rem 0.5rem" }}
           >
-            <Text fz="md">ABOUT US </Text>
+            <Text fz="md" className="mantine-flex-2-text">
+              About Us{" "}
+            </Text>
           </Button>
         </Link>
 
@@ -80,7 +82,9 @@ const Navbarm = () => {
             style={{ padding: "0rem", margin: "0rem 0.3rem 0rem 0.5rem" }}
           >
             {" "}
-            <Text fz="md">PRODUCTS </Text>
+            <Text fz="md" className="mantine-flex-2-text">
+              Products{" "}
+            </Text>
           </Button>
         </Link>
 
@@ -93,7 +97,9 @@ const Navbarm = () => {
             color="cyan"
             style={{ padding: "0rem", margin: "0rem 0.3rem 0rem 0.5rem" }}
           >
-            <Text fz="md">compliance </Text>
+            <Text fz="md" className="mantine-flex-2-text">
+              Compliance{" "}
+            </Text>
           </Button>
         </Link>
 
