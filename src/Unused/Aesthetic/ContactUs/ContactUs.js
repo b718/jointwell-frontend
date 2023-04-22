@@ -1,6 +1,6 @@
 import { Grid, Text, Title, Flex } from "@mantine/core";
 import React from "react";
-import Footer from "../Homepage/Footer/Footer-Unused";
+import Footer from "../../../Homepage/Footer/Footer-Unused";
 import "./ContactUs.css";
 import Form from "./Form/Form";
 
