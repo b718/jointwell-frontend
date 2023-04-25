@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Homepage.css";
 import { Center, Grid, Image, Text, Box } from "@mantine/core";
 import FooterFlex from "./Footer/FooterFlex";
@@ -6,6 +6,7 @@ import HomePageSlideShow from "../Slideshow/HomePageSlideShow";
 import JointWellChinaIntro from "./JointWellChinaIntro";
 import JointWellVietnamIntro from "./JointWellVietnamIntro";
 
+export const BranchNameProvider = React.createContext();
 const Homepage = () => {
   const [branchName, setBranchName] = useState("");
   const handleClickChinaScroll = () => {
@@ -22,118 +23,124 @@ const Homepage = () => {
     }
   };
 
-  return (
-    <div>
-      <div style={{ maxWidth: "10rem" }}></div>
-      <article>
-        <Center>
-          {" "}
-          <section className="homePageText">
-            {" "}
-            <Text
-              style={{
-                marginTop: "1rem",
-                marginLeft: "1rem",
-                marginRight: "1rem",
-              }}
-              className="home-page-open-statement-text"
-            >
-              {" "}
-              Joint Well Caps specializes in manufacturing caps and hats for
-              import customers over the world.
-            </Text>
-            <Text
-              style={{
-                marginTop: "1rem",
-                marginLeft: "1rem",
-                marginRight: "1rem",
-              }}
-              className="home-page-open-statement-text"
-            >
-              {" "}
-              Our China factory was set up in 1995, making 10 million caps each
-              year.
-            </Text>
-            <Text
-              style={{
-                marginTop: "1rem",
-                marginBottom: "1rem",
-                marginLeft: "1rem",
-                marginRight: "1rem",
-              }}
-              className="home-page-open-statement-text"
-            >
-              Our Vietnam factory was set up in 2019, making 12 million caps
-              each year. Our people make the products speak for themselves.
-            </Text>
-          </section>
-        </Center>
-      </article>
+  // useEffect(() => {
+  //   console.log("test", branchName);
+  // }, [branchName]);
 
-      <Grid
-        style={{ maxWidth: "60vw", marginTop: "2rem" }}
-        className="joint-well-china-paragraph"
-      >
-        <Grid.Col span={6}>
-          <Box
-            onClick={() => setBranchName("china")}
-            className="home-page-box-introduction-c-v"
-          >
-            <Center>
+  return (
+    <BranchNameProvider.Provider value={setBranchName}>
+      <div>
+        <div style={{ maxWidth: "10rem" }}></div>
+        <article>
+          <Center>
+            {" "}
+            <section className="homePageText">
+              {" "}
               <Text
-                style={{ marginTop: "1rem" }}
-                className="home-page-text-header-c-v"
+                style={{
+                  marginTop: "1rem",
+                  marginLeft: "1rem",
+                  marginRight: "1rem",
+                }}
+                className="home-page-open-statement-text"
               >
-                JOINTWELL CHINA
+                {" "}
+                Joint Well Caps specializes in manufacturing caps and hats for
+                import customers over the world.
               </Text>
-            </Center>
-            <Center>
               <Text
-                style={{ marginTop: "2rem", marginBottom: "10rem" }}
-                className="home-page-text-header-c-v-2"
+                style={{
+                  marginTop: "1rem",
+                  marginLeft: "1rem",
+                  marginRight: "1rem",
+                }}
+                className="home-page-open-statement-text"
               >
-                ENTER
+                {" "}
+                Our China factory was set up in 1995, making 10 million caps
+                each year.
               </Text>
-            </Center>
-          </Box>
-        </Grid.Col>
-        {/* <Grid.Col span={4}>
+              <Text
+                style={{
+                  marginTop: "1rem",
+                  marginBottom: "1rem",
+                  marginLeft: "1rem",
+                  marginRight: "1rem",
+                }}
+                className="home-page-open-statement-text"
+              >
+                Our Vietnam factory was set up in 2019, making 12 million caps
+                each year. Our people make the products speak for themselves.
+              </Text>
+            </section>
+          </Center>
+        </article>
+
+        <Grid
+          style={{ maxWidth: "60vw", marginTop: "2rem" }}
+          className="joint-well-china-paragraph"
+        >
+          <Grid.Col span={6}>
+            <Box
+              onClick={() => setBranchName("china")}
+              className="home-page-box-introduction-c-v"
+            >
+              <Center>
+                <Text
+                  style={{ marginTop: "1rem" }}
+                  className="home-page-text-header-c-v"
+                >
+                  JOINTWELL CHINA
+                </Text>
+              </Center>
+              <Center>
+                <Text
+                  style={{ marginTop: "2rem", marginBottom: "10rem" }}
+                  className="home-page-text-header-c-v-2"
+                >
+                  ENTER
+                </Text>
+              </Center>
+            </Box>
+          </Grid.Col>
+          {/* <Grid.Col span={4}>
           <HomePageSlideShow />
         </Grid.Col> */}
-        <Grid.Col span={6}>
-          {" "}
-          <Box
-            onClick={() => setBranchName("vietnam")}
-            className="home-page-box-introduction-c-v"
-          >
-            <Center>
-              <Text
-                style={{ marginTop: "1rem" }}
-                className="home-page-text-header-c-v"
-              >
-                JOINTWELL VIETNAM
-              </Text>
-            </Center>
-            <Center>
-              <Text
-                style={{ marginTop: "2rem", marginBottom: "10rem" }}
-                className="home-page-text-header-c-v-2"
-              >
-                ENTER
-              </Text>
-            </Center>
-          </Box>
-        </Grid.Col>
-      </Grid>
-      {branchName === "vietnam" ? (
-        <JointWellVietnamIntro />
-      ) : branchName === "china" ? (
-        <JointWellChinaIntro />
-      ) : (
-        <div> </div>
-      )}
-      <FooterFlex />
-    </div>
+          <Grid.Col span={6}>
+            {" "}
+            <Box
+              onClick={() => setBranchName("vietnam")}
+              className="home-page-box-introduction-c-v"
+            >
+              <Center>
+                <Text
+                  style={{ marginTop: "1rem" }}
+                  className="home-page-text-header-c-v"
+                >
+                  JOINTWELL VIETNAM
+                </Text>
+              </Center>
+              <Center>
+                <Text
+                  style={{ marginTop: "2rem", marginBottom: "10rem" }}
+                  className="home-page-text-header-c-v-2"
+                >
+                  ENTER
+                </Text>
+              </Center>
+            </Box>
+          </Grid.Col>
+        </Grid>
+        {branchName === "vietnam" ? (
+          <JointWellVietnamIntro />
+        ) : branchName === "china" ? (
+          <JointWellChinaIntro />
+        ) : (
+          <div> </div>
+        )}
+        <FooterFlex />
+      </div>
+    </BranchNameProvider.Provider>
   );
 };
 

@@ -1,23 +1,33 @@
-import React from "react";
-import { Center, Image, Text, Box, Flex } from "@mantine/core";
+import React, { useContext } from "react";
+import { Center, Image, Text, Box, Flex, Button } from "@mantine/core";
 import chinaPicOne from "../Images/China/WechatIMG43.jpeg";
 import chinaPicTwo from "../Images/China/WechatIMG48.jpeg";
 import chinaPicThree from "../Images/China/WechatIMG49.jpeg";
+import { BranchNameProvider } from "./Homepage";
 
 const JointWellChinaIntro = () => {
+  const BranchNameSetting = useContext(BranchNameProvider);
   const imagePaths = [chinaPicOne, chinaPicTwo, chinaPicThree];
-
   return (
     <>
       {" "}
       <Center>
         <Box id="joint-well-china-box-writing" style={{ maxWidth: "50vw" }}>
-          <h1
-            className="joint-well-china-header"
-            style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
-          >
-            JOINTWELL CHINA
-          </h1>
+          <Flex gap="30rem" align="center" justify="flex-start">
+            {" "}
+            <h1
+              className="joint-well-china-header"
+              style={{
+                marginTop: "1rem",
+                marginLeft: "1rem",
+                maxWidth: "60vw",
+              }}
+            >
+              JOINTWELL CHINA
+            </h1>
+            <Button onClick={() => BranchNameSetting("")}></Button>
+          </Flex>
+
           <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
           >

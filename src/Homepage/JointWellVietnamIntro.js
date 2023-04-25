@@ -1,10 +1,12 @@
-import React from "react";
-import { Center, Image, Text, Box, Flex } from "@mantine/core";
+import React, { useContext } from "react";
+import { Center, Image, Text, Box, Flex, Button } from "@mantine/core";
 import vietNamPicOne from "../Images/Vietnam/WechatIMG53.jpeg";
 import vietNamPicTwo from "../Images/Vietnam/WechatIMG56.jpeg";
 import vietNamPicThree from "../Images/Vietnam/WechatIMG54.jpeg";
+import { BranchNameProvider } from "./Homepage";
 
 const JointWellVietnamIntro = () => {
+  const BranchNameSetting = useContext(BranchNameProvider);
   const imagePaths = [vietNamPicTwo, vietNamPicOne, vietNamPicThree];
   return (
     <>
@@ -16,12 +18,19 @@ const JointWellVietnamIntro = () => {
             maxWidth: "50vw",
           }}
         >
-          <h1
-            className="joint-well-china-header"
-            style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
-          >
-            JOINTWELL VIETNAM
-          </h1>
+          <Flex gap="30rem" align="center" justify="flex-start">
+            <h1
+              className="joint-well-china-header"
+              style={{
+                marginTop: "1rem",
+                marginLeft: "1rem",
+                maxWidth: "60vw",
+              }}
+            >
+              JOINTWELL VIETNAM
+            </h1>
+            <Button onClick={() => BranchNameSetting("")}></Button>
+          </Flex>
           <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
           >
