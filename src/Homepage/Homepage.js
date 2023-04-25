@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Homepage.css";
 import { Center, Grid, Image, Text, Box } from "@mantine/core";
 import FooterFlex from "./Footer/FooterFlex";
@@ -7,6 +7,7 @@ import JointWellChinaIntro from "./JointWellChinaIntro";
 import JointWellVietnamIntro from "./JointWellVietnamIntro";
 
 const Homepage = () => {
+  const [branchName, setBranchName] = useState("");
   const handleClickChinaScroll = () => {
     const element = document.getElementById("joint-well-china-box-writing");
     if (element) {
@@ -75,7 +76,7 @@ const Homepage = () => {
       >
         <Grid.Col span={6}>
           <Box
-            onClick={handleClickChinaScroll}
+            onClick={() => setBranchName("china")}
             className="home-page-box-introduction-c-v"
           >
             <Center>
@@ -102,7 +103,7 @@ const Homepage = () => {
         <Grid.Col span={6}>
           {" "}
           <Box
-            onClick={handleClickVietnamScroll}
+            onClick={() => setBranchName("vietnam")}
             className="home-page-box-introduction-c-v"
           >
             <Center>
@@ -124,10 +125,13 @@ const Homepage = () => {
           </Box>
         </Grid.Col>
       </Grid>
-
-      {/* <JointWellChinaIntro />
-      <JointWellVietnamIntro /> */}
-
+      {branchName === "vietnam" ? (
+        <JointWellVietnamIntro />
+      ) : branchName === "china" ? (
+        <JointWellChinaIntro />
+      ) : (
+        <div> </div>
+      )}
       <FooterFlex />
     </div>
   );

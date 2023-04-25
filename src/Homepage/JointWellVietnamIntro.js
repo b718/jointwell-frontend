@@ -14,8 +14,6 @@ const JointWellVietnamIntro = () => {
           id="joint-well-vietnam-box-writing"
           style={{
             maxWidth: "50vw",
-            marginTop: "11rem",
-            marginBottom: "3rem",
           }}
         >
           <h1

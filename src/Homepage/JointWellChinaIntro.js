@@ -11,10 +11,7 @@ const JointWellChinaIntro = () => {
     <>
       {" "}
       <Center>
-        <Box
-          id="joint-well-china-box-writing"
-          style={{ maxWidth: "50vw", marginTop: "8rem" }}
-        >
+        <Box id="joint-well-china-box-writing" style={{ maxWidth: "50vw" }}>
           <h1
             className="joint-well-china-header"
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
