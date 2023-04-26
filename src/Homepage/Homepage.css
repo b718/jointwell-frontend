@@ -77,6 +77,11 @@
   font-weight: 400;
 }
 
+.joint-well-intro-writing {
+  border: 1px solid #0b4c95;
+  border-radius: 12px;
+}
+
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
   @media (max-width: 638px) {

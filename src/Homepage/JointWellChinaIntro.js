@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Center, Image, Text, Box, Flex, Button } from "@mantine/core";
+import { Center, Image, Text, Box, Flex, Button, Grid } from "@mantine/core";
 import chinaPicOne from "../Images/China/WechatIMG43.jpeg";
 import chinaPicTwo from "../Images/China/WechatIMG48.jpeg";
 import chinaPicThree from "../Images/China/WechatIMG49.jpeg";
@@ -12,21 +12,37 @@ const JointWellChinaIntro = () => {
     <>
       {" "}
       <Center>
-        <Box id="joint-well-china-box-writing" style={{ maxWidth: "50vw" }}>
-          <Flex gap="30rem" align="center" justify="flex-start">
+        <Box
+          id="joint-well-china-box-writing"
+          style={{ maxWidth: "55vw" }}
+          className="joint-well-intro-writing"
+        >
+          <Grid justify="flex-end" align="flex-end" grow="true">
             {" "}
-            <h1
-              className="joint-well-china-header"
-              style={{
-                marginTop: "1rem",
-                marginLeft: "1rem",
-                maxWidth: "60vw",
-              }}
-            >
-              JOINTWELL CHINA
-            </h1>
-            <Button onClick={() => BranchNameSetting("")}></Button>
-          </Flex>
+            <Grid.Col span={6}>
+              <h1
+                className="joint-well-china-header"
+                style={{
+                  marginTop: "1rem",
+                  marginLeft: "1rem",
+                  maxWidth: "60vw",
+                }}
+              >
+                JOINTWELL CHINA
+              </h1>
+            </Grid.Col>
+            <Grid.Col span={6}>
+              <Flex
+                justify="flex-end"
+                align="center"
+                direction="row"
+                wrap="wrap"
+                style={{ marginRight: "1rem" }}
+              >
+                <Button onClick={() => BranchNameSetting("")}></Button>
+              </Flex>
+            </Grid.Col>
+          </Grid>
 
           <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
@@ -50,7 +66,11 @@ const JointWellChinaIntro = () => {
 
           <Flex
             gap={"2rem"}
-            style={{ marginTop: "1rem", marginLeft: "1rem" }}
+            style={{
+              marginTop: "1rem",
+              marginLeft: "1rem",
+              marginBottom: "1rem",
+            }}
             wrap="wrap"
             justify="flex-start"
             align="center"
@@ -59,7 +79,7 @@ const JointWellChinaIntro = () => {
               return (
                 <Image
                   className="joint-well-china-pic"
-                  width="18rem"
+                  width="15rem"
                   radius="md"
                   src={path}
                 />
