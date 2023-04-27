@@ -22,7 +22,7 @@ const Products = () => {
     //One thing to note is that the keys that are unique, do
     //get re-rendered which can make it faster!
     async function fetchProducts() {
-      const response = await fetch("http://localhost:3001/hats");
+      const response = await fetch("https://joint-well-api.onrender.com/hats");
       const currentProducts = await response.json();
       setProducts(currentProducts);
     }
@@ -87,7 +87,9 @@ const Products = () => {
                         if (!selectedDecoration) {
                           return true;
                         } else {
-                          return product.decoration.includes(selectedDecoration);
+                          return product.decoration.includes(
+                            selectedDecoration
+                          );
                         }
                       })
                       .map((product) => {
