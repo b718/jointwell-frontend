@@ -31,7 +31,7 @@ const HatCard = ({ path, id, name }) => {
           </Grid.Col>
           <Grid.Col span={4}>
             {" "}
-            <Text fz="sm" align="right" className="text-hat-card">
+            <Text fz="sm" align="center" className="text-hat-card">
               {id}
             </Text>
           </Grid.Col>
