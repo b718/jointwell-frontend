@@ -5,6 +5,7 @@ import FooterFlex from "./Footer/FooterFlex";
 import HomePageSlideShow from "../Slideshow/HomePageSlideShow";
 import JointWellChinaIntro from "./JointWellChinaIntro";
 import JointWellVietnamIntro from "./JointWellVietnamIntro";
+import JointWellPictureHat from "../Images/hat-pic.png";
 
 export const BranchNameProvider = React.createContext();
 const Homepage = () => {
@@ -22,10 +23,6 @@ const Homepage = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  // useEffect(() => {
-  //   console.log("test", branchName);
-  // }, [branchName]);
 
   return (
     <BranchNameProvider.Provider value={setBranchName}>
@@ -80,7 +77,7 @@ const Homepage = () => {
           style={{ maxWidth: "60vw", marginTop: "2rem" }}
           className="joint-well-china-paragraph"
         >
-          <Grid.Col span={6}>
+          <Grid.Col span={4}>
             <Box
               onClick={() => setBranchName("china")}
               className="home-page-box-introduction-c-v"
@@ -103,10 +100,29 @@ const Homepage = () => {
               </Center>
             </Box>
           </Grid.Col>
-          {/* <Grid.Col span={4}>
-          <HomePageSlideShow />
-        </Grid.Col> */}
-          <Grid.Col span={6}>
+          <Grid.Col span={4}>
+            <Center>
+              <Image
+                width={200}
+                height={90}
+                fit="contain"
+                src={JointWellPictureHat}
+                style={{ marginBottom: "2rem" }}
+              />
+            </Center>
+
+            <Box className="home-page-box-introduction-c-v">
+              <Center>
+                <Text
+                  className="home-page-text-header-c-v"
+                  style={{ marginBottom: "7rem" }}
+                >
+                  Head Office And Sales
+                </Text>
+              </Center>
+            </Box>
+          </Grid.Col>
+          <Grid.Col span={4}>
             {" "}
             <Box
               onClick={() => setBranchName("vietnam")}

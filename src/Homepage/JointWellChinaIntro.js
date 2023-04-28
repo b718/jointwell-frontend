@@ -17,7 +17,7 @@ const JointWellChinaIntro = () => {
           style={{ maxWidth: "55vw" }}
           className="joint-well-intro-writing"
         >
-          <Grid justify="flex-end" align="flex-end" grow="true">
+          <Grid align="center">
             {" "}
             <Grid.Col span={6}>
               <h1
@@ -39,7 +39,14 @@ const JointWellChinaIntro = () => {
                 wrap="wrap"
                 style={{ marginRight: "1rem" }}
               >
-                <Button onClick={() => BranchNameSetting("")}></Button>
+                <Button
+                  variant="outline"
+                  compact="true"
+                  style={{ color: "#0b4c95", borderBlockColor: "#0b4c95" }}
+                  onClick={() => BranchNameSetting("")}
+                >
+                  X
+                </Button>
               </Flex>
             </Grid.Col>
           </Grid>
@@ -64,28 +71,30 @@ const JointWellChinaIntro = () => {
             demand on caps and usually we do better than you expect.
           </Text>
 
-          <Flex
-            gap={"2rem"}
-            style={{
-              marginTop: "1rem",
-              marginLeft: "1rem",
-              marginBottom: "1rem",
-            }}
-            wrap="wrap"
-            justify="flex-start"
-            align="center"
-          >
-            {imagePaths.map((path) => {
-              return (
-                <Image
-                  className="joint-well-china-pic"
-                  width="15rem"
-                  radius="md"
-                  src={path}
-                />
-              );
-            })}
-          </Flex>
+          <Center>
+            <Flex
+              gap={"2rem"}
+              style={{
+                marginTop: "1rem",
+                marginLeft: "1rem",
+                marginBottom: "1rem",
+              }}
+              wrap="wrap"
+              justify="flex-start"
+              align="center"
+            >
+              {imagePaths.map((path) => {
+                return (
+                  <Image
+                    className="joint-well-china-pic"
+                    width="15rem"
+                    radius="md"
+                    src={path}
+                  />
+                );
+              })}
+            </Flex>
+          </Center>
         </Box>
       </Center>
     </>
