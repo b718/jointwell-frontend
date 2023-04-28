@@ -106,55 +106,28 @@ const JointWellVietnamIntro = () => {
           </Text>
 
           <Center>
-            <MediaQuery largerThan="sm" styles={{ display: "none" }}>
-              <Flex
-                gap={"2rem"}
-                style={{
-                  marginTop: "1rem",
-                  marginLeft: "1rem",
-                  marginBottom: "1rem",
-                }}
-                wrap="wrap"
-                justify="center"
-                align="center"
-              >
-                {imagePaths.map((path) => {
-                  return (
-                    <Image
-                      className="joint-well-intro-pic"
-                      width="15rem"
-                      radius="md"
-                      src={path}
-                    />
-                  );
-                })}
-              </Flex>
-            </MediaQuery>
-
-            <MediaQuery smallerThan="md" styles={{ display: "none" }}>
-              <Flex
-                gap={"2rem"}
-                style={{
-                  marginTop: "1rem",
-                  marginLeft: "1rem",
-                  marginBottom: "1rem",
-                }}
-                wrap="wrap"
-                justify="flex-start"
-                align="center"
-              >
-                {imagePaths.map((path) => {
-                  return (
-                    <Image
-                      className="joint-well-intro-pic"
-                      width="15rem"
-                      radius="md"
-                      src={path}
-                    />
-                  );
-                })}
-              </Flex>
-            </MediaQuery>
+            <Flex
+              gap={"2rem"}
+              style={{
+                marginTop: "1rem",
+                marginLeft: "1rem",
+                marginBottom: "1rem",
+              }}
+              wrap="wrap"
+              justify="flex-start"
+              align="center"
+            >
+              {imagePaths.map((path) => {
+                return (
+                  <Image
+                    className="joint-well-intro-pic"
+                    width="15rem"
+                    radius="md"
+                    src={path}
+                  />
+                );
+              })}
+            </Flex>
           </Center>
         </Box>
       </Center>

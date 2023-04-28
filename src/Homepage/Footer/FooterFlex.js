@@ -20,10 +20,17 @@ const FooterFlex = () => {
             {" "}
             <div>
               <Image
-                fit="contain"
+                width={65}
                 height={65}
                 src={require("../../Images/nav-pic.png")}
-                style={{ background: "white", borderRadius: "1.2rem" }}
+                style={{
+                  background: "white",
+                  borderRadius: "1.2rem",
+                  paddingTop: "0.5rem",
+                  paddingLeft: "0.3rem",
+                  paddingRight: "0.3rem",
+                  paddingBottom: "0.5rem",
+                }}
               />
             </div>
             <h1 style={{ color: "white" }}>JOINT WELL</h1>

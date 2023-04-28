@@ -54,8 +54,8 @@
   transition: 0.3s;
 }
 
-.home-page-box-introduction-c-v:hover {
-  border: 2px solid #0b4c95;
+.home-page-box-introduction-c-v {
+  border: 1px solid #0b4c95;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -84,6 +84,11 @@
 
 .joint-well-intro-text {
   margin-right: 1rem;
+}
+
+.home-page-text-font-size {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
 }
 
 /*Max-width is basically saying 500px, if youre in that this will happen*/

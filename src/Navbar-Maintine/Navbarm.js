@@ -28,7 +28,7 @@ const Navbarm = () => {
         <div>
           <Link to="/about-us">
             <Image
-              fit="contain"
+              width={65}
               height={65}
               src={require("../Images/nav-pic.png")}
               style={{

@@ -97,12 +97,22 @@ const Homepage = () => {
               </Center>
               <Center>
                 <Text
-                  style={{ marginTop: "2rem", marginBottom: "10rem" }}
+                  style={{ marginTop: "2rem" }}
                   className="home-page-text-header-c-v-2"
                 >
                   ENTER
                 </Text>
               </Center>
+              {/* <Center>
+                <Box style={{ marginTop: "6rem", marginBottom: "4rem" }}>
+                  <Text fz="sm" className="home-page-text-font-size">
+                    Qingdao Joint Well Caps Co., Ltd.
+                  </Text>
+                  <Text fz="sm" className="home-page-text-font-size">
+                    Qingdao, China
+                  </Text>
+                </Box>
+              </Center> */}
             </Box>
           </Grid.Col>
           <Grid.Col span={4}>
@@ -120,11 +130,31 @@ const Homepage = () => {
               <Center>
                 <Text
                   className="home-page-text-header-c-v"
-                  style={{ marginBottom: "6rem", marginTop: "1rem" }}
+                  style={{ marginTop: "1rem" }}
                 >
                   Head Office And Sales
                 </Text>
               </Center>
+
+              {/* <Center>
+                <Box style={{ marginTop: "2rem" }}>
+                  <Text fz="sm" className="home-page-text-font-size">
+                    Room 702, Building No.3,
+                  </Text>
+                  <Text fz="sm" className="home-page-text-font-size">
+                    Guo Zhan Fortune Center
+                  </Text>
+                  <Text fz="sm" className="home-page-text-font-size">
+                    No.18 Qin Ling Road, Qingdao China 266061
+                  </Text>
+                  <Text fz="sm" className="home-page-text-font-size">
+                    Tel: +86 532 81118060, 81118058
+                  </Text>
+                  <Text fz="sm" className="home-page-text-font-size">
+                    E-mail: angela@jointwellcaps.com
+                  </Text>
+                </Box>
+              </Center> */}
             </Box>
           </Grid.Col>
           <Grid.Col span={4} onClick={() => setBranchName("vietnam")}>
@@ -140,12 +170,23 @@ const Homepage = () => {
               </Center>
               <Center>
                 <Text
-                  style={{ marginTop: "2rem", marginBottom: "10rem" }}
+                  style={{ marginTop: "2rem" }}
                   className="home-page-text-header-c-v-2"
                 >
                   ENTER
                 </Text>
               </Center>
+
+              {/* <Center>
+                <Box style={{ marginTop: "6rem", marginBottom: "4rem" }}>
+                  <Text fz="sm" className="home-page-text-font-size">
+                    Qingdao Joint Well Caps Co., Ltd.
+                  </Text>
+                  <Text fz="sm" className="home-page-text-font-size">
+                    Qingdao, China
+                  </Text>
+                </Box>
+              </Center> */}
             </Box>
           </Grid.Col>
         </Grid>

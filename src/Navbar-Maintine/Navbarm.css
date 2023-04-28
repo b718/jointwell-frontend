@@ -38,12 +38,6 @@ nav {
   background-color: #0b4c95;
 }
 
-#container {
-  min-width: 800px;
-  width: auto !important;
-  width: 800px;
-}
-
 .rotate-picture-nav-bar {
   transition: 2s;
 }
