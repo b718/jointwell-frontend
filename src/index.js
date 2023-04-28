@@ -5,15 +5,28 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+import { MantineProvider } from "@mantine/core";
 
 //disableReactDevTools();
-  
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <MantineProvider
+      theme={{
+        breakpoints: {
+          xs: 500,
+          sm: 768,
+          md: 992,
+          lg: 1200,
+          xl: 1400,
+        },
+      }}
+    >
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </MantineProvider>
   </React.StrictMode>
 );
 

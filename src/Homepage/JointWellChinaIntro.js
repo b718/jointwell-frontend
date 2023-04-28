@@ -53,18 +53,21 @@ const JointWellChinaIntro = () => {
 
           <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
+            className="joint-well-intro-text"
           >
             Established in 1995, Qingdao Joint Well Caps Co. Ltd has performed
             as a leading manufacturer and exporter of caps and hats in China.
           </Text>
           <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
+            className="joint-well-intro-text"
           >
             We have 800 skilled workers making 10 million quality caps each year
             and most of our products are selling to USA, Europe and Canada.
           </Text>
           <Text
             style={{ marginTop: "1rem", marginLeft: "1rem", maxWidth: "60vw" }}
+            className="joint-well-intro-text"
           >
             We train, motivate and equip our people to always provide better
             quality and better service. We are capable of satisfying all your
@@ -86,7 +89,7 @@ const JointWellChinaIntro = () => {
               {imagePaths.map((path) => {
                 return (
                   <Image
-                    className="joint-well-china-pic"
+                    className="joint-well-intro-pic"
                     width="15rem"
                     radius="md"
                     src={path}

@@ -1,6 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./Homepage.css";
-import { Center, Grid, Image, Text, Box } from "@mantine/core";
+import {
+  Center,
+  Grid,
+  Image,
+  Text,
+  Box,
+  MediaQuery,
+  TextInput,
+} from "@mantine/core";
 import FooterFlex from "./Footer/FooterFlex";
 import HomePageSlideShow from "../Slideshow/HomePageSlideShow";
 import JointWellChinaIntro from "./JointWellChinaIntro";
@@ -74,14 +82,11 @@ const Homepage = () => {
         </article>
 
         <Grid
-          style={{ maxWidth: "60vw", marginTop: "2rem" }}
+          style={{ maxWidth: "80vw", marginTop: "2rem" }}
           className="joint-well-china-paragraph"
         >
-          <Grid.Col span={4}>
-            <Box
-              onClick={() => setBranchName("china")}
-              className="home-page-box-introduction-c-v"
-            >
+          <Grid.Col span={4} onClick={() => setBranchName("china")}>
+            <Box className="home-page-box-introduction-c-v">
               <Center>
                 <Text
                   style={{ marginTop: "1rem" }}
@@ -115,19 +120,16 @@ const Homepage = () => {
               <Center>
                 <Text
                   className="home-page-text-header-c-v"
-                  style={{ marginBottom: "7rem" }}
+                  style={{ marginBottom: "6rem", marginTop: "1rem" }}
                 >
                   Head Office And Sales
                 </Text>
               </Center>
             </Box>
           </Grid.Col>
-          <Grid.Col span={4}>
+          <Grid.Col span={4} onClick={() => setBranchName("vietnam")}>
             {" "}
-            <Box
-              onClick={() => setBranchName("vietnam")}
-              className="home-page-box-introduction-c-v"
-            >
+            <Box className="home-page-box-introduction-c-v">
               <Center>
                 <Text
                   style={{ marginTop: "1rem" }}
