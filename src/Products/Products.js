@@ -46,7 +46,7 @@ const Products = () => {
             >
               <Grid.Col
                 span={2}
-                style={{ maxWidth: "10rem", marginLeft: "2rem" }}
+                style={{ maxWidth: "10rem", marginLeft: "1rem" }}
               >
                 <Box onClick={() => setClick(!click)}>
                   <DropDown dropDownName={"STYLE"} />
@@ -61,9 +61,9 @@ const Products = () => {
               <Grid.Col
                 span={10}
                 style={{
-                  maxWidth: "95vw",
+                  maxWidth: "fit-content",
                   marginTop: "1rem",
-                  marginLeft: "5rem",
+                  marginLeft: "2rem",
                 }}
                 grow={true}
               >

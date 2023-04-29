@@ -111,9 +111,9 @@ this is in case we want to do hover
   lg, large: 1200px
   xl, extra-large: 1536px */
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (min-width: 300px) {
     .homePageText {
-      max-width: 22rem;
+      max-width: 20rem;
     }
 
     .home-page-text-header-c-v {
@@ -127,7 +127,7 @@ this is in case we want to do hover
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (min-width: 500px) {
     .homePageText {
-      max-width: 30rem;
+      max-width: 26rem;
     }
 
     .home-page-text-header-c-v {
