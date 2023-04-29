@@ -128,7 +128,9 @@ const FooterFlex = () => {
 
       <footer>
         <Center>
-          <h1 className="jointWellFooter">©JOINTWELL 2023</h1>
+          <h1 className="jointWellFooter" style={{ marginBottom: "2rem" }}>
+            ©JOINTWELL 2023
+          </h1>
         </Center>
       </footer>
     </div>

@@ -90,7 +90,9 @@ const JointWellChinaIntro = () => {
                 return (
                   <Image
                     className="joint-well-intro-pic"
-                    width="15rem"
+                    width={150}
+                    height={130}
+                    fit="cover"
                     radius="md"
                     src={path}
                   />
