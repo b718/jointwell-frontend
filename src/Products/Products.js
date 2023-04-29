@@ -40,12 +40,14 @@ const Products = () => {
               gutter={40}
               grow={true}
               style={{
-                maxWidth: "97vw",
+                maxWidth: "95vw",
                 marginTop: "3rem",
-                marginLeft: "2rem",
               }}
             >
-              <Grid.Col span={2} style={{ maxWidth: "10rem" }}>
+              <Grid.Col
+                span={2}
+                style={{ maxWidth: "10rem", marginLeft: "2rem" }}
+              >
                 <Box onClick={() => setClick(!click)}>
                   <DropDown dropDownName={"STYLE"} />
                 </Box>

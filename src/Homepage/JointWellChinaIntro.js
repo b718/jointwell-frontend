@@ -28,7 +28,7 @@ const JointWellChinaIntro = () => {
                   maxWidth: "60vw",
                 }}
               >
-                JOINTWELL CHINA
+                JOINT WELL CHINA
               </h1>
             </Grid.Col>
             <Grid.Col span={6}>

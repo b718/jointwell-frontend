@@ -39,7 +39,7 @@ const JointWellVietnamIntro = () => {
                   maxWidth: "60vw",
                 }}
               >
-                JOINTWELL VIETNAM
+                JOINT WELL VIETNAM
               </h1>
             </Grid.Col>
             <Grid.Col span={6}>

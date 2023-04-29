@@ -1,16 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Homepage.css";
-import {
-  Center,
-  Grid,
-  Image,
-  Text,
-  Box,
-  MediaQuery,
-  TextInput,
-} from "@mantine/core";
+import { Center, Grid, Image, Text, Box, MediaQuery } from "@mantine/core";
 import FooterFlex from "./Footer/FooterFlex";
-import HomePageSlideShow from "../Slideshow/HomePageSlideShow";
 import JointWellChinaIntro from "./JointWellChinaIntro";
 import JointWellVietnamIntro from "./JointWellVietnamIntro";
 import JointWellPictureHat from "../Images/hat-pic.png";
@@ -18,19 +9,6 @@ import JointWellPictureHat from "../Images/hat-pic.png";
 export const BranchNameProvider = React.createContext();
 const Homepage = () => {
   const [branchName, setBranchName] = useState("");
-  const handleClickChinaScroll = () => {
-    const element = document.getElementById("joint-well-china-box-writing");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleClickVietnamScroll = () => {
-    const element = document.getElementById("joint-well-vietnam-box-writing");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <BranchNameProvider.Provider value={setBranchName}>
@@ -81,29 +59,37 @@ const Homepage = () => {
           </Center>
         </article>
 
-        <Grid
-          style={{ maxWidth: "80vw", marginTop: "2rem" }}
-          className="joint-well-china-paragraph"
-        >
-          <Grid.Col span={4} onClick={() => setBranchName("china")}>
-            <Box className="home-page-box-introduction-c-v">
-              <Center>
-                <Text
-                  style={{ marginTop: "1rem" }}
-                  className="home-page-text-header-c-v"
-                >
-                  JOINTWELL CHINA
-                </Text>
-              </Center>
-              <Center>
-                <Text
-                  style={{ marginTop: "2rem" }}
-                  className="home-page-text-header-c-v-2"
-                >
-                  ENTER
-                </Text>
-              </Center>
-              {/* <Center>
+        <Center>
+          <Grid
+            gutter="3rem"
+            style={{ maxWidth: "80vw", marginTop: "2rem" }}
+            className="joint-well-china-paragraph"
+          >
+            <Grid.Col
+              span={4}
+              onClick={() => setBranchName("china")}
+              className="home-page-grid-col-each"
+            >
+              <Box
+              // className="home-page-box-introduction-c-v"
+              >
+                <Center>
+                  <Text
+                    style={{ marginTop: "1rem" }}
+                    className="home-page-text-header-c-v"
+                  >
+                    Joint Well China Factory
+                  </Text>
+                </Center>
+                <Center>
+                  <Text
+                    style={{ marginTop: "2rem" }}
+                    className="home-page-text-header-c-v-2"
+                  >
+                    ENTER
+                  </Text>
+                </Center>
+                {/* <Center>
                 <Box style={{ marginTop: "6rem", marginBottom: "4rem" }}>
                   <Text fz="sm" className="home-page-text-font-size">
                     Qingdao Joint Well Caps Co., Ltd.
@@ -113,30 +99,33 @@ const Homepage = () => {
                   </Text>
                 </Box>
               </Center> */}
-            </Box>
-          </Grid.Col>
-          <Grid.Col span={4}>
-            <Center>
-              <Image
-                width={200}
-                height={90}
-                fit="contain"
-                src={JointWellPictureHat}
-                style={{ marginBottom: "2rem" }}
-              />
-            </Center>
-
-            <Box className="home-page-box-introduction-c-v">
+              </Box>
+            </Grid.Col>
+            <Grid.Col
+              span={4}
+              // className="home-page-grid-col-each"
+            >
               <Center>
-                <Text
-                  className="home-page-text-header-c-v"
-                  style={{ marginTop: "1rem" }}
-                >
-                  Head Office And Sales
-                </Text>
+                <Image
+                  width={200}
+                  height={90}
+                  fit="contain"
+                  src={JointWellPictureHat}
+                  style={{ marginBottom: "1rem" }}
+                />
               </Center>
 
-              {/* <Center>
+              <Box className="home-page-box-introduction-c-v">
+                <Center>
+                  <Text
+                    className="home-page-text-header-c-v"
+                    style={{ marginTop: "0.3rem", marginBottom: "5rem" }}
+                  >
+                    Head Office And Sales
+                  </Text>
+                </Center>
+
+                {/* <Center>
                 <Box style={{ marginTop: "2rem" }}>
                   <Text fz="sm" className="home-page-text-font-size">
                     Room 702, Building No.3,
@@ -155,29 +144,35 @@ const Homepage = () => {
                   </Text>
                 </Box>
               </Center> */}
-            </Box>
-          </Grid.Col>
-          <Grid.Col span={4} onClick={() => setBranchName("vietnam")}>
-            {" "}
-            <Box className="home-page-box-introduction-c-v">
-              <Center>
-                <Text
-                  style={{ marginTop: "1rem" }}
-                  className="home-page-text-header-c-v"
-                >
-                  JOINTWELL VIETNAM
-                </Text>
-              </Center>
-              <Center>
-                <Text
-                  style={{ marginTop: "2rem" }}
-                  className="home-page-text-header-c-v-2"
-                >
-                  ENTER
-                </Text>
-              </Center>
+              </Box>
+            </Grid.Col>
+            <Grid.Col
+              span={4}
+              onClick={() => setBranchName("vietnam")}
+              className="home-page-grid-col-each"
+            >
+              {" "}
+              <Box
+              // className="home-page-box-introduction-c-v"
+              >
+                <Center>
+                  <Text
+                    style={{ marginTop: "1rem" }}
+                    className="home-page-text-header-c-v"
+                  >
+                    Joint Well Vietnam Factory
+                  </Text>
+                </Center>
+                <Center>
+                  <Text
+                    style={{ marginTop: "2rem" }}
+                    className="home-page-text-header-c-v-2"
+                  >
+                    ENTER
+                  </Text>
+                </Center>
 
-              {/* <Center>
+                {/* <Center>
                 <Box style={{ marginTop: "6rem", marginBottom: "4rem" }}>
                   <Text fz="sm" className="home-page-text-font-size">
                     Qingdao Joint Well Caps Co., Ltd.
@@ -187,9 +182,10 @@ const Homepage = () => {
                   </Text>
                 </Box>
               </Center> */}
-            </Box>
-          </Grid.Col>
-        </Grid>
+              </Box>
+            </Grid.Col>
+          </Grid>
+        </Center>
         {branchName === "vietnam" ? (
           <JointWellVietnamIntro />
         ) : branchName === "china" ? (

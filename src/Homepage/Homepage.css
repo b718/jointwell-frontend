@@ -47,17 +47,21 @@
   font-size: 1.6rem;
   margin-left: 1rem;
 }
-
+/* 
+this is in case we want to do hover
 .home-page-box-introduction-c-v {
   border: 1px solid transparent;
   border-radius: 12px;
   transition: 0.3s;
-}
+} */
 
 .home-page-box-introduction-c-v {
   border: 1px solid #0b4c95;
   border-radius: 12px;
   cursor: pointer;
+  position: relative;
+  top: 61%;
+  transform: translateY(-100%);
 }
 
 .home-page-text-header-c-v {
@@ -78,6 +82,7 @@
 }
 
 .joint-well-intro-writing {
+  margin-top: 1rem;
   border: 1px solid #0b4c95;
   border-radius: 12px;
 }
@@ -89,6 +94,13 @@
 .home-page-text-font-size {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
+}
+
+.home-page-grid-col-each {
+  border: 1px solid #0b4c95;
+  border-radius: 12px;
+  max-width: fit-content;
+  cursor: pointer;
 }
 
 /*Max-width is basically saying 500px, if youre in that this will happen*/
