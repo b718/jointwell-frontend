@@ -113,7 +113,7 @@ this is in case we want to do hover
 
   @media only screen and (min-width: 300px) {
     .homePageText {
-      max-width: 20rem;
+      max-width: 18rem;
     }
 
     .home-page-text-header-c-v {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
-import { Grid, Box, Flex, Header } from "@mantine/core";
+import { Grid, Box, Flex, Header, Center } from "@mantine/core";
 import DropDown from "./DropDown/DropDownHats/DropDownHatsBase";
 import DropDownDecorationBase from "./DropDown/DropDownDecorations/DropDownDecorationBase";
 import HatCard from "./HatCard/HatCard";
@@ -63,14 +63,14 @@ const Products = () => {
                 style={{
                   maxWidth: "fit-content",
                   marginTop: "1rem",
-                  marginLeft: "2rem",
+                  marginLeft: "4rem",
                 }}
                 grow={true}
               >
                 {" "}
                 <Flex
                   gap="md"
-                  justify="flex-start"
+                  justify="center"
                   align="flex-end"
                   direction="row"
                   wrap="wrap"

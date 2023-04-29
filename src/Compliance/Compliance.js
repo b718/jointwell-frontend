@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Grid, Center, Image, Text } from "@mantine/core";
+import { Grid, Center, Image, Text, Flex } from "@mantine/core";
 import "./Compliance.css";
 
 const Compliance = (props) => {
@@ -12,18 +12,19 @@ const Compliance = (props) => {
           </header>
         </article>
       </Center>
-      <Center>
+
+      {/* <Center>
         <Grid style={{ maxWidth: "70vw", marginTop: "4rem" }} grow="true">
           <Grid.Col span={6}>
             <Image
-              fit="contain"
+              width={200}
               src={require("../Images/compliance-new-1.jpg")}
             />
           </Grid.Col>
           <Grid.Col span={6}>
             {" "}
             <Image
-              fit="contain"
+              width={200}
               src={require("../Images/compliance-new-2.jpg")}
             />
           </Grid.Col>
@@ -34,18 +35,33 @@ const Compliance = (props) => {
         <Grid style={{ maxWidth: "70vw", marginTop: "4rem" }} grow="true">
           <Grid.Col span={6}>
             <Image
-              fit="contain"
+              width={200}
               src={require("../Images/compliance-new-3.jpg")}
             />
           </Grid.Col>
           <Grid.Col span={6}>
             <Image
-              fit="contain"
+              width={200}
               src={require("../Images/compliance-new-4.jpg")}
             />
           </Grid.Col>
         </Grid>
-      </Center>
+      </Center> */}
+
+      <Flex
+        gap="md"
+        justify="center"
+        align="flex-end"
+        direction="row"
+        wrap="wrap"
+        style={{ maxWidth: "30rem", marginTop: "1rem" }}
+        className="compliance-flex-center"
+      >
+        <Image width={160} src={require("../Images/compliance-new-1.jpg")} />
+        <Image width={160} src={require("../Images/compliance-new-2.jpg")} />
+        <Image width={160} src={require("../Images/compliance-new-3.jpg")} />
+        <Image width={160} src={require("../Images/compliance-new-4.jpg")} />
+      </Flex>
     </>
   );
 };
