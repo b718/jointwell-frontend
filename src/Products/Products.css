@@ -8,14 +8,14 @@
 
   @media only screen and (width < 400px) {
     .hat-column-right-products {
-      margin-left: 1rem;
+      margin-left: 2rem;
       max-width: fit-content;
     }
   }
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (width >= 400px) {
     .hat-column-right-products {
-      margin-left: 2rem;
+      margin-left: 4rem;
       max-width: fit-content;
     }
   }
