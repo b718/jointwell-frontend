@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import "./Homepage.css";
-import {
-  Center,
-  Grid,
-  Image,
-  Text,
-  Box,
-  MediaQuery,
-  Flex,
-} from "@mantine/core";
+import { Center, Grid, Image, Text, Box } from "@mantine/core";
 import FooterFlex from "./Footer/FooterFlex";
 import JointWellChinaIntro from "./JointWellChinaIntro";
 import JointWellVietnamIntro from "./JointWellVietnamIntro";
@@ -69,7 +61,6 @@ const Homepage = () => {
 
         <Center>
           <Grid
-            gutter="3rem"
             style={{ maxWidth: "80vw", marginTop: "3.5rem" }}
             className="joint-well-china-paragraph"
             justify="center"
@@ -83,19 +74,32 @@ const Homepage = () => {
             >
               <Box
                 // className="home-page-box-introduction-c-v"
-                style={{ margin: "1rem 3rem 3rem 1rem" }}
+                className="home-page-box-for-enter"
               >
                 <Center>
                   <Text
-                    style={{ marginTop: "1rem" }}
+                    style={{
+                      marginTop: "1rem",
+                      marginLeft: "0.5rem",
+                      marginRight: "0.5rem",
+                    }}
                     className="home-page-text-header-c-v"
                   >
-                    JW China Factory
+                    JW China
+                  </Text>
+                </Center>
+
+                <Center>
+                  <Text
+                    style={{ marginTop: "0rem" }}
+                    className="home-page-text-header-c-v"
+                  >
+                    Factory
                   </Text>
                 </Center>
                 <Center>
                   <Text
-                    style={{ marginTop: "2rem" }}
+                    style={{ marginTop: "1rem" }}
                     className="home-page-text-header-c-v-2"
                   >
                     ENTER
@@ -129,19 +133,29 @@ const Homepage = () => {
               {" "}
               <Box
                 // className="home-page-box-introduction-c-v"
-                style={{ margin: "1rem 2rem 2rem 1rem" }}
+                className="home-page-box-for-enter"
               >
                 <Center>
                   <Text
                     style={{ marginTop: "1rem" }}
                     className="home-page-text-header-c-v"
                   >
-                    JW Vietnam Factory
+                    JW Vietnam
                   </Text>
                 </Center>
+
                 <Center>
                   <Text
-                    style={{ marginTop: "2rem" }}
+                    style={{ marginTop: "0rem" }}
+                    className="home-page-text-header-c-v"
+                  >
+                    Factory
+                  </Text>
+                </Center>
+
+                <Center>
+                  <Text
+                    style={{ marginTop: "1rem" }}
                     className="home-page-text-header-c-v-2"
                   >
                     ENTER

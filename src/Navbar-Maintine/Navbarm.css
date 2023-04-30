@@ -35,7 +35,7 @@
 nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #0b4c95;
+  background-color: #2f7abc;
 }
 
 .rotate-picture-nav-bar {

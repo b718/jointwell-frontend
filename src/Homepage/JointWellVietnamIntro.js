@@ -1,21 +1,39 @@
-import React, { useContext } from "react";
-import {
-  Center,
-  Image,
-  Text,
-  Box,
-  Flex,
-  Button,
-  Grid,
-  MediaQuery,
-} from "@mantine/core";
+import React, { useContext, useState, useEffect } from "react";
+import { Center, Image, Text, Box, Flex, Button, Grid } from "@mantine/core";
 import vietNamPicOne from "../Images/Vietnam/WechatIMG53.jpeg";
 import vietNamPicTwo from "../Images/Vietnam/WechatIMG56.jpeg";
 import vietNamPicThree from "../Images/Vietnam/WechatIMG54.jpeg";
 import { BranchNameProvider } from "./Homepage";
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+
 const JointWellVietnamIntro = () => {
   const BranchNameSetting = useContext(BranchNameProvider);
+  const { height, width } = useWindowDimensions();
+
   const imagePaths = [vietNamPicTwo, vietNamPicOne, vietNamPicThree];
   return (
     <>
@@ -23,9 +41,6 @@ const JointWellVietnamIntro = () => {
       <Center>
         <Box
           id="joint-well-vietnam-box-writing"
-          style={{
-            maxWidth: "55vw",
-          }}
           className="joint-well-intro-writing"
         >
           <Grid align="center">
@@ -116,14 +131,15 @@ const JointWellVietnamIntro = () => {
               wrap="wrap"
               justify="flex-start"
               align="center"
+              direction={width < 992 ? "column" : "row"}
             >
               {imagePaths.map((path) => {
                 return (
                   <a href={path} target="_blank">
                     <Image
                       className="joint-well-intro-pic"
-                      width={150}
-                      height={130}
+                      width={width < 992 ? (width < 600 ? 150 : 350) : 150}
+                      height={width < 992 ? (width < 600 ? 130 : 280) : 130}
                       fit="cover"
                       radius="md"
                       src={path}

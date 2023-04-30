@@ -1,5 +1,5 @@
 .footer-contact-us {
-  background-color: #0b4c95;
+  background-color: #2f7abc;
   margin-top: 10rem;
 }
 
@@ -11,22 +11,67 @@
 .text-section-contact-us {
   color: white;
   max-width: 25rem;
-  background-color: #0b4c95;
+  background-color: #2f7abc;
   border-radius: 1rem;
 }
 .footer-grid-for-contacts {
-  border: #0b4c95 solid 1px;
+  border: #116fdb solid 1px;
   margin-top: 1.6rem;
   margin-bottom: 0.4rem;
   max-width: fit-content;
-  background-color: #0b4c95;
+  background-color: #2f7abc;
   border-radius: 12px;
 }
 .column-contact-us-footer-flex {
   margin-top: 1rem;
-  background-color: #0b4c95;
+  background-color: #2f7abc;
 }
 
 .jointWellFooter {
-  color: #0b4c95;
+  color: #2f7abc;
+}
+
+/*Max-width is basically saying 500px, if youre in that this will happen*/
+@media all {
+  /* xs, extra-small: 0px
+  sm, small: 600px
+  md, medium: 900px
+  lg, large: 1200px
+  xl, extra-large: 1536px */
+
+  @media only screen and (width >= 300px) {
+    .footer-grid-for-contacts {
+      max-width: 18rem;
+    }
+  }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (width >= 500px) {
+    .footer-grid-for-contacts {
+      max-width: 26rem;
+    }
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (width >= 600px) {
+    .footer-grid-for-contacts {
+      max-width: 32rem;
+    }
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (width >= 768px) {
+    .footer-grid-for-contacts {
+      max-width: 34rem;
+    }
+  }
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (width >= 992px) {
+    .footer-grid-for-contacts {
+      max-width: 36rem;
+    }
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (width >= 1200px) {
+    .footer-grid-for-contacts {
+      max-width: 50rem;
+    }
+  }
 }

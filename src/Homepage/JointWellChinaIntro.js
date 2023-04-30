@@ -1,12 +1,38 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Center, Image, Text, Box, Flex, Button, Grid } from "@mantine/core";
 import chinaPicOne from "../Images/China/WechatIMG43.jpeg";
 import chinaPicTwo from "../Images/China/WechatIMG48.jpeg";
 import chinaPicThree from "../Images/China/WechatIMG49.jpeg";
 import { BranchNameProvider } from "./Homepage";
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
 
 const JointWellChinaIntro = () => {
   const BranchNameSetting = useContext(BranchNameProvider);
+  const { height, width } = useWindowDimensions();
+
   const imagePaths = [chinaPicOne, chinaPicTwo, chinaPicThree];
   return (
     <>
@@ -14,7 +40,6 @@ const JointWellChinaIntro = () => {
       <Center>
         <Box
           id="joint-well-china-box-writing"
-          style={{ maxWidth: "55vw" }}
           className="joint-well-intro-writing"
         >
           <Grid align="center">
@@ -85,14 +110,15 @@ const JointWellChinaIntro = () => {
               wrap="wrap"
               justify="flex-start"
               align="center"
+              direction={width < 992 ? "column" : "row"}
             >
               {imagePaths.map((path) => {
                 return (
                   <a href={path} target="_blank">
                     <Image
                       className="joint-well-intro-pic"
-                      width={150}
-                      height={130}
+                      width={width < 992 ? (width < 600 ? 150 : 350) : 150}
+                      height={width < 992 ? (width < 600 ? 130 : 280) : 130}
                       fit="cover"
                       radius="md"
                       src={path}

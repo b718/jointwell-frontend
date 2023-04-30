@@ -3,7 +3,7 @@
   text-align: center;
   max-width: 40rem;
   margin-top: 4rem;
-  background-color: #0b4c95;
+  background-color: #2f7abc;
   border-radius: 1rem;
   text-align: left;
 }
@@ -43,7 +43,7 @@
 }
 
 .joint-well-china-header {
-  color: #0b4c95;
+  color: #2f7abc;
   font-size: 1.6rem;
   margin-left: 1rem;
 }
@@ -56,12 +56,12 @@ this is in case we want to do hover
 } */
 
 .home-page-box-introduction-c-v {
-  border: 1px solid #0b4c95;
+  border: 1px solid #2f7a80;
   border-radius: 12px;
   cursor: pointer;
   position: relative;
   top: 61%;
-  background-color: #0b4c95;
+  background-color: #2f7a80;
   transform: translateY(-100%);
 }
 
@@ -84,8 +84,9 @@ this is in case we want to do hover
 
 .joint-well-intro-writing {
   margin-top: 1rem;
-  border: 1px solid #0b4c95;
+  border: 1px solid #2f7abc;
   border-radius: 12px;
+  max-width: 40rem;
 }
 
 .joint-well-intro-text {
@@ -98,22 +99,28 @@ this is in case we want to do hover
 }
 
 .home-page-grid-col-each {
-  border: 1px solid #0b4c95;
+  border: 1px solid #2f7abc;
   border-radius: 12px;
-  max-width: fit-content;
   cursor: pointer;
   color: white;
-  background-color: #0b4c95;
+  background-color: #2f7abc;
   max-height: 11rem;
 }
 
 .home-page-flex-col-each {
-  background-color: #0b4c95;
+  background-color: #2f7abc;
   cursor: pointer;
   color: white;
-  border: 1px solid #0b4c95;
+  border: 1px solid #2f7abc;
   border-radius: 12px;
   max-width: max-content;
+}
+
+.home-page-box-for-enter {
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
 }
 
 /*Max-width is basically saying 500px, if youre in that this will happen*/
@@ -124,76 +131,123 @@ this is in case we want to do hover
   lg, large: 1200px
   xl, extra-large: 1536px */
 
-  @media only screen and (min-width: 300px) {
+  @media only screen and (width >= 300px) {
     .homePageText {
       max-width: 18rem;
     }
 
-    .home-page-text-header-c-v {
+    /* .home-page-grid-col-each {
+      max-width: fit-content;
+    } */
+    /* .home-page-text-header-c-v {
       font-size: 0.5rem;
     }
 
     .home-page-text-header-c-v-2 {
       font-size: 0.5rem;
+    } */
+  }
+
+  @media only screen and (width < 350px) {
+    .homePageText {
+      max-width: 18rem;
+    }
+
+    /* .home-page-grid-col-each {
+      max-width: fit-content;
+    } */
+    /* .home-page-text-header-c-v {
+      font-size: 0.5rem;
+    }
+
+    .home-page-text-header-c-v-2 {
+      font-size: 0.5rem;
+    } */
+
+    .home-page-text-header-c-v {
+      font-size: 1rem;
     }
   }
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (min-width: 500px) {
+  @media only screen and (width >= 500px) {
     .homePageText {
       max-width: 26rem;
     }
 
-    .home-page-text-header-c-v {
+    /* .home-page-grid-col-each {
+      max-width: fit-content;
+    } */
+    /* .home-page-text-header-c-v {
       font-size: 0.7rem;
     }
 
     .home-page-text-header-c-v-2 {
       font-size: 0.7rem;
-    }
+    } */
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (width >= 600px) {
     .homePageText {
       max-width: 32rem;
     }
 
-    .home-page-text-header-c-v {
+    /* .home-page-grid-col-each {
+      max-width: fit-content;
+    } */
+    /* .home-page-text-header-c-v {
       font-size: 0.8rem;
     }
 
     .home-page-text-header-c-v-2 {
       font-size: 0.8rem;
-    }
+    } */
   }
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (width >= 768px) {
     .homePageText {
       max-width: 34rem;
     }
 
-    .home-page-text-header-c-v {
+    /* .home-page-grid-col-each {
+      max-width: fit-content;
+    } */
+
+    /* .home-page-text-header-c-v {
       font-size: 0.84rem;
     }
 
     .home-page-text-header-c-v-2 {
       font-size: 0.84rem;
+    } */
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (width < 992px) {
+    .home-page-grid-col-each {
+      max-width: fit-content;
     }
   }
+
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
+  @media only screen and (width >= 992px) {
     .homePageText {
       max-width: 36rem;
     }
-    .home-page-text-header-c-v {
+    /* .home-page-text-header-c-v {
       font-size: 1rem;
     }
 
     .home-page-text-header-c-v-2 {
       font-size: 1rem;
+    } */
+
+    .home-page-box-for-enter {
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (width >= 1200px) {
     .homePageText {
       max-width: 50rem;
     }
@@ -204,6 +258,11 @@ this is in case we want to do hover
     .home-page-text-header-c-v-2 {
       font-size: 1.2rem;
     }
+
+    .home-page-box-for-enter {
+      margin-left: 4.5rem;
+      margin-right: 4.5rem;
+    }
   }
 }
 
@@ -214,23 +273,40 @@ this is in case we want to do hover
   md, medium: 900px
   lg, large: 1200px
   xl, extra-large: 1536px */
+
+  @media only screen and (width >= 300px) {
+    .joint-well-intro-writing {
+      max-width: 18rem;
+    }
+  }
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    .joint-well-intro-pic {
-      width: 20%;
-      height: 20%;
+  @media only screen and (width >= 500px) {
+    .joint-well-intro-writing {
+      max-width: 26rem;
     }
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (width >= 600px) {
+    .joint-well-intro-writing {
+      max-width: 32rem;
+    }
   }
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (width >= 768px) {
+    .joint-well-intro-writing {
+      max-width: 34rem;
+    }
   }
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
+  @media only screen and (width >= 992px) {
+    .joint-well-intro-writing {
+      max-width: 36rem;
+    }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (width >= 1200px) {
+    .joint-well-intro-writing {
+      max-width: 50rem;
+    }
   }
 }
