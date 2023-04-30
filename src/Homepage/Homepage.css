@@ -118,7 +118,6 @@ this is in case we want to do hover
 
 .home-page-box-for-enter {
   max-width: fit-content;
-  margin: 0 auto;
   margin-left: 4.5rem;
   margin-right: 4.5rem;
 }
@@ -252,7 +251,7 @@ this is in case we want to do hover
       max-width: 50rem;
     }
     .home-page-text-header-c-v {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .home-page-text-header-c-v-2 {

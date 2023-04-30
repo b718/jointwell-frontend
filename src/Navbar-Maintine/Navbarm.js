@@ -5,14 +5,40 @@ import { Flex, Button, Image, Text } from "@mantine/core";
 import "./Navbarm.css";
 import { Link, useLocation } from "react-router-dom";
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+
 const Navbarm = () => {
   const location = useLocation();
   const [pathState, setPathState] = useState("");
+  const { height, width } = useWindowDimensions();
 
   useEffect(() => {
-    console.log(window.location.pathname);
+    // console.log(window.location.pathname);
     setPathState(location.pathname);
-    console.log("path state", location.pathname);
+    // console.log("path state", location.pathname);
   });
 
   return (
@@ -50,7 +76,7 @@ const Navbarm = () => {
         gap="xs"
         justify="flex-end"
         align="center"
-        direction="row"
+        direction={width < 768 ? "column" : "row"}
         wrap="wrap"
         className="maintineFlex-2"
         style={{ marginBottom: "1rem", marginTop: "1rem" }}

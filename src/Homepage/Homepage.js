@@ -72,40 +72,42 @@ const Homepage = () => {
               onClick={() => setBranchName("china")}
               className="home-page-grid-col-each"
             >
-              <Box
-                // className="home-page-box-introduction-c-v"
-                className="home-page-box-for-enter"
-              >
-                <Center>
-                  <Text
-                    style={{
-                      marginTop: "1rem",
-                      marginLeft: "0.5rem",
-                      marginRight: "0.5rem",
-                    }}
-                    className="home-page-text-header-c-v"
-                  >
-                    JW China
-                  </Text>
-                </Center>
+              <Center>
+                <Box
+                  // className="home-page-box-introduction-c-v"
+                  className="home-page-box-for-enter"
+                >
+                  <Center>
+                    <Text
+                      style={{
+                        marginTop: "1rem",
+                        marginLeft: "0.5rem",
+                        marginRight: "0.5rem",
+                      }}
+                      className="home-page-text-header-c-v"
+                    >
+                      JW China
+                    </Text>
+                  </Center>
 
-                <Center>
-                  <Text
-                    style={{ marginTop: "0rem" }}
-                    className="home-page-text-header-c-v"
-                  >
-                    Factory
-                  </Text>
-                </Center>
-                <Center>
-                  <Text
-                    style={{ marginTop: "1rem" }}
-                    className="home-page-text-header-c-v-2"
-                  >
-                    ENTER
-                  </Text>
-                </Center>
-              </Box>
+                  <Center>
+                    <Text
+                      style={{ marginTop: "0rem" }}
+                      className="home-page-text-header-c-v"
+                    >
+                      Factory
+                    </Text>
+                  </Center>
+                  <Center>
+                    <Text
+                      style={{ marginTop: "1rem" }}
+                      className="home-page-text-header-c-v-2"
+                    >
+                      ENTER
+                    </Text>
+                  </Center>
+                </Box>
+              </Center>
             </Grid.Col>
             <Grid.Col
               md={4}
@@ -131,37 +133,39 @@ const Homepage = () => {
               className="home-page-grid-col-each"
             >
               {" "}
-              <Box
-                // className="home-page-box-introduction-c-v"
-                className="home-page-box-for-enter"
-              >
-                <Center>
-                  <Text
-                    style={{ marginTop: "1rem" }}
-                    className="home-page-text-header-c-v"
-                  >
-                    JW Vietnam
-                  </Text>
-                </Center>
+              <Center>
+                <Box
+                  // className="home-page-box-introduction-c-v"
+                  className="home-page-box-for-enter"
+                >
+                  <Center>
+                    <Text
+                      style={{ marginTop: "1rem" }}
+                      className="home-page-text-header-c-v"
+                    >
+                      JW Vietnam
+                    </Text>
+                  </Center>
 
-                <Center>
-                  <Text
-                    style={{ marginTop: "0rem" }}
-                    className="home-page-text-header-c-v"
-                  >
-                    Factory
-                  </Text>
-                </Center>
+                  <Center>
+                    <Text
+                      style={{ marginTop: "0rem" }}
+                      className="home-page-text-header-c-v"
+                    >
+                      Factory
+                    </Text>
+                  </Center>
 
-                <Center>
-                  <Text
-                    style={{ marginTop: "1rem" }}
-                    className="home-page-text-header-c-v-2"
-                  >
-                    ENTER
-                  </Text>
-                </Center>
-              </Box>
+                  <Center>
+                    <Text
+                      style={{ marginTop: "1rem" }}
+                      className="home-page-text-header-c-v-2"
+                    >
+                      ENTER
+                    </Text>
+                  </Center>
+                </Box>
+              </Center>
             </Grid.Col>
           </Grid>
         </Center>
