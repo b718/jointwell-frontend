@@ -116,6 +116,7 @@ const Products = () => {
                       display: "block",
                       marginTop: "2rem",
                       maxWidth: "fit-content",
+                      textAlign: "center",
                     }}
                   >
                     The logos on the products displayed here are not for sell.
