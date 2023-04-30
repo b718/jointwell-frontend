@@ -1,9 +1,9 @@
 .maintineFlex {
-  margin-left: 3rem;
+  margin-left: 8rem;
 }
 
 .maintineFlex-2 {
-  margin-right: 3rem;
+  margin-right: 8rem;
 }
 
 .navbarm-header-jw {
@@ -47,15 +47,71 @@ nav {
   font-weight: 400;
 }
 
-/* .rotate-picture-nav-bar:hover {
-  transform: rotate(360deg);
-} */
-
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
-  @media (max-width: 638px) {
-    .navbarm-header-jw {
-      font-size: 0.7rem;
+  /* xs, extra-small: 0px
+  sm, small: 600px
+  md, medium: 900px
+  lg, large: 1200px
+  xl, extra-large: 1536px */
+
+  @media only screen and (width >= 300px) {
+    .maintineFlex {
+      margin-left: 0.5rem;
+    }
+
+    .maintineFlex-2 {
+      margin-right: 0.5rem;
+    }
+  }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (width >= 500px) {
+    .maintineFlex {
+      margin-left: 1rem;
+    }
+
+    .maintineFlex-2 {
+      margin-right: 1rem;
+    }
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (width >= 600px) {
+    .maintineFlex {
+      margin-left: 3rem;
+    }
+
+    .maintineFlex-2 {
+      margin-right: 3rem;
+    }
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (width >= 768px) {
+    .maintineFlex {
+      margin-left: 4rem;
+    }
+
+    .maintineFlex-2 {
+      margin-right: 4rem;
+    }
+  }
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (width >= 992px) {
+    .maintineFlex {
+      margin-left: 6rem;
+    }
+
+    .maintineFlex-2 {
+      margin-right: 6rem;
+    }
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (width >= 1200px) {
+    .maintineFlex {
+      margin-left: 8rem;
+    }
+
+    .maintineFlex-2 {
+      margin-right: 8rem;
     }
   }
 }

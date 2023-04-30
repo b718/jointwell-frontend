@@ -11,14 +11,22 @@
 .text-section-contact-us {
   color: white;
   max-width: 25rem;
-  background-color: #267adb;
+  background-color: #0b4c95;
   border-radius: 1rem;
 }
 .footer-grid-for-contacts {
-  margin-top: 1.3rem;
+  border: #0b4c95 solid 1px;
+  margin-top: 1.6rem;
   margin-bottom: 0.4rem;
+  max-width: fit-content;
+  background-color: #0b4c95;
+  border-radius: 12px;
 }
 .column-contact-us-footer-flex {
   margin-top: 1rem;
   background-color: #0b4c95;
+}
+
+.jointWellFooter {
+  color: #0b4c95;
 }

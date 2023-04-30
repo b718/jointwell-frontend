@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
-import { Grid, Box, Flex, Header, Center } from "@mantine/core";
+import { Grid, Box, Flex, Header, Center, Text } from "@mantine/core";
 import DropDown from "./DropDown/DropDownHats/DropDownHatsBase";
 import DropDownDecorationBase from "./DropDown/DropDownDecorations/DropDownDecorationBase";
 import HatCard from "./HatCard/HatCard";
@@ -61,20 +61,11 @@ const Products = () => {
               <Grid.Col
                 span={10}
                 style={{
-                  maxWidth: "fit-content",
                   marginTop: "1rem",
-                  marginLeft: "4rem",
                 }}
-                grow={true}
+                className="hat-column-right-products"
               >
-                {" "}
-                <Flex
-                  gap="md"
-                  justify="center"
-                  align="flex-end"
-                  direction="row"
-                  wrap="wrap"
-                >
+                <Flex gap="md" align="flex-end" direction="row" wrap="wrap">
                   {products.length > 0 ? (
                     products
                       .filter((product) => {
@@ -105,11 +96,25 @@ const Products = () => {
                         );
                       })
                   ) : (
-                    <Header style={{ display: "block", margin: "0 auto" }}>
-                      Loading ...
-                    </Header>
+                    <Text style={{ display: "block", margin: "0 auto" }}>
+                      Loading ...{" "}
+                    </Text>
                   )}
                 </Flex>
+                <Center>
+                  <Text
+                    size="0.5rem"
+                    style={{
+                      display: "block",
+                      marginTop: "2rem",
+                      maxWidth: "fit-content",
+                    }}
+                  >
+                    The logos on the products displayed here are not for sell.
+                    They are just to exhibit our development and production
+                    capabilities.
+                  </Text>
+                </Center>
               </Grid.Col>
             </Grid>
           </SetDecorationContext.Provider>

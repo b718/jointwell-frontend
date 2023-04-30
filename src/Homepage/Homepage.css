@@ -61,11 +61,12 @@ this is in case we want to do hover
   cursor: pointer;
   position: relative;
   top: 61%;
+  background-color: #0b4c95;
   transform: translateY(-100%);
 }
 
 .home-page-text-header-c-v {
-  color: #0b4c95;
+  color: white;
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -101,6 +102,18 @@ this is in case we want to do hover
   border-radius: 12px;
   max-width: fit-content;
   cursor: pointer;
+  color: white;
+  background-color: #0b4c95;
+  max-height: 11rem;
+}
+
+.home-page-flex-col-each {
+  background-color: #0b4c95;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #0b4c95;
+  border-radius: 12px;
+  max-width: max-content;
 }
 
 /*Max-width is basically saying 500px, if youre in that this will happen*/
@@ -182,7 +195,7 @@ this is in case we want to do hover
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     .homePageText {
-      max-width: 40rem;
+      max-width: 50rem;
     }
     .home-page-text-header-c-v {
       font-size: 1.2rem;

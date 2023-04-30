@@ -88,14 +88,16 @@ const JointWellChinaIntro = () => {
             >
               {imagePaths.map((path) => {
                 return (
-                  <Image
-                    className="joint-well-intro-pic"
-                    width={150}
-                    height={130}
-                    fit="cover"
-                    radius="md"
-                    src={path}
-                  />
+                  <a href={path} target="_blank">
+                    <Image
+                      className="joint-well-intro-pic"
+                      width={150}
+                      height={130}
+                      fit="cover"
+                      radius="md"
+                      src={path}
+                    />
+                  </a>
                 );
               })}
             </Flex>

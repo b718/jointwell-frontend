@@ -4,8 +4,97 @@ import "./Footer.css";
 
 const FooterFlex = () => {
   return (
-    <div className="footer-contact-us">
+    <div>
       <Center>
+        <Flex
+          className="footer-grid-for-contacts"
+          wrap="wrap"
+          justify="center"
+          columnGap={"1rem"}
+        >
+          <section
+            className="text-section-contact-us"
+            style={{ marginTop: "0.3rem" }}
+          >
+            <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
+              <Text
+                fz="sm"
+                style={{ textDecoration: "underline" }}
+                className="footer-flex-text-font"
+              >
+                Head Office and Sales:
+              </Text>
+              <Text fz="sm" className="footer-flex-text-font">
+                Room 702, Building No.3,
+              </Text>
+              <Text fz="sm" className="footer-flex-text-font">
+                Guo Zhan Fortune Center
+              </Text>
+              <Text fz="sm" className="footer-flex-text-font">
+                No.18 Qin Ling Road, Qingdao China 266061
+              </Text>
+              <Text fz="sm" className="footer-flex-text-font">
+                Tel: +86 532 81118060, 81118058
+              </Text>
+              <Text fz="sm" className="footer-flex-text-font">
+                E-mail: angela@jointwellcaps.com
+              </Text>
+            </div>
+          </section>
+
+          <section
+            className="text-section-contact-us"
+            style={{ marginTop: "0.3rem" }}
+          >
+            <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
+              <Text
+                fz="sm"
+                style={{ marginTop: "1rem", textDecoration: "underline" }}
+                className="footer-flex-text-font"
+              >
+                China Factory:
+              </Text>
+              <Text fz="sm" className="footer-flex-text-font">
+                Qingdao Joint Well Caps Co., Ltd.
+              </Text>
+              <Text fz="sm" className="footer-flex-text-font">
+                Qingdao, China
+              </Text>
+            </div>
+          </section>
+
+          <section
+            className="text-section-contact-us"
+            style={{ marginTop: "0.3rem" }}
+          >
+            <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
+              <Text
+                fz="sm"
+                style={{ textDecoration: "underline" }}
+                className="footer-flex-text-font"
+              >
+                Vietnam Factory:
+              </Text>
+              <Text fz="sm" className="footer-flex-text-font">
+                Jointwell Vietnam Co., Ltd.
+              </Text>
+              <Text fz="sm" className="footer-flex-text-font">
+                Thua Thien Hue City, Vietnam
+              </Text>
+            </div>
+          </section>
+        </Flex>
+      </Center>
+
+      <footer>
+        <Center>
+          <h1 className="jointWellFooter" style={{ marginBottom: "2rem" }}>
+            ©JOINTWELL 2023
+          </h1>
+        </Center>
+      </footer>
+
+      {/* <Center>
         <Flex
           direction="column"
           className="column-contact-us-footer-flex"
@@ -18,7 +107,7 @@ const FooterFlex = () => {
             style={{ marginBottom: "1rem", marginTop: "1rem" }}
           >
             {" "}
-            <div>
+            {/* <div>
               <Image
                 width={65}
                 height={65}
@@ -33,8 +122,8 @@ const FooterFlex = () => {
                 }}
               />
             </div>
-            <h1 style={{ color: "white" }}>JOINT WELL</h1>
-          </Flex>
+            <h1 style={{ color: "white" }}>JOINT WELL</h1> */}
+      {/* </Flex>
 
           <Center>
             <hr
@@ -122,17 +211,9 @@ const FooterFlex = () => {
                 </Text>
               </div>
             </section>
-          </Flex>
-        </Flex>
-      </Center>
-
-      <footer>
-        <Center>
-          <h1 className="jointWellFooter" style={{ marginBottom: "2rem" }}>
-            ©JOINTWELL 2023
-          </h1>
-        </Center>
-      </footer>
+          </Flex> */}
+      {/* </Flex> */}
+      {/* </Center> */}
     </div>
   );
 };

@@ -1,1 +1,54 @@
+/*Max-width is basically saying 500px, if youre in that this will happen*/
+@media all {
+  /* xs, extra-small: 0px
+    sm, small: 600px
+    md, medium: 900px
+    lg, large: 1200px
+    xl, extra-large: 1536px */
 
+  @media only screen and (width < 400px) {
+    .hat-column-right-products {
+      margin-left: 1rem;
+      max-width: fit-content;
+    }
+  }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (width >= 400px) {
+    .hat-column-right-products {
+      margin-left: 2rem;
+      max-width: fit-content;
+    }
+  }
+  @media only screen and (width >= 500px) {
+    .hat-column-right-products {
+      margin-left: 7rem;
+      max-width: fit-content;
+    }
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (width >= 600px) {
+    .hat-column-right-products {
+      margin-left: 6rem;
+      max-width: fit-content;
+    }
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (width >= 768px) {
+    .hat-column-right-products {
+      margin-left: 7rem;
+      max-width: fit-content;
+    }
+  }
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (width >= 992px) {
+    .hat-column-right-products {
+      margin-left: 3rem;
+    }
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (width >= 1200px) {
+    .hat-column-right-products {
+      margin-left: 13rem;
+    }
+  }
+}
