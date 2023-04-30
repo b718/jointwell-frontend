@@ -4,30 +4,7 @@ import chinaPicOne from "../Images/China/WechatIMG43.jpeg";
 import chinaPicTwo from "../Images/China/WechatIMG48.jpeg";
 import chinaPicThree from "../Images/China/WechatIMG49.jpeg";
 import { BranchNameProvider } from "./Homepage";
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
-}
-
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return windowDimensions;
-}
+import useWindowDimensions from "../Components/useWindowDimensions";
 
 const JointWellChinaIntro = () => {
   const BranchNameSetting = useContext(BranchNameProvider);

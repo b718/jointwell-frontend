@@ -4,7 +4,7 @@ import vietNamPicOne from "../Images/Vietnam/WechatIMG53.jpeg";
 import vietNamPicTwo from "../Images/Vietnam/WechatIMG56.jpeg";
 import vietNamPicThree from "../Images/Vietnam/WechatIMG54.jpeg";
 import { BranchNameProvider } from "./Homepage";
-import useWindowDimensions from "../useWindowDimensions";
+import useWindowDimensions from "../Components/useWindowDimensions";
 
 const JointWellVietnamIntro = () => {
   const BranchNameSetting = useContext(BranchNameProvider);

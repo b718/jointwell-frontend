@@ -4,7 +4,7 @@ import { Grid, Box, Flex, Header, Center, Text } from "@mantine/core";
 import DropDown from "./DropDown/DropDownHats/DropDownHatsBase";
 import DropDownDecorationBase from "./DropDown/DropDownDecorations/DropDownDecorationBase";
 import HatCard from "./HatCard/HatCard";
-import useWindowDimensions from "../useWindowDimensions";
+import useWindowDimensions from "../Components/useWindowDimensions";
 
 export const ProductsContext = React.createContext();
 export const SetProductsContext = React.createContext();
