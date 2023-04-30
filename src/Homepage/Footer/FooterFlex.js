@@ -18,25 +18,25 @@ const FooterFlex = () => {
           >
             <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
               <Text
-                fz="sm"
+                fz="xs"
                 style={{ textDecoration: "underline" }}
                 className="footer-flex-text-font"
               >
                 Head Office and Sales:
               </Text>
-              <Text fz="sm" className="footer-flex-text-font">
+              <Text fz="xs" className="footer-flex-text-font">
                 Room 702, Building No.3,
               </Text>
-              <Text fz="sm" className="footer-flex-text-font">
+              <Text fz="xs" className="footer-flex-text-font">
                 Guo Zhan Fortune Center
               </Text>
-              <Text fz="sm" className="footer-flex-text-font">
+              <Text fz="xs" className="footer-flex-text-font">
                 No.18 Qin Ling Road, Qingdao China 266061
               </Text>
-              <Text fz="sm" className="footer-flex-text-font">
+              <Text fz="xs" className="footer-flex-text-font">
                 Tel: +86 532 81118060, 81118058
               </Text>
-              <Text fz="sm" className="footer-flex-text-font">
+              <Text fz="xs" className="footer-flex-text-font">
                 E-mail: angela@jointwellcaps.com
               </Text>
             </div>
@@ -48,16 +48,16 @@ const FooterFlex = () => {
           >
             <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
               <Text
-                fz="sm"
+                fz="xs"
                 style={{ marginTop: "1rem", textDecoration: "underline" }}
                 className="footer-flex-text-font"
               >
                 China Factory:
               </Text>
-              <Text fz="sm" className="footer-flex-text-font">
+              <Text fz="xs" className="footer-flex-text-font">
                 Qingdao Joint Well Caps Co., Ltd.
               </Text>
-              <Text fz="sm" className="footer-flex-text-font">
+              <Text fz="xs" className="footer-flex-text-font">
                 Qingdao, China
               </Text>
             </div>
@@ -69,16 +69,16 @@ const FooterFlex = () => {
           >
             <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
               <Text
-                fz="sm"
+                fz="xs"
                 style={{ textDecoration: "underline" }}
                 className="footer-flex-text-font"
               >
                 Vietnam Factory:
               </Text>
-              <Text fz="sm" className="footer-flex-text-font">
+              <Text fz="xs" className="footer-flex-text-font">
                 Jointwell Vietnam Co., Ltd.
               </Text>
-              <Text fz="sm" className="footer-flex-text-font">
+              <Text fz="xs" className="footer-flex-text-font">
                 Thua Thien Hue City, Vietnam
               </Text>
             </div>
@@ -101,7 +101,7 @@ const FooterFlex = () => {
           style={{ maxWidth: "80vw" }}
         >
           <Flex
-            gap="sm"
+            gap="xs"
             justify="flex-start"
             align="center"
             style={{ marginBottom: "1rem", marginTop: "1rem" }}
@@ -147,16 +147,16 @@ const FooterFlex = () => {
             >
               <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
                 <Text
-                  fz="sm"
+                  fz="xs"
                   style={{ marginTop: "1rem", textDecoration: "underline" }}
                   className="footer-flex-text-font"
                 >
                   China Factory:
                 </Text>
-                <Text fz="sm" className="footer-flex-text-font">
+                <Text fz="xs" className="footer-flex-text-font">
                   Qingdao Joint Well Caps Co., Ltd.
                 </Text>
-                <Text fz="sm" className="footer-flex-text-font">
+                <Text fz="xs" className="footer-flex-text-font">
                   Qingdao, China
                 </Text>
               </div>
@@ -167,25 +167,25 @@ const FooterFlex = () => {
             >
               <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
                 <Text
-                  fz="sm"
+                  fz="xs"
                   style={{ textDecoration: "underline" }}
                   className="footer-flex-text-font"
                 >
                   Joint Well Head Office:
                 </Text>
-                <Text fz="sm" className="footer-flex-text-font">
+                <Text fz="xs" className="footer-flex-text-font">
                   Room 702, Building No.3,
                 </Text>
-                <Text fz="sm" className="footer-flex-text-font">
+                <Text fz="xs" className="footer-flex-text-font">
                   Guo Zhan Fortune Center
                 </Text>
-                <Text fz="sm" className="footer-flex-text-font">
+                <Text fz="xs" className="footer-flex-text-font">
                   No.18 Qin Ling Road, Qingdao China 266061
                 </Text>
-                <Text fz="sm" className="footer-flex-text-font">
+                <Text fz="xs" className="footer-flex-text-font">
                   Tel: +86 532 81118060, 81118058
                 </Text>
-                <Text fz="sm" className="footer-flex-text-font">
+                <Text fz="xs" className="footer-flex-text-font">
                   E-mail: angela@jointwellcaps.com
                 </Text>
               </div>
@@ -197,16 +197,16 @@ const FooterFlex = () => {
             >
               <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
                 <Text
-                  fz="sm"
+                  fz="xs"
                   style={{ textDecoration: "underline" }}
                   className="footer-flex-text-font"
                 >
                   Vietnam Factory:
                 </Text>
-                <Text fz="sm" className="footer-flex-text-font">
+                <Text fz="xs" className="footer-flex-text-font">
                   Jointwell Vietnam Co., Ltd.
                 </Text>
-                <Text fz="sm" className="footer-flex-text-font">
+                <Text fz="xs" className="footer-flex-text-font">
                   Thua Thien Hue City, Vietnam
                 </Text>
               </div>
