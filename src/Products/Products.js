@@ -4,6 +4,7 @@ import { Grid, Box, Flex, Header, Center, Text } from "@mantine/core";
 import DropDown from "./DropDown/DropDownHats/DropDownHatsBase";
 import DropDownDecorationBase from "./DropDown/DropDownDecorations/DropDownDecorationBase";
 import HatCard from "./HatCard/HatCard";
+import useWindowDimensions from "../useWindowDimensions";
 
 export const ProductsContext = React.createContext();
 export const SetProductsContext = React.createContext();
@@ -16,6 +17,7 @@ const Products = () => {
   const [click, setClick] = useState(false);
   const [selectedStyle, setSelectedStyle] = useState("");
   const [selectedDecoration, setSelectedDecoration] = useState("");
+  const { height, width } = useWindowDimensions();
 
   useEffect(() => {
     //we need to do async await since its an api fetch
@@ -65,7 +67,13 @@ const Products = () => {
                 }}
                 className="hat-column-right-products"
               >
-                <Flex gap="md" align="flex-end" direction="row" wrap="wrap">
+                <Flex
+                  gap="md"
+                  align="flex-end"
+                  justify={width < 730 ? "center" : "flex-start"}
+                  direction="row"
+                  wrap="wrap"
+                >
                   {products.length > 0 ? (
                     products
                       .filter((product) => {

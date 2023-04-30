@@ -4,31 +4,7 @@ import vietNamPicOne from "../Images/Vietnam/WechatIMG53.jpeg";
 import vietNamPicTwo from "../Images/Vietnam/WechatIMG56.jpeg";
 import vietNamPicThree from "../Images/Vietnam/WechatIMG54.jpeg";
 import { BranchNameProvider } from "./Homepage";
-
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
-}
-
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return windowDimensions;
-}
+import useWindowDimensions from "../useWindowDimensions";
 
 const JointWellVietnamIntro = () => {
   const BranchNameSetting = useContext(BranchNameProvider);
