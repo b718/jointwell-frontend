@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Grid, Center, Image, Text, Flex } from "@mantine/core";
 import "./Compliance.css";
+import { clamp } from "@mantine/hooks";
 
 const Compliance = (props) => {
   return (
@@ -48,20 +49,42 @@ const Compliance = (props) => {
         </Grid>
       </Center> */}
 
-      <Flex
-        gap="md"
-        justify="center"
-        align="flex-end"
-        direction="row"
-        wrap="wrap"
-        style={{ maxWidth: "30rem", marginTop: "1rem" }}
-        className="compliance-flex-center"
-      >
-        <Image width={160} src={require("../Images/compliance-new-1.jpg")} />
-        <Image width={160} src={require("../Images/compliance-new-2.jpg")} />
-        <Image width={160} src={require("../Images/compliance-new-3.jpg")} />
-        <Image width={160} src={require("../Images/compliance-new-4.jpg")} />
-      </Flex>
+      <Center>
+        <Flex
+          gap="md"
+          justify="center"
+          align="flex-end"
+          direction="row"
+          wrap="wrap"
+          style={{ maxWidth: "40rem", marginTop: "1rem" }}
+          className="compliance-flex-center"
+        >
+          <a href={require("../Images/compliance-new-1.jpg")} target="_blank">
+            <Image
+              width={"15rem"}
+              src={require("../Images/compliance-new-1.jpg")}
+            />
+          </a>
+          <a href={require("../Images/compliance-new-2.jpg")} target="_blank">
+            <Image
+              width={"15rem"}
+              src={require("../Images/compliance-new-2.jpg")}
+            />
+          </a>
+          <a href={require("../Images/compliance-new-3.jpg")} target="_blank">
+            <Image
+              width={"15rem"}
+              src={require("../Images/compliance-new-3.jpg")}
+            />
+          </a>
+          <a href={require("../Images/compliance-new-4.jpg")} target="_blank">
+            <Image
+              width={"15rem"}
+              src={require("../Images/compliance-new-4.jpg")}
+            />
+          </a>
+        </Flex>
+      </Center>
     </>
   );
 };
