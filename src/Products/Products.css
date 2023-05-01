@@ -48,7 +48,7 @@
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (width >= 1200px) {
     .hat-column-right-products {
-      margin-left: auto;
+      margin-left: 10rem;
     }
   }
 }
