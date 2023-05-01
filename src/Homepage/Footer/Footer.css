@@ -32,6 +32,9 @@
   color: #2f7abc;
 }
 
+.footer-each-section-flex {
+  margin: 1rem 0.65rem 1rem 0.65rem;
+}
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
   /* xs, extra-small: 0px
@@ -39,11 +42,12 @@
   md, medium: 900px
   lg, large: 1200px
   xl, extra-large: 1536px */
+  /* margin: 2rem 6rem 2rem 6rem; */
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (width < 992px) {
     .text-section-contact-us {
-      margin: 4rem 4rem 4rem 4rem;
+      margin: 4rem 10rem 4rem 10rem;
     }
   }
 
@@ -89,6 +93,9 @@
     .footer-flex-text-font {
       font-size: 1rem;
     }
+    .text-section-contact-us {
+      margin: 1rem 1rem 1rem 1rem;
+    }
   }
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (width >= 768px) {
@@ -102,11 +109,15 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (width >= 992px) {
     .footer-grid-for-contacts {
-      max-width: 36rem;
+      max-width: 40rem;
     }
 
     .footer-flex-text-font {
       font-size: 0.5rem;
+    }
+
+    .footer-each-section-flex {
+      margin: 1rem 0.65rem 1rem 0.65rem;
     }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -117,6 +128,10 @@
 
     .footer-flex-text-font {
       font-size: 0.75rem;
+    }
+
+    .footer-each-section-flex {
+      margin: 1rem 0.65rem 1rem 0.65rem;
     }
   }
 }

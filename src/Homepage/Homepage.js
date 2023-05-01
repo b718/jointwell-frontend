@@ -22,8 +22,6 @@ const Homepage = () => {
               <Text
                 style={{
                   marginTop: "1rem",
-                  marginLeft: "1rem",
-                  marginRight: "1rem",
                 }}
                 className="home-page-open-statement-text"
               >
@@ -34,8 +32,6 @@ const Homepage = () => {
               <Text
                 style={{
                   marginTop: "1rem",
-                  marginLeft: "1rem",
-                  marginRight: "1rem",
                 }}
                 className="home-page-open-statement-text"
               >
@@ -47,8 +43,6 @@ const Homepage = () => {
                 style={{
                   marginTop: "1rem",
                   marginBottom: "1rem",
-                  marginLeft: "1rem",
-                  marginRight: "1rem",
                 }}
                 className="home-page-open-statement-text"
               >

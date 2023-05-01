@@ -56,7 +56,7 @@ const Compliance = (props) => {
           align="flex-end"
           direction="row"
           wrap="wrap"
-          style={{ maxWidth: "40rem", marginTop: "1rem" }}
+          style={{ maxWidth: "60rem", marginTop: "1rem" }}
           className="compliance-flex-center"
         >
           <a href={require("../Images/compliance-new-1.jpg")} target="_blank">
@@ -79,7 +79,7 @@ const Compliance = (props) => {
           </a>
           <a href={require("../Images/compliance-new-4.jpg")} target="_blank">
             <Image
-              width={"10rem"}
+              width={"9rem"}
               src={require("../Images/compliance-new-3.jpg")}
             />
           </a>

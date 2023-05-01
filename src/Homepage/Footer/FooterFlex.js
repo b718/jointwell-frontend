@@ -20,7 +20,7 @@ const FooterFlex = () => {
             className="text-section-contact-us"
             style={{ marginTop: "0.3rem" }}
           >
-            <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
+            <div className="footer-each-section-flex">
               <Text
                 fz="xs"
                 style={{ textDecoration: "underline" }}
@@ -50,10 +50,10 @@ const FooterFlex = () => {
             className="text-section-contact-us"
             style={{ marginTop: "0.3rem" }}
           >
-            <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
+            <div className="footer-each-section-flex">
               <Text
                 fz="xs"
-                style={{ marginTop: "1rem", textDecoration: "underline" }}
+                style={{ textDecoration: "underline" }}
                 className="footer-flex-text-font"
               >
                 China Factory:
@@ -71,7 +71,7 @@ const FooterFlex = () => {
             className="text-section-contact-us"
             style={{ marginTop: "0.3rem" }}
           >
-            <div style={{ margin: "1rem 1rem 1rem 1rem" }}>
+            <div className="footer-each-section-flex">
               <Text
                 fz="xs"
                 style={{ textDecoration: "underline" }}

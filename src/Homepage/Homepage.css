@@ -80,6 +80,8 @@ this is in case we want to do hover
 .home-page-open-statement-text {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
 }
 
 .joint-well-intro-writing {
@@ -230,7 +232,7 @@ this is in case we want to do hover
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (width >= 992px) {
     .homePageText {
-      max-width: 36rem;
+      max-width: 37rem;
     }
     /* .home-page-text-header-c-v {
       font-size: 1rem;
@@ -248,7 +250,7 @@ this is in case we want to do hover
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (width >= 1200px) {
     .homePageText {
-      max-width: 50rem;
+      max-width: 49rem;
     }
     .home-page-text-header-c-v {
       font-size: 1rem;
