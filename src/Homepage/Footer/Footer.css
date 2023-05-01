@@ -47,7 +47,7 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (width < 992px) {
     .text-section-contact-us {
-      margin: 2rem 6rem 2rem 1rem;
+      margin: 2rem 12rem 2rem 2rem;
     }
   }
 
