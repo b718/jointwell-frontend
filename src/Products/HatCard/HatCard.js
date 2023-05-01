@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./HatCard.css";
 import { Box, Center, Flex, Grid, Image, Text } from "@mantine/core";
+import useWindowDimensions from "../../Components/useWindowDimensions";
 
 const HatCard = ({ path, id, name }) => {
+  const [hatSize, setHatSize] = useState(260);
+  const { height, width } = useWindowDimensions();
+
+  useEffect(() => {
+    if (width < 730) {
+      setHatSize(260);
+    }
+
+    if (width >= 800) {
+      setHatSize(180);
+    }
+
+    if (width >= 900) {
+      setHatSize(160);
+    }
+
+    if (width >= 1000) {
+      setHatSize(200);
+    }
+    if (width >= 1435) {
+      setHatSize(260);
+    }
+  }, [width]);
+
   return (
     <Flex
       direction="column"
@@ -14,7 +39,7 @@ const HatCard = ({ path, id, name }) => {
         <Center>
           <a href={require(`../../Images/${path}`)} target="_blank">
             <Image
-              width={260}
+              width={hatSize}
               fit="contain"
               src={require(`../../Images/${path}`)}
             />
