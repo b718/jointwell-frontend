@@ -12,13 +12,14 @@ const FooterFlex = () => {
         <Flex
           className="footer-grid-for-contacts"
           wrap="wrap"
-          justify="center"
+          justify={width < 992 ? "flex-start" : "center"}
+          align="flex-start"
           columnGap={"1rem"}
           direction={width < 992 ? "column" : "row"}
         >
           <section
             className="text-section-contact-us"
-            style={{ marginTop: "0.3rem" }}
+            style={{ marginTop: "0.3rem", textAlign: "left" }}
           >
             <div className="footer-each-section-flex">
               <Text

@@ -10,7 +10,7 @@
 
 .text-section-contact-us {
   color: white;
-  max-width: 25rem;
+  max-width: fit-content;
   background-color: #126fdb;
   border-radius: 1rem;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -47,7 +47,7 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (width < 992px) {
     .text-section-contact-us {
-      margin: 4rem 10rem 4rem 10rem;
+      margin: 2rem 6rem 2rem 1rem;
     }
   }
 
@@ -93,9 +93,6 @@
     .footer-flex-text-font {
       font-size: 1rem;
     }
-    .text-section-contact-us {
-      margin: 1rem 1rem 1rem 1rem;
-    }
   }
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (width >= 768px) {
@@ -119,6 +116,9 @@
     .footer-each-section-flex {
       margin: 1rem 0.65rem 1rem 0.65rem;
     }
+    .text-section-contact-us {
+      margin: 1rem 1rem 1rem 1rem;
+    }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (width >= 1200px) {
@@ -132,6 +132,10 @@
 
     .footer-each-section-flex {
       margin: 1rem 0.65rem 1rem 0.65rem;
+    }
+
+    .text-section-contact-us {
+      margin: 1rem 1rem 1rem 1rem;
     }
   }
 }

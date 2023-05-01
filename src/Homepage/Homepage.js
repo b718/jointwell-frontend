@@ -110,7 +110,7 @@ const Homepage = () => {
 
               // className="home-page-grid-col-each"
             >
-              <Center style={{ paddingBottom: "1rem" }}>
+              <Center>
                 <Image
                   width={260}
                   height={160}
