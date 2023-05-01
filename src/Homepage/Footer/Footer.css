@@ -1,5 +1,5 @@
 .footer-contact-us {
-  background-color: #2f7abc;
+  background-color: #126fdb;
   margin-top: 10rem;
 }
 
@@ -11,7 +11,7 @@
 .text-section-contact-us {
   color: white;
   max-width: 25rem;
-  background-color: #2f7abc;
+  background-color: #126fdb;
   border-radius: 1rem;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
@@ -20,12 +20,12 @@
   margin-top: 1.6rem;
   margin-bottom: 0.4rem;
   max-width: fit-content;
-  background-color: #2f7abc;
+  background-color: #126fdb;
   border-radius: 12px;
 }
 .column-contact-us-footer-flex {
   margin-top: 1rem;
-  background-color: #2f7abc;
+  background-color: #126fdb;
 }
 
 .jointWellFooter {
@@ -40,9 +40,36 @@
   lg, large: 1200px
   xl, extra-large: 1536px */
 
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (width < 992px) {
+    .text-section-contact-us {
+      margin: 4rem 4rem 4rem 4rem;
+    }
+  }
+
+  @media only screen and (width < 600px) {
+    .text-section-contact-us {
+      margin: 2rem 2rem 2rem 2rem;
+    }
+  }
+
+  @media only screen and (width < 500px) {
+    .text-section-contact-us {
+      margin: 1rem 1rem 1rem 1rem;
+    }
+  }
+
+  @media only screen and (width < 400px) {
+    .text-section-contact-us {
+      margin: 0rem 0rem 0rem 0rem;
+    }
+  }
   @media only screen and (width >= 300px) {
     .footer-grid-for-contacts {
       max-width: 18rem;
+    }
+    .footer-flex-text-font {
+      font-size: 1rem;
     }
   }
   /* Extra small devices (phones, 600px and down) */
@@ -50,11 +77,17 @@
     .footer-grid-for-contacts {
       max-width: 26rem;
     }
+    .footer-flex-text-font {
+      font-size: 1rem;
+    }
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (width >= 600px) {
     .footer-grid-for-contacts {
       max-width: 32rem;
+    }
+    .footer-flex-text-font {
+      font-size: 1rem;
     }
   }
   /* Medium devices (landscape tablets, 768px and up) */
@@ -62,17 +95,28 @@
     .footer-grid-for-contacts {
       max-width: 34rem;
     }
+    .footer-flex-text-font {
+      font-size: 1rem;
+    }
   }
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (width >= 992px) {
     .footer-grid-for-contacts {
       max-width: 36rem;
     }
+
+    .footer-flex-text-font {
+      font-size: 0.5rem;
+    }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (width >= 1200px) {
     .footer-grid-for-contacts {
       max-width: 50rem;
+    }
+
+    .footer-flex-text-font {
+      font-size: 0.75rem;
     }
   }
 }

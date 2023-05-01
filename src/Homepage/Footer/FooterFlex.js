@@ -1,8 +1,11 @@
 import React from "react";
 import { Text, Flex, Center, Image } from "@mantine/core";
 import "./Footer.css";
+import useWindowDimensions from "../../Components/useWindowDimensions";
 
 const FooterFlex = () => {
+  const { height, width } = useWindowDimensions();
+
   return (
     <div>
       <Center>
@@ -11,6 +14,7 @@ const FooterFlex = () => {
           wrap="wrap"
           justify="center"
           columnGap={"1rem"}
+          direction={width < 992 ? "column" : "row"}
         >
           <section
             className="text-section-contact-us"

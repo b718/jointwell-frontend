@@ -3,7 +3,7 @@
   text-align: center;
   max-width: 40rem;
   margin-top: 4rem;
-  background-color: #2f7abc;
+  background-color: #126fdb;
   border-radius: 1rem;
   text-align: left;
 }
@@ -43,7 +43,7 @@
 }
 
 .joint-well-china-header {
-  color: #2f7abc;
+  color: #126fdb;
   font-size: 1.6rem;
   margin-left: 1rem;
 }
@@ -56,12 +56,12 @@ this is in case we want to do hover
 } */
 
 .home-page-box-introduction-c-v {
-  border: 1px solid #2f7a80;
+  border: 1px solid #126fdb;
   border-radius: 12px;
   cursor: pointer;
   position: relative;
   top: 61%;
-  background-color: #2f7a80;
+  background-color: #126fdb;
   transform: translateY(-100%);
 }
 
@@ -84,7 +84,7 @@ this is in case we want to do hover
 
 .joint-well-intro-writing {
   margin-top: 1rem;
-  border: 1px solid #2f7abc;
+  border: 1px solid #126fdb;
   border-radius: 12px;
   max-width: 40rem;
 }
@@ -99,19 +99,19 @@ this is in case we want to do hover
 }
 
 .home-page-grid-col-each {
-  border: 1px solid #2f7abc;
+  border: 1px solid #126fdb;
   border-radius: 12px;
   cursor: pointer;
   color: white;
-  background-color: #2f7abc;
+  background-color: #126fdb;
   max-height: 11rem;
 }
 
 .home-page-flex-col-each {
-  background-color: #2f7abc;
+  background-color: #126fdb;
   cursor: pointer;
   color: white;
-  border: 1px solid #2f7abc;
+  border: 1px solid #126fdb;
   border-radius: 12px;
   max-width: max-content;
 }

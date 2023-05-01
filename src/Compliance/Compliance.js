@@ -74,13 +74,13 @@ const Compliance = (props) => {
           <a href={require("../Images/compliance-new-3.jpg")} target="_blank">
             <Image
               width={"15rem"}
-              src={require("../Images/compliance-new-3.jpg")}
+              src={require("../Images/compliance-new-4.jpg")}
             />
           </a>
           <a href={require("../Images/compliance-new-4.jpg")} target="_blank">
             <Image
-              width={"15rem"}
-              src={require("../Images/compliance-new-4.jpg")}
+              width={"10rem"}
+              src={require("../Images/compliance-new-3.jpg")}
             />
           </a>
         </Flex>
