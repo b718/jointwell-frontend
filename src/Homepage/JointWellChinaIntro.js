@@ -3,6 +3,9 @@ import { Center, Image, Text, Box, Flex, Button, Grid } from "@mantine/core";
 import chinaPicOne from "../Images/China/WechatIMG43.jpeg";
 import chinaPicTwo from "../Images/China/WechatIMG48.jpeg";
 import chinaPicThree from "../Images/China/WechatIMG49.jpeg";
+import chinaPicFour from "../Images/China/WechatIMG50.jpeg";
+import chinaPicFive from "../Images/China/WechatIMG51.jpeg";
+
 import { BranchNameProvider } from "./Homepage";
 import useWindowDimensions from "../Components/useWindowDimensions";
 
@@ -10,7 +13,13 @@ const JointWellChinaIntro = () => {
   const BranchNameSetting = useContext(BranchNameProvider);
   const { height, width } = useWindowDimensions();
 
-  const imagePaths = [chinaPicOne, chinaPicTwo, chinaPicThree];
+  const imagePaths = [
+    chinaPicOne,
+    chinaPicTwo,
+    chinaPicThree,
+    chinaPicFour,
+    chinaPicFive,
+  ];
   return (
     <>
       {" "}

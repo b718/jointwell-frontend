@@ -26,6 +26,7 @@ const Products = () => {
     async function fetchProducts() {
       const response = await fetch("https://joint-well-api.onrender.com/hats");
       const currentProducts = await response.json();
+      console.log(products.length);
       setProducts(currentProducts);
     }
     fetchProducts();
@@ -39,7 +40,6 @@ const Products = () => {
           <SetDecorationContext.Provider value={setSelectedDecoration}>
             <Grid
               columns={12}
-              gutter={40}
               grow={true}
               style={{
                 maxWidth: "95vw",
@@ -70,9 +70,18 @@ const Products = () => {
                 <Flex
                   gap="md"
                   align="flex-end"
-                  justify={width < 730 ? "center" : "flex-start"}
+                  justify={
+                    !(products.length > 0) || width < 730
+                      ? "center"
+                      : "flex-start"
+                  }
                   direction="row"
                   wrap="wrap"
+                  style={
+                    !(products.length > 0) && width > 992
+                      ? { marginLeft: "10rem" }
+                      : {}
+                  }
                 >
                   {products.length > 0 ? (
                     products
@@ -112,12 +121,12 @@ const Products = () => {
                 <Center>
                   <Text
                     size="0.5rem"
-                    style={{
-                      display: "block",
-                      marginTop: "2rem",
-                      maxWidth: "fit-content",
-                      textAlign: "center",
-                    }}
+                    style={
+                      !(products.length > 0) && width > 992
+                        ? { marginLeft: "10rem" }
+                        : {}
+                    }
+                    className="bottom-text-products-logos"
                   >
                     The logos on the products displayed here are not for sell.
                     They are just to exhibit our development and production

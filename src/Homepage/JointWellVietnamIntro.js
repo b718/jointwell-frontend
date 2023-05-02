@@ -3,6 +3,9 @@ import { Center, Image, Text, Box, Flex, Button, Grid } from "@mantine/core";
 import vietNamPicOne from "../Images/Vietnam/WechatIMG53.jpeg";
 import vietNamPicTwo from "../Images/Vietnam/WechatIMG56.jpeg";
 import vietNamPicThree from "../Images/Vietnam/WechatIMG54.jpeg";
+import vietNamPicFour from "../Images/Vietnam/WechatIMG45.jpeg";
+import vietNamPicFive from "../Images/Vietnam/WechatIMG55.jpeg";
+
 import { BranchNameProvider } from "./Homepage";
 import useWindowDimensions from "../Components/useWindowDimensions";
 
@@ -10,7 +13,13 @@ const JointWellVietnamIntro = () => {
   const BranchNameSetting = useContext(BranchNameProvider);
   const { height, width } = useWindowDimensions();
 
-  const imagePaths = [vietNamPicTwo, vietNamPicOne, vietNamPicThree];
+  const imagePaths = [
+    vietNamPicTwo,
+    vietNamPicOne,
+    vietNamPicThree,
+    vietNamPicFour,
+    vietNamPicFive,
+  ];
   return (
     <>
       {" "}

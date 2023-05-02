@@ -1,3 +1,10 @@
+.bottom-text-products-logos {
+  display: block;
+  margin-top: 2rem;
+  max-width: fit-content;
+  text-align: center;
+}
+
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
   /* xs, extra-small: 0px
