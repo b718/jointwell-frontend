@@ -24,7 +24,10 @@ const FooterFlex = () => {
             <div className="footer-each-section-flex">
               <Text
                 fz="xs"
-                style={{ textDecoration: "underline" }}
+                style={{
+                  textDecoration: "underline",
+                  textTransform: "uppercase",
+                }}
                 className="footer-flex-text-font"
               >
                 Head Office and Sales:
@@ -54,7 +57,10 @@ const FooterFlex = () => {
             <div className="footer-each-section-flex">
               <Text
                 fz="xs"
-                style={{ textDecoration: "underline" }}
+                style={{
+                  textDecoration: "underline",
+                  textTransform: "uppercase",
+                }}
                 className="footer-flex-text-font"
               >
                 China Factory:
@@ -75,7 +81,10 @@ const FooterFlex = () => {
             <div className="footer-each-section-flex">
               <Text
                 fz="xs"
-                style={{ textDecoration: "underline" }}
+                style={{
+                  textDecoration: "underline",
+                  textTransform: "uppercase",
+                }}
                 className="footer-flex-text-font"
               >
                 Vietnam Factory:

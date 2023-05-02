@@ -106,19 +106,19 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (width >= 992px) {
     .footer-grid-for-contacts {
-      max-width: 40rem;
+      max-width: 38rem;
     }
 
     .footer-flex-text-font {
-      font-size: 0.5rem;
+      font-size: 0.6rem;
     }
 
     .footer-each-section-flex {
-      margin: 1rem 0.65rem 1rem 0.65rem;
+      margin: 1rem 0.5rem 1rem 0.5rem;
     }
-    .text-section-contact-us {
+    /* .text-section-contact-us {
       margin: 1rem 1rem 1rem 1rem;
-    }
+    } */
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (width >= 1200px) {

@@ -232,7 +232,7 @@ this is in case we want to do hover
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (width >= 992px) {
     .homePageText {
-      max-width: 37rem;
+      max-width: 38rem;
     }
     /* .home-page-text-header-c-v {
       font-size: 1rem;
