@@ -132,7 +132,7 @@ this is in case we want to do hover
   lg, large: 1200px
   xl, extra-large: 1536px */
 
-  @media only screen and (width >= 300px) {
+  @media only screen and (min-width: 300px) {
     .homePageText {
       max-width: 18rem;
     }
@@ -149,7 +149,7 @@ this is in case we want to do hover
     } */
   }
 
-  @media only screen and (width < 350px) {
+  @media only screen and (max-width: 349px) {
     .homePageText {
       max-width: 18rem;
     }
@@ -170,7 +170,7 @@ this is in case we want to do hover
     }
   }
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (width >= 500px) {
+  @media only screen and (min-width: 500px) {
     .homePageText {
       max-width: 26rem;
     }
@@ -187,7 +187,7 @@ this is in case we want to do hover
     } */
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (width >= 600px) {
+  @media only screen and (min-width: 600px) {
     .homePageText {
       max-width: 32rem;
     }
@@ -204,7 +204,7 @@ this is in case we want to do hover
     } */
   }
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (width >= 768px) {
+  @media only screen and (min-width: 768px) {
     .homePageText {
       max-width: 34rem;
     }
@@ -223,14 +223,14 @@ this is in case we want to do hover
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (width < 992px) {
+  @media only screen and (max-width: 991px) {
     .home-page-grid-col-each {
       max-width: fit-content;
     }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (width >= 992px) {
+  @media only screen and (min-width: 992px) {
     .homePageText {
       max-width: 38rem;
     }
@@ -248,7 +248,7 @@ this is in case we want to do hover
     }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (width >= 1200px) {
+  @media only screen and (min-width: 1200px) {
     .homePageText {
       max-width: 49rem;
     }
@@ -275,37 +275,37 @@ this is in case we want to do hover
   lg, large: 1200px
   xl, extra-large: 1536px */
 
-  @media only screen and (width >= 300px) {
+  @media only screen and (min-width: 300px) {
     .joint-well-intro-writing {
       max-width: 18rem;
     }
   }
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (width >= 500px) {
+  @media only screen and (min-width: 500px) {
     .joint-well-intro-writing {
       max-width: 26rem;
     }
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (width >= 600px) {
+  @media only screen and (min-width: 600px) {
     .joint-well-intro-writing {
       max-width: 32rem;
     }
   }
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (width >= 768px) {
+  @media only screen and (min-width: 768px) {
     .joint-well-intro-writing {
       max-width: 34rem;
     }
   }
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (width >= 992px) {
+  @media only screen and (min-width: 992px) {
     .joint-well-intro-writing {
       max-width: 36rem;
     }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (width >= 1200px) {
+  @media only screen and (min-width: 1200px) {
     .joint-well-intro-writing {
       max-width: 50rem;
     }

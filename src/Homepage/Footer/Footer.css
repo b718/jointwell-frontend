@@ -45,30 +45,30 @@
   /* margin: 2rem 6rem 2rem 6rem; */
 
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (width < 992px) {
+  @media only screen and (max-width: 991px) {
     .text-section-contact-us {
       margin: 2rem 12rem 2rem 2rem;
     }
   }
 
-  @media only screen and (width < 600px) {
+  @media only screen and (max-width: 599px) {
     .text-section-contact-us {
       margin: 2rem 2rem 2rem 2rem;
     }
   }
 
-  @media only screen and (width < 500px) {
+  @media only screen and (max-width: 499px) {
     .text-section-contact-us {
       margin: 1rem 1rem 1rem 1rem;
     }
   }
 
-  @media only screen and (width < 400px) {
+  @media only screen and (max-width: 399px) {
     .text-section-contact-us {
       margin: 0rem 0rem 0rem 0rem;
     }
   }
-  @media only screen and (width >= 300px) {
+  @media only screen and (min-width: 300px) {
     .footer-grid-for-contacts {
       max-width: 18rem;
     }
@@ -77,7 +77,7 @@
     }
   }
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (width >= 500px) {
+  @media only screen and (min-width: 500px) {
     .footer-grid-for-contacts {
       max-width: 26rem;
     }
@@ -86,7 +86,7 @@
     }
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (width >= 600px) {
+  @media only screen and (min-width: 600px) {
     .footer-grid-for-contacts {
       max-width: 32rem;
     }
@@ -95,7 +95,7 @@
     }
   }
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (width >= 768px) {
+  @media only screen and (min-width: 768px) {
     .footer-grid-for-contacts {
       max-width: 34rem;
     }
@@ -104,7 +104,7 @@
     }
   }
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (width >= 992px) {
+  @media only screen and (min-width: 992px) {
     .footer-grid-for-contacts {
       max-width: 38rem;
     }
@@ -121,7 +121,7 @@
     } */
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (width >= 1200px) {
+  @media only screen and (min-width: 1200px) {
     .footer-grid-for-contacts {
       max-width: 50rem;
     }

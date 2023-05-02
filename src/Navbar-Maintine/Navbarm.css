@@ -73,7 +73,7 @@ nav {
     }
   }
 
-  @media only screen and (width >= 300px) {
+  @media only screen and (min-width: 300px) {
     .maintineFlex {
       margin-left: 0.5rem;
     }
@@ -83,21 +83,21 @@ nav {
     } */
   }
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (width >= 500px) {
+  @media only screen and (min-width: 500px) {
     .maintineFlex {
       margin-left: 1rem;
     }
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (width >= 600px) {
+  @media only screen and (min-width: 600px) {
     .maintineFlex {
       margin-left: 3rem;
     }
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (width >= 768px) {
+  @media only screen and (min-width: 768px) {
     .maintineFlex {
       margin-left: 4rem;
     }
@@ -112,7 +112,7 @@ nav {
     }
   }
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (width >= 992px) {
+  @media only screen and (min-width: 992px) {
     .maintineFlex {
       margin-left: 6rem;
     }
@@ -122,7 +122,7 @@ nav {
     }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (width >= 1200px) {
+  @media only screen and (min-width: 1200px) {
     .maintineFlex {
       margin-left: 8rem;
     }
