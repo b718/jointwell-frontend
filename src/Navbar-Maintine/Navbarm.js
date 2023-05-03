@@ -4,31 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Flex, Button, Image, Text } from "@mantine/core";
 import "./Navbarm.css";
 import { Link, useLocation } from "react-router-dom";
-
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
-}
-
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return windowDimensions;
-}
+import useWindowDimensions from "../Components/useWindowDimensions";
 
 const Navbarm = () => {
   const location = useLocation();

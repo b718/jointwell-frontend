@@ -4,40 +4,7 @@ import { Box, Center, Flex, Grid, Image, Text } from "@mantine/core";
 import useWindowDimensions from "../../Components/useWindowDimensions";
 
 const HatCard = ({ path, id, name }) => {
-  const [hatSize, setHatSize] = useState(260);
   const { height, width } = useWindowDimensions();
-
-  useEffect(() => {
-    // if (width < 730) {
-    //   setHatSize(260);
-    // }
-    // if (width >= 800) {
-    //   setHatSize(180);
-    // }
-    // if (width >= 900) {
-    //   setHatSize(190);
-    // }
-    // if (width >= 1152) {
-    //   setHatSize(200);
-    // }
-    // if (width >= 1435) {
-    //   setHatSize(260);
-    // }
-    // if (width < 1090) {
-    //   setHatSize(180);
-    // }
-    // if (width < 845) {
-    //   setHatSize(160);
-    // }
-
-    if (width < 1454) {
-      setHatSize(240);
-    }
-
-    if (width < 1454) {
-      setHatSize(240);
-    }
-  }, [width]);
 
   return (
     <Flex

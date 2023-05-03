@@ -3,8 +3,13 @@ import { Center, Image, Text, Box, Flex, Button, Grid } from "@mantine/core";
 import chinaPicOne from "../Images/China/WechatIMG43.jpeg";
 import chinaPicTwo from "../Images/China/WechatIMG48.jpeg";
 import chinaPicThree from "../Images/China/WechatIMG49.jpeg";
-import chinaPicFour from "../Images/China/WechatIMG50.jpeg";
-import chinaPicFive from "../Images/China/WechatIMG51.jpeg";
+import chinaPicFour from "../Images/China/WechatIMG50.jpeg"; //mark
+import chinaPicFive from "../Images/China/WechatIMG51.jpeg"; //mark
+import chinaPicSix from "../Images/China/WechatIMG52.jpeg";
+import chinaPicSeven from "../Images/China/WechatIMG311.jpeg";
+import chinaPicEight from "../Images/China/WechatIMG312.jpeg";
+import chinaPicNine from "../Images/China/WechatIMG313.jpeg";
+import chinaPicTen from "../Images/China/WechatIMG314.jpeg";
 
 import { BranchNameProvider } from "./Homepage";
 import useWindowDimensions from "../Components/useWindowDimensions";
@@ -14,18 +19,29 @@ const JointWellChinaIntro = () => {
   const { height, width } = useWindowDimensions();
   const [imageWidth, setImageWidth] = useState();
   const [imageHeight, setimageHeight] = useState();
+
+  const imagePaths = [
+    chinaPicOne,
+    chinaPicTwo,
+    chinaPicThree,
+    chinaPicSix,
+    chinaPicSeven,
+    chinaPicEight,
+    chinaPicNine,
+    chinaPicTen,
+  ];
   useEffect(() => {
     // width={width < 992 ? (width < 600 ? 150 : 350) : 120}
     // height={width < 992 ? (width < 600 ? 130 : 280) : 100}
 
     if (width >= 1200) {
-      setImageWidth(120);
-      setimageHeight(100);
+      setImageWidth(160);
+      setimageHeight(120);
     }
 
     if (width < 1200) {
-      setImageWidth(80);
-      setimageHeight(60);
+      setImageWidth(110);
+      setimageHeight(80);
     }
 
     if (width < 992) {
@@ -38,13 +54,7 @@ const JointWellChinaIntro = () => {
       setimageHeight(130);
     }
   }, [width]);
-  const imagePaths = [
-    chinaPicOne,
-    chinaPicTwo,
-    chinaPicThree,
-    chinaPicFour,
-    chinaPicFive,
-  ];
+
   return (
     <>
       {" "}

@@ -5,6 +5,9 @@ import vietNamPicTwo from "../Images/Vietnam/WechatIMG56.jpeg";
 import vietNamPicThree from "../Images/Vietnam/WechatIMG54.jpeg";
 import vietNamPicFour from "../Images/Vietnam/WechatIMG45.jpeg";
 import vietNamPicFive from "../Images/Vietnam/WechatIMG55.jpeg";
+import vietNamPicSix from "../Images/Vietnam/WechatIMG303.jpeg";
+import vietNamPicSeven from "../Images/Vietnam/WechatIMG304.jpeg";
+import vietNamPicEight from "../Images/Vietnam/WechatIMG306.jpeg";
 
 import { BranchNameProvider } from "./Homepage";
 import useWindowDimensions from "../Components/useWindowDimensions";
@@ -20,13 +23,13 @@ const JointWellVietnamIntro = () => {
     // height={width < 992 ? (width < 600 ? 130 : 280) : 100}
 
     if (width >= 1200) {
-      setImageWidth(120);
-      setimageHeight(100);
+      setImageWidth(160);
+      setimageHeight(120);
     }
 
     if (width < 1200) {
-      setImageWidth(80);
-      setimageHeight(60);
+      setImageWidth(110);
+      setimageHeight(80);
     }
 
     if (width < 992) {
@@ -45,6 +48,9 @@ const JointWellVietnamIntro = () => {
     vietNamPicThree,
     vietNamPicFour,
     vietNamPicFive,
+    vietNamPicSix,
+    vietNamPicSeven,
+    vietNamPicEight,
   ];
   return (
     <>
