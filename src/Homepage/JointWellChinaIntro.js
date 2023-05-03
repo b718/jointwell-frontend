@@ -12,7 +12,32 @@ import useWindowDimensions from "../Components/useWindowDimensions";
 const JointWellChinaIntro = () => {
   const BranchNameSetting = useContext(BranchNameProvider);
   const { height, width } = useWindowDimensions();
+  const [imageWidth, setImageWidth] = useState();
+  const [imageHeight, setimageHeight] = useState();
+  useEffect(() => {
+    // width={width < 992 ? (width < 600 ? 150 : 350) : 120}
+    // height={width < 992 ? (width < 600 ? 130 : 280) : 100}
 
+    if (width >= 1200) {
+      setImageWidth(120);
+      setimageHeight(100);
+    }
+
+    if (width < 1200) {
+      setImageWidth(80);
+      setimageHeight(60);
+    }
+
+    if (width < 992) {
+      setImageWidth(350);
+      setimageHeight(280);
+    }
+
+    if (width < 600) {
+      setImageWidth(150);
+      setimageHeight(130);
+    }
+  }, [width]);
   const imagePaths = [
     chinaPicOne,
     chinaPicTwo,
@@ -103,8 +128,8 @@ const JointWellChinaIntro = () => {
                   <a href={path} target="_blank">
                     <Image
                       className="joint-well-intro-pic"
-                      width={width < 992 ? (width < 600 ? 150 : 350) : 150}
-                      height={width < 992 ? (width < 600 ? 130 : 280) : 130}
+                      width={imageWidth}
+                      height={imageHeight}
                       fit="cover"
                       radius="md"
                       src={path}

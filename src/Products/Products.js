@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
-import { Grid, Box, Flex, Header, Center, Text } from "@mantine/core";
+import { Grid, Box, Flex, Header, Center, Text, Loader } from "@mantine/core";
 import DropDown from "./DropDown/DropDownHats/DropDownHatsBase";
 import DropDownDecorationBase from "./DropDown/DropDownDecorations/DropDownDecorationBase";
 import HatCard from "./HatCard/HatCard";
@@ -78,56 +78,52 @@ const Products = () => {
                   }
                   direction="row"
                   wrap="wrap"
-                  style={
-                    !(products.length > 0) && width > 992
-                      ? { marginLeft: "31rem" }
-                      : {}
-                  }
                   className="flex-hat-products-right-column"
                 >
-                  {products.length > 0 ? (
-                    products
-                      .filter((product) => {
-                        //console.log(product);
-                        if (!selectedStyle) {
-                          return true;
-                        } else {
-                          return product.style.includes(selectedStyle);
-                        }
-                      })
-                      .filter((product) => {
-                        if (!selectedDecoration) {
-                          return true;
-                        } else {
-                          return product.decoration.includes(
-                            selectedDecoration
-                          );
-                        }
-                      })
-                      .map((product) => {
-                        return (
-                          <HatCard
-                            key={product._id}
-                            path={product.path}
-                            id={product.id}
-                            name={product.name}
-                          />
-                        );
-                      })
-                  ) : (
-                    <Text className="loading-text-product-page">
-                      Loading ...{" "}
-                    </Text>
-                  )}
+                  {products
+                    .filter((product) => {
+                      //console.log(product);
+                      if (!selectedStyle) {
+                        return true;
+                      } else {
+                        return product.style.includes(selectedStyle);
+                      }
+                    })
+                    .filter((product) => {
+                      if (!selectedDecoration) {
+                        return true;
+                      } else {
+                        return product.decoration.includes(selectedDecoration);
+                      }
+                    })
+                    .map((product) => {
+                      return (
+                        <HatCard
+                          key={product._id}
+                          path={product.path}
+                          id={product.id}
+                          name={product.name}
+                        />
+                      );
+                    })}
                 </Flex>
+                <Center>
+                  {!(products.length > 0) ? (
+                    <div className="loading-div-products">
+                      <Loader color="gray" />
+                    </div>
+                  ) : (
+                    <div></div>
+                  )}
+                </Center>
                 <Center>
                   <Text
                     size="0.5rem"
-                    style={
-                      !(products.length > 0) && width > 992
-                        ? { marginLeft: "10rem" }
-                        : {}
-                    }
+                    // style={
+                    //   !(products.length > 0) && width > 992
+                    //     ? { marginLeft: "10rem" }
+                    //     : {}
+                    // }
                     className="bottom-text-products-logos"
                   >
                     The logos on the products displayed here are not for sell.

@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+.loading-div-products {
+  display: block;
+}
+
 .flex-hat-products-right-column {
   max-width: max-content;
 }
@@ -82,7 +86,9 @@
     xl, extra-large: 1536px */
 
   @media only screen and (max-width: 844px) {
-    .flex-hat-products-right-column {
+    .flex-hat-products-right-column,
+    .loading-div-products,
+    .bottom-text-products-logos {
       margin-left: 2rem;
     }
   }
