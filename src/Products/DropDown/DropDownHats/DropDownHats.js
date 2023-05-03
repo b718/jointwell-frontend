@@ -42,7 +42,7 @@ const DropDownHats = () => {
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
-        style={{ maxWidth: "3.2rem" }}
+        style={{ maxWidth: "fit-content" }}
         onClick={() => {
           setNumActive(0);
           setCounter(counter + 1);
@@ -58,7 +58,7 @@ const DropDownHats = () => {
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
-        style={{ maxWidth: "3.2rem" }}
+        style={{ maxWidth: "fit-content" }}
         onClick={() => {
           setNumActive(1);
           setCounter(counter + 1);
@@ -74,7 +74,7 @@ const DropDownHats = () => {
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
-        style={{ maxWidth: "3.2rem" }}
+        style={{ maxWidth: "fit-content" }}
         onClick={() => {
           setNumActive(2);
           setCounter(counter + 1);
@@ -90,7 +90,7 @@ const DropDownHats = () => {
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
-        style={{ maxWidth: "3.2rem" }}
+        style={{ maxWidth: "fit-content" }}
         onClick={() => {
           setNumActive(3);
           setCounter(counter + 1);
@@ -106,7 +106,7 @@ const DropDownHats = () => {
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
-        style={{ maxWidth: "3.2rem" }}
+        style={{ maxWidth: "fit-content" }}
         onClick={() => {
           setNumActive(4);
           setCounter(counter + 1);
@@ -122,7 +122,7 @@ const DropDownHats = () => {
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
-        style={{ maxWidth: "3.2rem" }}
+        style={{ maxWidth: "fit-content" }}
         onClick={() => {
           setNumActive(5);
           setCounter(counter + 1);

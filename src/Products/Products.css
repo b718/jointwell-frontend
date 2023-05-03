@@ -3,6 +3,74 @@
   margin-top: 2rem;
   max-width: fit-content;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.loading-text-product-page {
+  display: block;
+  max-width: fit-content;
+  text-align: center;
+}
+
+.flex-hat-products-right-column {
+  max-width: max-content;
+}
+/* .flex-hat-products-right-column {
+  max-width: 55rem;
+} */
+
+/*Max-width is basically saying 500px, if youre in that this will happen*/
+@media all {
+  /* xs, extra-small: 0px
+    sm, small: 600px
+    md, medium: 900px
+    lg, large: 1200px
+    xl, extra-large: 1536px */
+  /* 
+  @media only screen and (width < 845px) {
+    .hat-column-right-products,
+    .flex-hat-products-right-column {
+      max-width: 40rem;
+    }
+  }
+
+  @media only screen and (width < 814px) {
+    .hat-column-right-products,
+    .flex-hat-products-right-column {
+      max-width: 39rem;
+    }
+  } */
+  /* @media only screen and (width < 400px) {
+    .flex-hat-products-right-column {
+    }
+  }
+  
+  @media only screen and (width >= 400px) {
+    .hat-column-right-products {
+    }
+  }
+  @media only screen and (width >= 500px) {
+    .flex-hat-products-right-column {
+    }
+  }
+  @media only screen and (width >= 600px) {
+    .flex-hat-products-right-column {
+    }
+  }
+  @media only screen and (width >= 768px) {
+    .flex-hat-products-right-column {
+    }
+  }
+  @media only screen and (max-width: 1087px) {
+    .flex-hat-products-right-column {
+      max-width: 54rem;
+    }
+  }
+
+  @media only screen and (width >= 1200px) {
+    .flex-hat-products-right-column {
+    }
+  } */
 }
 
 /*Max-width is basically saying 500px, if youre in that this will happen*/
@@ -13,49 +81,54 @@
     lg, large: 1200px
     xl, extra-large: 1536px */
 
-  @media only screen and (width < 400px) {
-    .hat-column-right-products {
+  @media only screen and (max-width: 844px) {
+    .flex-hat-products-right-column {
       margin-left: 2rem;
-      max-width: fit-content;
+    }
+  }
+
+  @media only screen and (min-width: 845px) {
+    .flex-hat-products-right-column {
+      margin-left: 0rem;
     }
   }
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (width >= 400px) {
+  /* @media only screen and (width >= 400px) {
     .hat-column-right-products {
       margin-left: 4rem;
       max-width: fit-content;
     }
-  }
-  @media only screen and (width >= 500px) {
+  } */
+  /* @media only screen and (width >= 500px) {
     .hat-column-right-products {
       margin-left: 7rem;
       max-width: fit-content;
     }
-  }
+  } */
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (width >= 600px) {
+  /* @media only screen and (width >= 600px) {
     .hat-column-right-products {
-      margin-left: 6rem;
+      margin-left: 0rem;
       max-width: fit-content;
     }
-  }
+  } */
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (width >= 768px) {
+  /* @media only screen and (width >= 768px) {
     .hat-column-right-products {
       margin-left: 7rem;
       max-width: fit-content;
     }
-  }
+  } */
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (width >= 992px) {
+  /* @media only screen and (width >= 992px) {
     .hat-column-right-products {
       margin-left: 3rem;
     }
-  }
+  } */
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (width >= 1200px) {
+  /* @media only screen and (width >= 1200px) {
     .hat-column-right-products {
       margin-left: 10rem;
     }
-  }
+  } */
 }

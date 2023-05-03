@@ -10,3 +10,52 @@
   color: orange;
   transform: translateY(-3%);
 }
+
+.hat-card-drop-down {
+  width: calc(20% - 20px);
+}
+
+/*Max-width is basically saying 500px, if youre in that this will happen*/
+@media all {
+  /* xs, extra-small: 0px
+    sm, small: 600px
+    md, medium: 900px
+    lg, large: 1200px
+    xl, extra-large: 1536px */
+
+  @media only screen and (width < 845px) {
+    .hat-card-drop-down {
+      width: calc(33% - 20px);
+    }
+  }
+
+  @media only screen and (width < 600px) {
+    .hat-card-drop-down {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media only screen and (width < 500px) {
+    .hat-card-drop-down {
+      width: calc(70% - 20px);
+    }
+  }
+
+  @media only screen and (width >= 845px) {
+    .hat-card-drop-down {
+      width: calc(25% - 20px);
+    }
+  }
+
+  @media only screen and (width >= 1000px) {
+    .hat-card-drop-down {
+      width: calc(25% - 20px);
+    }
+  }
+
+  @media only screen and (width >= 1200px) {
+    .hat-card-drop-down {
+      width: calc(20% - 20px);
+    }
+  }
+}

@@ -61,8 +61,8 @@ const Navbarm = () => {
                 background: "white",
                 borderRadius: "1.2rem",
                 paddingTop: "0.5rem",
-                paddingLeft: "0.3rem",
-                paddingRight: "0.3rem",
+                paddingLeft: "0.7rem",
+                paddingRight: "0.7rem",
                 paddingBottom: "0.5rem",
               }}
               className="rotate-picture-nav-bar"

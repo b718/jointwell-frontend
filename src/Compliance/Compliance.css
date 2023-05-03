@@ -2,6 +2,9 @@
   margin-top: 2rem;
   color: #126fdb;
   font-size: 2rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-decoration-color: lightblue;
 }
 
 .compliace-second-header {

@@ -46,18 +46,19 @@ const Products = () => {
                 marginTop: "3rem",
               }}
             >
-              <Grid.Col
-                span={2}
-                style={{ maxWidth: "10rem", marginLeft: "2rem" }}
-              >
-                <Box onClick={() => setClick(!click)}>
-                  <DropDown dropDownName={"STYLE"} />
-                </Box>
+              <Grid.Col span={2}>
+                <Flex justify="center" direction="column" align="flex-start">
+                  <Box style={{ paddingLeft: "1rem" }}>
+                    <Box onClick={() => setClick(!click)}>
+                      <DropDown dropDownName={"STYLE"} />
+                    </Box>
 
-                <Box style={{ marginTop: "0.2rem", maxWidth: "10rem" }}>
-                  {" "}
-                  <DropDownDecorationBase dropDownName={"DECORATION"} />
-                </Box>
+                    <Box style={{ marginTop: "0.2rem" }}>
+                      {" "}
+                      <DropDownDecorationBase dropDownName={"DECORATION"} />
+                    </Box>
+                  </Box>
+                </Flex>
               </Grid.Col>
 
               <Grid.Col
@@ -71,7 +72,7 @@ const Products = () => {
                   gap="md"
                   align="flex-end"
                   justify={
-                    !(products.length > 0) || width < 730
+                    !(products.length > 0) || width < 600
                       ? "center"
                       : "flex-start"
                   }
@@ -79,9 +80,10 @@ const Products = () => {
                   wrap="wrap"
                   style={
                     !(products.length > 0) && width > 992
-                      ? { marginLeft: "10rem" }
+                      ? { marginLeft: "31rem" }
                       : {}
                   }
+                  className="flex-hat-products-right-column"
                 >
                   {products.length > 0 ? (
                     products
@@ -113,7 +115,7 @@ const Products = () => {
                         );
                       })
                   ) : (
-                    <Text style={{ display: "block", margin: "0 auto" }}>
+                    <Text className="loading-text-product-page">
                       Loading ...{" "}
                     </Text>
                   )}

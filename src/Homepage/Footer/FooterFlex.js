@@ -19,7 +19,7 @@ const FooterFlex = () => {
         >
           <section
             className="text-section-contact-us"
-            style={{ marginTop: "0.3rem", textAlign: "left" }}
+            style={{ marginTop: "0.3rem" }}
           >
             <div className="footer-each-section-flex">
               <Text
@@ -27,6 +27,8 @@ const FooterFlex = () => {
                 style={{
                   textDecoration: "underline",
                   textTransform: "uppercase",
+
+                  marginBottom: "0.2rem",
                 }}
                 className="footer-flex-text-font"
               >
@@ -60,6 +62,8 @@ const FooterFlex = () => {
                 style={{
                   textDecoration: "underline",
                   textTransform: "uppercase",
+
+                  marginBottom: "0.2rem",
                 }}
                 className="footer-flex-text-font"
               >
@@ -84,6 +88,7 @@ const FooterFlex = () => {
                 style={{
                   textDecoration: "underline",
                   textTransform: "uppercase",
+                  marginBottom: "0.2rem",
                 }}
                 className="footer-flex-text-font"
               >
