@@ -41,10 +41,10 @@ const DropDownDecorationBase = ({ dropDownName }) => {
             style={
               isActive
                 ? {
-                    "max-height": parentRef.current.scrollHeight + "px",
+                    maxHeight: parentRef.current.scrollHeight + "px",
                   }
                 : {
-                    "max-height": "0px",
+                    maxHeight: "0px",
                   }
             }
           >
