@@ -23,37 +23,37 @@
     lg, large: 1200px
     xl, extra-large: 1536px */
 
-  @media only screen and (width < 845px) {
+  @media only screen and (max-width: 844px) {
     .hat-card-drop-down {
       width: calc(33% - 20px);
     }
   }
 
-  @media only screen and (width < 600px) {
+  @media only screen and (max-width: 599px) {
     .hat-card-drop-down {
       width: calc(50% - 20px);
     }
   }
 
-  @media only screen and (width < 500px) {
+  @media only screen and (max-width: 499px) {
     .hat-card-drop-down {
       width: calc(70% - 20px);
     }
   }
 
-  @media only screen and (width >= 845px) {
+  @media only screen and (min-width: 845px) {
     .hat-card-drop-down {
       width: calc(25% - 20px);
     }
   }
 
-  @media only screen and (width >= 1000px) {
+  @media only screen and (min-width: 1000px) {
     .hat-card-drop-down {
       width: calc(25% - 20px);
     }
   }
 
-  @media only screen and (width >= 1200px) {
+  @media only screen and (min-width: 1200px) {
     .hat-card-drop-down {
       width: calc(20% - 20px);
     }
