@@ -124,6 +124,11 @@ this is in case we want to do hover
   margin-right: 4.5rem;
 }
 
+/* .joint-well-intro-pic {
+  border: 2px solid #126fdb;
+  border-radius: 12px;
+} */
+
 /*Max-width is basically saying 500px, if youre in that this will happen*/
 @media all {
   /* xs, extra-small: 0px
