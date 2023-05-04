@@ -43,15 +43,26 @@ const JointWellVietnamIntro = () => {
     }
   }, [width]);
   const imagePaths = [
-    vietNamPicTwo,
+    vietNamPicFour,
+    vietNamPicSix,
     vietNamPicOne,
     vietNamPicThree,
-    vietNamPicFour,
-    vietNamPicFive,
-    vietNamPicSix,
-    vietNamPicSeven,
+    vietNamPicTwo,
     vietNamPicEight,
+    vietNamPicFive,
+    vietNamPicSeven,
   ];
+
+  // const imagePaths = [
+  //   vietNamPicTwo,   #5
+  //   vietNamPicOne,   #3
+  //   vietNamPicThree, #4
+  //   vietNamPicFour,  #1
+  //   vietNamPicFive,  #7
+  //   vietNamPicSix,   #2
+  //   vietNamPicSeven, #8
+  //   vietNamPicEight, #6
+  // ];
   return (
     <>
       {" "}

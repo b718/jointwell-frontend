@@ -21,15 +21,27 @@ const JointWellChinaIntro = () => {
   const [imageHeight, setimageHeight] = useState();
 
   const imagePaths = [
-    chinaPicOne,
-    chinaPicTwo,
-    chinaPicThree,
-    chinaPicSix,
-    chinaPicSeven,
     chinaPicEight,
+    chinaPicTwo,
     chinaPicNine,
+    chinaPicSix,
+    chinaPicOne,
+    chinaPicThree,
+    chinaPicSeven,
     chinaPicTen,
   ];
+
+  // const imagePaths = [
+  //   chinaPicOne,   #5
+  //   chinaPicTwo,   #2
+  //   chinaPicThree, #6
+  //   chinaPicSix,   #4
+  //   chinaPicSeven, #7
+  //   chinaPicEight, #1
+  //   chinaPicNine,  #3
+  //   chinaPicTen,   #8
+  // ];
+
   useEffect(() => {
     // width={width < 992 ? (width < 600 ? 150 : 350) : 120}
     // height={width < 992 ? (width < 600 ? 130 : 280) : 100}
