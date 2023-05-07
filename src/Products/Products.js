@@ -9,14 +9,16 @@ import useWindowDimensions from "../Components/useWindowDimensions";
 export const ProductsContext = React.createContext();
 export const SetProductsContext = React.createContext();
 export const SetDecorationContext = React.createContext();
+export const CurrentActiveTab = React.createContext();
+export const SetCurrentActiveTab = React.createContext();
 
 //Recall that with context API we can now avoid prop drilling!
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const [click, setClick] = useState(false);
   const [selectedStyle, setSelectedStyle] = useState("");
   const [selectedDecoration, setSelectedDecoration] = useState("");
+  const [activeTab, setActiveTab] = useState("");
   const { height, width } = useWindowDimensions();
 
   useEffect(() => {
@@ -38,101 +40,111 @@ const Products = () => {
       <ProductsContext.Provider value={products}>
         <SetProductsContext.Provider value={setSelectedStyle}>
           <SetDecorationContext.Provider value={setSelectedDecoration}>
-            <Grid
-              columns={12}
-              grow={true}
-              style={{
-                maxWidth: "95vw",
-                marginTop: "3rem",
-              }}
-            >
-              <Grid.Col span={2}>
-                <Flex justify="center" direction="column" align="flex-start">
-                  <Box style={{ paddingLeft: "1rem" }}>
-                    <Box onClick={() => setClick(!click)}>
-                      <DropDown dropDownName={"STYLE"} />
-                    </Box>
-
-                    <Box style={{ marginTop: "0.2rem" }}>
-                      {" "}
-                      <DropDownDecorationBase dropDownName={"DECORATION"} />
-                    </Box>
-                  </Box>
-                </Flex>
-              </Grid.Col>
-
-              <Grid.Col
-                span={10}
-                style={{
-                  marginTop: "1rem",
-                }}
-                className="hat-column-right-products"
-              >
-                <Flex
-                  gap="md"
-                  align="flex-end"
-                  justify={
-                    !(products.length > 0) || width < 600
-                      ? "center"
-                      : "flex-start"
-                  }
-                  direction="row"
-                  wrap="wrap"
-                  className="flex-hat-products-right-column"
+            <CurrentActiveTab.Provider value={activeTab}>
+              <SetCurrentActiveTab.Provider value={setActiveTab}>
+                <Grid
+                  columns={12}
+                  grow={true}
+                  style={{
+                    maxWidth: "95vw",
+                    marginTop: "3rem",
+                  }}
                 >
-                  {products
-                    .filter((product) => {
-                      //console.log(product);
-                      if (!selectedStyle) {
-                        return true;
-                      } else {
-                        return product.style.includes(selectedStyle);
-                      }
-                    })
-                    .filter((product) => {
-                      if (!selectedDecoration) {
-                        return true;
-                      } else {
-                        return product.decoration.includes(selectedDecoration);
-                      }
-                    })
-                    .map((product) => {
-                      return (
-                        <HatCard
-                          key={product._id}
-                          path={product.path}
-                          id={product.id}
-                          name={product.name}
-                        />
-                      );
-                    })}
-                </Flex>
-                <Center>
-                  {!(products.length > 0) ? (
-                    <div className="loading-div-products">
-                      <Loader color="gray" />
-                    </div>
-                  ) : (
-                    <div></div>
-                  )}
-                </Center>
-                <Center>
-                  <Text
-                    size="0.5rem"
-                    // style={
-                    //   !(products.length > 0) && width > 992
-                    //     ? { marginLeft: "10rem" }
-                    //     : {}
-                    // }
-                    className="bottom-text-products-logos"
+                  <Grid.Col span={2}>
+                    <Flex
+                      justify="center"
+                      direction="column"
+                      align="flex-start"
+                    >
+                      <Box style={{ paddingLeft: "1rem" }}>
+                        <Box>
+                          <DropDown dropDownName={"STYLE"} />
+                        </Box>
+
+                        <Box style={{ marginTop: "0.2rem" }}>
+                          {" "}
+                          <DropDownDecorationBase dropDownName={"DECORATION"} />
+                        </Box>
+                      </Box>
+                    </Flex>
+                  </Grid.Col>
+
+                  <Grid.Col
+                    span={10}
+                    style={{
+                      marginTop: "1rem",
+                    }}
+                    className="hat-column-right-products"
                   >
-                    The logos on the products displayed here are not for sell.
-                    They are just to exhibit our development and production
-                    capabilities.
-                  </Text>
-                </Center>
-              </Grid.Col>
-            </Grid>
+                    <Flex
+                      gap="md"
+                      align="flex-end"
+                      justify={
+                        !(products.length > 0) || width < 600
+                          ? "center"
+                          : "flex-start"
+                      }
+                      direction="row"
+                      wrap="wrap"
+                      className="flex-hat-products-right-column"
+                    >
+                      {products
+                        .filter((product) => {
+                          //console.log(product);
+                          if (!selectedStyle) {
+                            return true;
+                          } else {
+                            return product.style.includes(selectedStyle);
+                          }
+                        })
+                        .filter((product) => {
+                          if (!selectedDecoration) {
+                            return true;
+                          } else {
+                            return product.decoration.includes(
+                              selectedDecoration
+                            );
+                          }
+                        })
+                        .map((product) => {
+                          return (
+                            <HatCard
+                              key={product._id}
+                              path={product.path}
+                              id={product.id}
+                              name={product.name}
+                            />
+                          );
+                        })}
+                    </Flex>
+                    <Center>
+                      {!(products.length > 0) ? (
+                        <div className="loading-div-products">
+                          <Loader color="gray" />
+                        </div>
+                      ) : (
+                        <div></div>
+                      )}
+                    </Center>
+                    <Center>
+                      <Text
+                        size="0.5rem"
+                        // style={
+                        //   !(products.length > 0) && width > 992
+                        //     ? { marginLeft: "10rem" }
+                        //     : {}
+                        // }
+                        className="bottom-text-products-logos"
+                      >
+                        The logos on the products displayed here are not for
+                        sell. They are just to exhibit our development and
+                        production capabilities.
+                      </Text>
+                    </Center>
+                  </Grid.Col>
+                </Grid>
+              </SetCurrentActiveTab.Provider>
+            </CurrentActiveTab.Provider>
           </SetDecorationContext.Provider>
         </SetProductsContext.Provider>
       </ProductsContext.Provider>

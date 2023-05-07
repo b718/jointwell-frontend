@@ -1,14 +1,14 @@
 import { Text } from "@mantine/core";
 import React, { useState, useEffect, useContext } from "react";
 import { SetProductsContext } from "../../Products";
-import { ActiveContext } from "./DropDownHatsBase";
+import { ActiveContextHatsBase } from "./DropDownHatsBase";
 
 const DropDownHats = () => {
   const [numActive, setNumActive] = useState(-1);
   const [counter, setCounter] = useState(1);
   const [name, setName] = useState("");
   const newProducts = useContext(SetProductsContext);
-  const activeContent = useContext(ActiveContext);
+  const activeContent = useContext(ActiveContextHatsBase);
 
   const settingProducts = (name) => {
     if (counter % 2 == 0) {

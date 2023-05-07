@@ -1,28 +1,42 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
 import "../../DropDown/DropDown.css";
 import { Text } from "@mantine/core";
-import { SetProductsContext } from "../../Products";
+import {
+  CurrentActiveTab,
+  SetCurrentActiveTab,
+  SetProductsContext,
+} from "../../Products";
 import DropDownHats from "./DropDownHats";
 
 export const DropDownContext = React.createContext();
-export const ActiveContext = React.createContext();
-
+export const ActiveContextHatsBase = React.createContext();
 const DropDown = ({ dropDownName }) => {
   const [isActive, setIsActive] = useState(false);
   const [styleActive, setStyleActive] = useState(-1);
   const parentRef = useRef();
   const newProducts = useContext(SetProductsContext);
+  const activeTab = useContext(CurrentActiveTab);
+  const setActiveTab = useContext(SetCurrentActiveTab);
 
   useEffect(() => {
     if (!isActive) {
       setStyleActive(-1);
       newProducts("");
+      setActiveTab("");
     }
   }, [isActive]);
 
+  useEffect(() => {
+    if (activeTab === "style") {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
+    }
+  }, [activeTab]);
+
   return (
     <DropDownContext.Provider value={styleActive}>
-      <ActiveContext.Provider value={isActive}>
+      <ActiveContextHatsBase.Provider value={isActive}>
         <div style={{ maxWidth: "10rem" }}>
           <Text
             fz="md"
@@ -30,6 +44,7 @@ const DropDown = ({ dropDownName }) => {
               !isActive ? "dropDownExperience" : "dropDownExperience-active"
             }
             onClick={() => {
+              setActiveTab("style");
               setIsActive(!isActive);
             }}
           >
@@ -51,7 +66,7 @@ const DropDown = ({ dropDownName }) => {
             <DropDownHats />
           </div>
         </div>
-      </ActiveContext.Provider>
+      </ActiveContextHatsBase.Provider>
     </DropDownContext.Provider>
   );
 };
