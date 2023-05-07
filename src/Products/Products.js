@@ -28,7 +28,6 @@ const Products = () => {
     async function fetchProducts() {
       const response = await fetch("https://joint-well-api.onrender.com/hats");
       const currentProducts = await response.json();
-      console.log(products.length);
       setProducts(currentProducts);
     }
     fetchProducts();

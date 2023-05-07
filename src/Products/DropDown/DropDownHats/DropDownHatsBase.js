@@ -22,7 +22,6 @@ const DropDown = ({ dropDownName }) => {
     if (!isActive) {
       setStyleActive(-1);
       newProducts("");
-      setActiveTab("");
     }
   }, [isActive]);
 
