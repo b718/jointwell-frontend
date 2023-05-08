@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import { Grid, Center, Image, Text, Flex } from "@mantine/core";
+import React from "react";
+import { Center, Image, Flex } from "@mantine/core";
 import "./Compliance.css";
-import { clamp } from "@mantine/hooks";
 
 const Compliance = (props) => {
   return (
@@ -59,25 +58,41 @@ const Compliance = (props) => {
           style={{ maxWidth: "60rem", marginTop: "1rem" }}
           className="compliance-flex-center"
         >
-          <a href={require("../Images/compliance-new-1.jpg")} target="_blank">
+          <a
+            href={require("../Images/compliance-new-1.jpg")}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               width={"15rem"}
               src={require("../Images/compliance-new-1.jpg")}
             />
           </a>
-          <a href={require("../Images/compliance-new-2.jpg")} target="_blank">
+          <a
+            href={require("../Images/compliance-new-2.jpg")}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               width={"15rem"}
               src={require("../Images/compliance-new-2.jpg")}
             />
           </a>
-          <a href={require("../Images/compliance-new-3.jpg")} target="_blank">
+          <a
+            href={require("../Images/compliance-new-3.jpg")}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               width={"15rem"}
               src={require("../Images/compliance-new-4.jpg")}
             />
           </a>
-          <a href={require("../Images/compliance-new-4.jpg")} target="_blank">
+          <a
+            href={require("../Images/compliance-new-4.jpg")}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               width={"9rem"}
               src={require("../Images/compliance-new-3.jpg")}

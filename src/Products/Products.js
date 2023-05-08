@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
-import { Grid, Box, Flex, Header, Center, Text, Loader } from "@mantine/core";
+import { Grid, Box, Flex, Center, Text, Loader } from "@mantine/core";
 import DropDown from "./DropDown/DropDownHats/DropDownHatsBase";
 import DropDownDecorationBase from "./DropDown/DropDownDecorations/DropDownDecorationBase";
 import HatCard from "./HatCard/HatCard";

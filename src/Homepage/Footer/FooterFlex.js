@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Flex, Center, Image } from "@mantine/core";
+import { Text, Flex, Center } from "@mantine/core";
 import "./Footer.css";
 import useWindowDimensions from "../../Components/useWindowDimensions";
 
