@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./HatCard.css";
 import { Box, Center, Flex, Grid, Image, Text } from "@mantine/core";
-import useWindowDimensions from "../../Components/useWindowDimensions";
 
 const HatCard = ({ path, id, name }) => {
-  const { height, width } = useWindowDimensions();
   const [widthHat, setWidthHat] = useState(100);
   const smallerWidthHats = [
     "BH001",
@@ -30,6 +28,7 @@ const HatCard = ({ path, id, name }) => {
       setWidthHat(90);
     }
   }, []);
+
   const styles = {
     width: `${widthHat}%`,
     marginLeft: !largerWidthHats.includes(id) ? "1rem" : null,
@@ -44,7 +43,11 @@ const HatCard = ({ path, id, name }) => {
       {" "}
       <Box style={{ marginLeft: "0.3rem", marginRight: "0.3rem" }}>
         <Center>
-          <a href={require(`../../Images/${path}`)} target="_blank">
+          <a
+            href={require(`../../Images/${path}`)}
+            target="_blank"
+            rel="noopener"
+          >
             <Center>
               <Image
                 style={styles}

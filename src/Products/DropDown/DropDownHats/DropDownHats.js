@@ -11,7 +11,7 @@ const DropDownHats = () => {
   const activeContent = useContext(ActiveContextHatsBase);
 
   const settingProducts = (name) => {
-    if (counter % 2 == 0) {
+    if (counter % 2 === 0) {
       newProducts(name.toLowerCase());
     } else {
       newProducts("");
@@ -38,7 +38,7 @@ const DropDownHats = () => {
       <Text
         fz="sm"
         className={
-          numActive == 0 && counter % 2 == 0 && activeContent
+          numActive === 0 && counter % 2 === 0 && activeContent
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
@@ -54,7 +54,7 @@ const DropDownHats = () => {
       <Text
         fz="sm"
         className={
-          numActive == 1 && counter % 2 == 0 && activeContent
+          numActive === 1 && counter % 2 === 0 && activeContent
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
@@ -70,7 +70,7 @@ const DropDownHats = () => {
       <Text
         fz="sm"
         className={
-          numActive == 2 && counter % 2 == 0 && activeContent
+          numActive === 2 && counter % 2 === 0 && activeContent
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
@@ -86,7 +86,7 @@ const DropDownHats = () => {
       <Text
         fz="sm"
         className={
-          numActive == 3 && counter % 2 == 0 && activeContent
+          numActive === 3 && counter % 2 === 0 && activeContent
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
@@ -102,7 +102,7 @@ const DropDownHats = () => {
       <Text
         fz="sm"
         className={
-          numActive == 4 && counter % 2 == 0 && activeContent
+          numActive === 4 && counter % 2 === 0 && activeContent
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
@@ -118,7 +118,7 @@ const DropDownHats = () => {
       <Text
         fz="sm"
         className={
-          numActive == 5 && counter % 2 == 0 && activeContent
+          numActive === 5 && counter % 2 === 0 && activeContent
             ? "drop-down-item-each-active"
             : "drop-down-item-each"
         }
